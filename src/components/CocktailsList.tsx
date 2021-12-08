@@ -18,21 +18,21 @@ const CocktailListItem: React.FC<any> = ({cocktail}) => <div style={{
     </div>
     <div>
         <ul>
-            {cocktail.ingredients.map((ingredient: any) => <li>
+            {cocktail.preparationSteps.map((ingredient: any) => <li>
                 {ingredient}
             </li>)}
         </ul>
     </div>
     <div>
         <ul>
-            {cocktail.ingredients.map((ingredient: any) => <li>
+            {cocktail.garnishes.map((ingredient: any) => <li>
                 {ingredient}
             </li>)}
         </ul>
     </div>
     <div>
         <ul>
-            {cocktail.ingredients.map((ingredient: any) => <li>
+            {cocktail.glasses.map((ingredient: any) => <li>
                 {ingredient}
             </li>)}
         </ul>

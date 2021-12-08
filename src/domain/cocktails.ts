@@ -18,7 +18,7 @@ const whiskySour = {
         "lemon zeste",
         "...",
     ],
-    glass: [
+    glasses: [
         NICKANDNORA_GLASS,
         TUMBLER_GLASS
     ]
