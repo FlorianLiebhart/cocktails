@@ -49,10 +49,23 @@ const CocktailListItem: React.FC<any> = ({cocktail}) => <div
 </div>;
 
 
-const CocktailsList: React.FC<any> = ({cocktails}) => <>
+const CocktailsList: React.FC<any> = ({cocktails, onUserInputChange}) => <div
+    style={{
+        paddingTop: '20px',
+        paddingBottom: '50px'
+    }}
+>
+
+    <input
+        placeholder={"Search for something"}
+        style={{height: '48px', width: '98%'}}
+        onChange={(ev) => {
+            onUserInputChange(ev.target.value);
+        }}
+    />
 
     {cocktails.map((cocktail: any) => <CocktailListItem cocktail={cocktail}/>)}
-</>;
+</div>;
 
 
 export default CocktailsList;

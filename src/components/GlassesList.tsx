@@ -10,5 +10,6 @@ const glassesMap: any = {
 }
 // @ts-ignore
 export const GlassesList = ({glasses}) => <div style={{display: 'flex'}}>
-    {glasses.map((glass: any) => <img style={{width: 32, height: 32, padding: 4}} src={glassesMap[glass]}/>)}
+    {glasses.map((glass: any) => <img alt={glass} style={{width: 32, height: 32, padding: 4}}
+                                      src={glassesMap[glass]}/>)}
 </div>;
