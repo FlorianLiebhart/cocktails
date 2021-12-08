@@ -11,7 +11,15 @@ function App() {
         setFilter(newValue);
     }
 
-    const filteredCocktails = cocktails.filter(cocktail => filter === null || cocktail.name.includes(filter));
+    const filterCocktail = (cocktail: any) => {
+        if (filter === null) {
+            return true;
+        }
+
+        return cocktail.name.includes(filter);
+    }
+
+    const filteredCocktails = cocktails.filter(filterCocktail);
 
     return (
         <div className="App">
