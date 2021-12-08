@@ -29,7 +29,7 @@ const labelsMap: any = {
 export const PreparationStepsList = ({preparationSteps}) => <div>
     {preparationSteps.map((step: any) =>
         <div style={{display: 'flex', alignItems: 'center'}}>
-            <img alt={labelsMap[step]} style={{width: 48, height: 48}} src={picturesMap[step]}/>
+            <img alt={labelsMap[step]} style={{width: 48, height: 48, padding: 5}} src={picturesMap[step]}/>
             <div>&nbsp;{labelsMap[step]}</div>
         </div>
     )}

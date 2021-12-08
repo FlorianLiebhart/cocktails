@@ -1,5 +1,5 @@
 import {DRY_SHAKE, FINE_STRAIN, WET_SHAKE} from "./preparationSteps";
-import {NICKANDNORA_GLASS, TUMBLER_GLASS} from "./glasses";
+import {NICKANDNORA_GLASS, LOWBALL_GLASS} from "./glasses";
 
 import whiskySourSrc from './images/whiskysour.png';
 
@@ -22,7 +22,7 @@ const whiskySour = {
     ],
     glasses: [
         NICKANDNORA_GLASS,
-        TUMBLER_GLASS
+        LOWBALL_GLASS
     ]
 };
 

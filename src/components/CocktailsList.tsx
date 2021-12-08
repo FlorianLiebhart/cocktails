@@ -1,10 +1,6 @@
 import React from "react";
 import {PreparationStepsList} from "./PreparationStepsList";
-
-
-const glassesMap={
-
-}
+import {GlassesList} from "./GlassesList";
 
 
 const CocktailListItem: React.FC<any> = ({cocktail}) => <div
@@ -47,11 +43,7 @@ const CocktailListItem: React.FC<any> = ({cocktail}) => <div
             </ul>
         </div>
         <div>
-            <ul>
-                {cocktail.glasses.map((ingredient: any) => <li>
-                    {ingredient}
-                </li>)}
-            </ul>
+            <GlassesList glasses={cocktail.glasses}/>
         </div>
     </div>
 </div>;
