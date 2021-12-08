@@ -1,0 +1,3 @@
+export const TUMBLER_GLASS = 'TUMBLER_GLASS';
+export const NICKANDNORA_GLASS = 'NICKANDNORA_GLASS';
+export const TIKI_GLASS = 'TIKI_GLASS';
