@@ -110,7 +110,7 @@ const maitai = {
         "2cl Abuelo",
         "3cl Lime juice",
         "22ml Orgeat",
-        "15ml Dry Curaçau"
+        "15ml Dry Curaçao"
     ],
     preparationSteps: [
         WET_SHAKE,
