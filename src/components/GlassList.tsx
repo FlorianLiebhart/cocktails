@@ -9,7 +9,13 @@ const glassesMap: any = {
     TIKI_GLASS: tiki
 }
 // @ts-ignore
-export const GlassesList = ({glasses}) => <div style={{display: 'flex'}}>
-    {glasses.map((glass: any) => <img alt={glass} style={{width: 32, height: 32, padding: 4}}
-                                      src={glassesMap[glass]}/>)}
-</div>;
+export const GlassList = ({glasses}) => 
+  <div>
+      {
+        glasses.map((glass: any) => 
+          <div style={{display: 'flex', alignItems: 'center'}}>
+            <img alt={glass} style={{width: 48, height: 48, padding: 0}} src={glassesMap[glass]}/>
+          </div>
+        )
+      }
+  </div>;

@@ -1,15 +1,32 @@
-import {DRY_SHAKE, FINE_STRAIN, WET_SHAKE} from "./preparationSteps";
-import {NICKANDNORA_GLASS, LOWBALL_GLASS} from "./glasses";
+import {
+    DRY_SHAKE,
+    WET_SHAKE,
+    BUILD,
+    STIR,
+    OPEN_POUR,
+    FINE_STRAIN,
+    SINGLE_STRAIN
+} from "./preparationSteps";
 
-import whiskySourSrc from './images/whiskysour.png';
+import {
+    LOWBALL_GLASS,
+    NICKANDNORA_GLASS,
+    TIKI_GLASS
+} from "./glasses";
+
+import whiskySourImg from './images/whiskysour.png';
+import negroniImg from './images/negroni.png';
 
 
 const whiskySour = {
     name: "Whisky Sour",
-    picture: whiskySourSrc,
+    picture: whiskySourImg,
     ingredients: [
-        "whisky 6cl",
-        "...",
+        "6cl Whisky (4cl Bourbon, zB. Bulleit, 2cl LaPhroaigh)",
+        "2cl Lemon Juice",
+        "1,5cl sugar sirup",
+        "15ml egg white",
+        "1-2 dashes bitters"
     ],
     preparationSteps: [
         DRY_SHAKE,
@@ -17,35 +34,44 @@ const whiskySour = {
         FINE_STRAIN
     ],
     garnishes: [
-        "lemon zeste",
-        "...",
+        "Lemon Zeste",
+        "2 Maraschino cherries",
     ],
     glasses: [
         NICKANDNORA_GLASS,
         LOWBALL_GLASS
+    ],
+    tags: [
+        "sour",
+        "favorite",
+        "amazing",
+        "sweet",
+        "Whisky"
     ]
 };
 
 
 const negroni = {
     name: "Negroni",
-    picture: whiskySourSrc,
+    picture: negroniImg,
     ingredients: [
-        "gim 6cl",
-        "...",
+        "4cl Gin (Tanqueray, Needle)",
+        "4cl Sweet red Vermouth",
+        "2cl Campari",
+        "2-3 dashes orange bitters"
     ],
     preparationSteps: [
-        DRY_SHAKE,
-        WET_SHAKE,
-        FINE_STRAIN
+        SINGLE_STRAIN,
+        "Light it on Fire!! :))"
     ],
     garnishes: [
-        "orange",
-        "...",
+        "Orange zeste"
     ],
     glasses: [
-        NICKANDNORA_GLASS,
         LOWBALL_GLASS
+    ],
+    tags: [
+        "bitter"
     ]
 };
 
