@@ -13,7 +13,7 @@ export const GlassList = ({glasses}) =>
   <div>
       {
         glasses.map((glass: any) => 
-          <div style={{display: 'flex', alignItems: 'center'}}>
+          <div style={{display: 'flex', alignItems: 'center', marginLeft: '10px'}}>
             <img alt={glass} style={{width: 48, height: 48, padding: 0}} src={glassesMap[glass]}/>
           </div>
         )
