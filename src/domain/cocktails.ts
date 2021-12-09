@@ -16,6 +16,8 @@ import {
 
 import whiskySourImg from './images/whiskysour.png';
 import negroniImg from './images/negroni.png';
+import aviationImg from './images/aviation.png';
+import maitaiImg from './images/maitai.png';
 
 
 const whiskySour = {
@@ -26,7 +28,8 @@ const whiskySour = {
         "2cl Lemon Juice",
         "1,5cl sugar sirup",
         "15ml egg white",
-        "1-2 dashes bitters"
+        "1-2 dashes bitters",
+        "Lemon twist"
     ],
     preparationSteps: [
         DRY_SHAKE,
@@ -43,10 +46,7 @@ const whiskySour = {
     ],
     tags: [
         "sour",
-        "favorite",
-        "amazing",
-        "sweet",
-        "Whisky"
+        "favorite"
     ]
 };
 
@@ -58,11 +58,11 @@ const negroni = {
         "4cl Gin (Tanqueray, Needle)",
         "4cl Sweet red Vermouth",
         "2cl Campari",
-        "2-3 dashes orange bitters"
+        "2-3 dashes orange bitters",
+        "Orange twist"
     ],
     preparationSteps: [
-        SINGLE_STRAIN,
-        "Light it on Fire!! :))"
+        SINGLE_STRAIN
     ],
     garnishes: [
         "Orange zeste"
@@ -75,8 +75,65 @@ const negroni = {
     ]
 };
 
+const aviation = {
+    name: "Aviation",
+    picture: aviationImg,
+    ingredients: [
+        "45ml Gin (Tanqueray)",
+        "10ml Lemon juice",
+        "15ml Maraschino Liqueur",
+        "5ml Violet Liqueur",
+        "Lemon twist"
+    ],
+    preparationSteps: [
+        STIR
+    ],
+    garnishes: [
+        "1 Maraschino on bottom of glass"
+    ],
+    glasses: [
+        NICKANDNORA_GLASS
+    ],
+    tags: [
+        "bitter",
+        "sour",
+        "favorite",
+    ]
+};
 
-const cocktails = [whiskySour, negroni];
+const maitai = {
+    name: "Mai tai",
+    picture: maitaiImg,
+    ingredients: [
+        "2cl Smith n Cross",
+        "2cl Demarara Rum (e.g. El Dorado 8 year",
+        "2cl Abuelo",
+        "3cl Lime juice",
+        "22ml Orgeat",
+        "15ml Dry Curaçau"
+    ],
+    preparationSteps: [
+        WET_SHAKE,
+        OPEN_POUR
+    ],
+    garnishes: [
+        "Lime boat with 2 Maraschino cherries inside",
+        "Mint"
+    ],
+    glasses: [
+        TIKI_GLASS
+    ],
+    tags: [
+        "favorite",
+        "strong",
+        "rum", 
+        "fancy",
+        "tiki"
+    ]
+};
+
+
+const cocktails = [whiskySour, negroni, aviation, maitai];
 
 
 export default cocktails;
