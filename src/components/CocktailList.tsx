@@ -22,7 +22,7 @@ const CocktailListItem: React.FC<any> = ({cocktail}) =>
             <div title="cocktail picture" style={{height: '150px', minWidth:'150px', maxWidth:'150px'}}>
                 <img src={cocktail.picture} alt={cocktail.name} style={{height: '150px', width:'150px'}}/>
             </div>
-            <div title="ingredients" style={{width: '350px', maxWidth: '350px'}}>
+            <div title="ingredients" style={{width: '350px', maxWidth: '400px'}}>
                 <ul>
                     {cocktail.ingredients.map((ingredient: any) => <li>
                         {ingredient}
