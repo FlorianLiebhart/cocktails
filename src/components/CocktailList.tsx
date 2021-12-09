@@ -46,6 +46,7 @@ const CocktailListItem: React.FC<any> = ({cocktail}) =>
                 <TagList tags={cocktail.tags}/>
             </div>
         </div>
+        <hr style={{marginBlockStart: '20px'}}/>
     </div>;
 
 // @ts-ignore
