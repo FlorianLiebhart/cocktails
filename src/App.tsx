@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import './App.css';
 import {CocktailList} from "./components/CocktailList";
 import cocktails from "./domain/cocktails";
+import cocktailbarImg from "./domain/images/cocktailbar.jpg";
 
 function App() {
     const [filter, setFilter] = useState<string | null>(null);
@@ -23,7 +24,8 @@ function App() {
     }
 
     return (
-        <div className="App" style={{margin: '30px'}}>
+        <div className="App" style={{margin: '0px 30px'}}>
+          <img src={cocktailbarImg} style={{height: '250px', marginBottom: '2px'}}/>
             <input
                 placeholder={"Search for something"}
                 style={{
