@@ -7,6 +7,7 @@ import mix_stir from "../icons/steps/mix_stir.png";
 import open_pour from "../icons/steps/pour.png";
 import fine_strain from "../icons/steps/strain_fine.png";
 import empty_image from "../icons/steps/empty.png";
+import muddle from "../icons/steps/muddle.png";
 
 const picturesMap: any = {
     DRY_SHAKE: mix_dry_shake,
@@ -15,7 +16,8 @@ const picturesMap: any = {
     STIR: mix_stir,
     OPEN_POUR: open_pour,
     FINE_STRAIN: fine_strain,
-    SINGLE_STRAIN: single_strain
+    SINGLE_STRAIN: single_strain,
+    MUDDLE: muddle
 }
 
 const labelsMap: any = {
@@ -25,7 +27,8 @@ const labelsMap: any = {
     STIR: "Stir",
     OPEN_POUR: 'Open pour',
     FINE_STRAIN: 'Fine strain',
-    SINGLE_STRAIN: 'Single strain'
+    SINGLE_STRAIN: 'Single strain',
+    MUDDLE: 'Muddle'
 }
 
 function findInLabelsMap(step: any): any {
