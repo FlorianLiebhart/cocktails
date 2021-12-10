@@ -5,4 +5,4 @@ export const PREP_STIR = "STIR";
 export const PREP_OPEN_POUR = "OPEN_POUR";
 export const PREP_FINE_STRAIN = "FINE_STRAIN";
 export const PREP_SINGLE_STRAIN = "SINGLE_STRAIN";
-export const PREP_MUDDLE = "SINGLE_STRAIN";
+export const PREP_MUDDLE = "MUDDLE";
