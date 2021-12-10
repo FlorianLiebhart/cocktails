@@ -32,6 +32,26 @@ import imgRoyalbermudayachtclub from './images/royalbermudayachtclub.png';
 import imgBloodandsand from './images/bloodandsand.png';
 import imgManhattan from './images/manhattan.png';
 import imgPenicillin from './images/penicillin.png';
+import imgWhiterussian from './images/whiterussian.png';
+import imgOldfashioned from './images/oldfashioned.png';
+import imgMrswizzle from './images/mrswizzle.png';
+import imgBloodymary from './images/bloodymary.png';
+import imgSexonthebeach from './images/sexonthebeach.png';
+import imgDaiquiri from './images/daiquiri.png';
+import imgElpresidente from './images/elpresidente.png';
+import imgCaipirinha from './images/caipirinha.png';
+import imgPinacolada from './images/pinacolada.png';
+import imgTrinidadsour from './images/trinidadsour.png';
+import imgAperolspritz from './images/aperolspritz.png';
+import imgSaturn from './images/saturn.png';
+import imgMojito from './images/mojito.png';
+import imgAmarettosour from './images/amarettosour.png';
+import imgAmericano from './images/americano.png';
+import imgBoulevardier from './images/boulevardier.png';
+import imgMillionaire from './images/millionaire.png';
+import imgBillionaire from './images/billionaire.png';
+import imgCoffeeandcigarettes from './images/coffeeandcigarettes.png';
+
 
 const whiskysour = {
     name: "Whisky (Boston) Sour",
@@ -43,6 +63,12 @@ const whiskysour = {
         "15ml egg white",
         "1-2 dashes bitters",
         "Lemon twist"
+    ],
+    ingredients_guest: [
+        "Bourbon/Scotch Whisky",
+        "Lemon",
+        "Egg white",
+        "bitters"
     ],
     preparationSteps: [
         PREP_DRY_SHAKE,
@@ -102,7 +128,8 @@ const aviation = {
         PREP_STIR
     ],
     garnishes: [
-        "1 Maraschino on bottom of glass"
+        "1 Maraschino cherry on bottom of glass",
+        "lemon zeste spiral (channel knife)"
     ],
     glasses: [
         GLASS_NICKANDNORA
@@ -115,7 +142,7 @@ const aviation = {
 };
 
 const maitai = {
-    name: "Mai tai",
+    name: "Mai Tai",
     picture: imgMaitai,
     ingredients: [
         "2cl Smith n Cross",
@@ -123,7 +150,7 @@ const maitai = {
         "2cl Abuelo",
         "3cl Lime juice",
         "22ml Orgeat",
-        "15ml Cointreau/Dry Curaçao"
+        "15ml Cointreau/Dry Curacao"
     ],
     preparationSteps: [
         PREP_WET_SHAKE,
@@ -131,7 +158,8 @@ const maitai = {
     ],
     garnishes: [
         "Lime boat with 2 Maraschino cherries inside",
-        "Mint"
+        "Mint",
+        "lemon zeste spiral (channel knife)"
     ],
     glasses: [
         GLASS_TIKI
@@ -151,7 +179,7 @@ const margarita = {
     ingredients: [
         "5cl silver tequila (e.g. Don Julio Blanco)",
         "2,5cl lime juice",
-        "1,5cl Cointreau/Curaçao"
+        "1,5cl Cointreau/Curacao"
     ],
     preparationSteps: [
         PREP_WET_SHAKE,
@@ -179,7 +207,7 @@ const royalbermudayachtclub = {
         "5cl Rum (e.g. El Dorado 5, Appleton Estate, Abuelo, El Dorado 8)",
         "2cl lime juice",
         "15ml Falernum",
-        "5ml Curaçao"
+        "5ml Curacao"
     ],
     preparationSteps: [
         PREP_WET_SHAKE,
@@ -293,20 +321,400 @@ const penicillin = {
     ]
 };
 
+const whiterussian = {
+    name: "White Russian",
+    picture: imgWhiterussian,
+    ingredients: [
+        "???"
+    ],
+    preparationSteps: [
+        "???"
+    ],
+    garnishes: [
+        "???"
+    ],
+    glasses: [
+        GLASS_LOWBALL
+    ],
+    tags: [
+        "???"
+    ]
+};
 
-// whiterussian.png
-// oldfashioned.png
-// mrswizzle.png
-// bloodymary.png
-// sexonthebeach.png
-// daiquiri.png
-// elpresidente.png
-// caipirinha.png
-// pinacolada.png
-// trinidadsour.png
-// aperolspritz.png
-// saturn.png
-// mojito.png
+const oldfashioned = {
+    name: "Old-Fashioned",
+    picture: imgOldfashioned,
+    ingredients: [
+        "???"
+    ],
+    preparationSteps: [
+        "???"
+    ],
+    garnishes: [
+        "???"
+    ],
+    glasses: [
+        GLASS_LOWBALL
+    ],
+    tags: [
+        "???"
+    ]
+};
+
+const mrswizzle = {
+    name: "Mr Swizzle",
+    picture: imgMrswizzle,
+    ingredients: [
+        "???"
+    ],
+    preparationSteps: [
+        "???"
+    ],
+    garnishes: [
+        "???"
+    ],
+    glasses: [
+        GLASS_HIGHBALL
+    ],
+    tags: [
+        "???"
+    ]
+};
+
+const bloodymary = {
+    name: "Bloody Mary",
+    picture: imgBloodymary,
+    ingredients: [
+        "???"
+    ],
+    preparationSteps: [
+        "???"
+    ],
+    garnishes: [
+        "???"
+    ],
+    glasses: [
+        GLASS_HIGHBALL
+    ],
+    tags: [
+        "???"
+    ]
+};
+
+const sexonthebeach = {
+    name: "Sex on the Beach",
+    picture: imgSexonthebeach,
+    ingredients: [
+        "???"
+    ],
+    preparationSteps: [
+        "???"
+    ],
+    garnishes: [
+        "???"
+    ],
+    glasses: [
+        GLASS_HIGHBALL
+    ],
+    tags: [
+        "new",
+        "???"
+    ]
+};
+
+const daiquiri = {
+    name: "Daiquiri",
+    picture: imgDaiquiri,
+    ingredients: [
+        "???"
+    ],
+    preparationSteps: [
+        "???"
+    ],
+    garnishes: [
+        "???"
+    ],
+    glasses: [
+        GLASS_NICKANDNORA
+    ],
+    tags: [
+        "new",
+        "???"
+    ]
+};
+
+const elpresidente = {
+    name: "El Presidente",
+    picture: imgElpresidente,
+    ingredients: [
+        "???"
+    ],
+    preparationSteps: [
+        "???"
+    ],
+    garnishes: [
+        "???"
+    ],
+    glasses: [
+        GLASS_NICKANDNORA
+    ],
+    tags: [
+        "???"
+    ]
+};
+
+const caipirinha = {
+    name: "Caipirinha",
+    picture: imgCaipirinha,
+    ingredients: [
+        "???"
+    ],
+    preparationSteps: [
+        "???"
+    ],
+    garnishes: [
+        "???"
+    ],
+    glasses: [
+        GLASS_LOWBALL
+    ],
+    tags: [
+        "???"
+    ]
+};
+
+const pinacolada = {
+    name: "Pina Colada",
+    picture: imgPinacolada,
+    ingredients: [
+        "???"
+    ],
+    preparationSteps: [
+        "???"
+    ],
+    garnishes: [
+        "???"
+    ],
+    glasses: [
+        GLASS_TIKI,
+        GLASS_HIGHBALL
+    ],
+    tags: [
+        "???"
+    ]
+};
+
+const trinidadsour = {
+    name: "Trinidad Sour",
+    picture: imgTrinidadsour,
+    ingredients: [
+        "???"
+    ],
+    preparationSteps: [
+        "???"
+    ],
+    garnishes: [
+        "???"
+    ],
+    glasses: [
+        GLASS_NICKANDNORA
+    ],
+    tags: [
+        "???"
+    ]
+};
+
+const aperolspritz = {
+    name: "Aperol Spritz",
+    picture: imgAperolspritz,
+    ingredients: [
+        "???"
+    ],
+    preparationSteps: [
+        "???"
+    ],
+    garnishes: [
+        "???"
+    ],
+    glasses: [
+        GLASS_REDWINE
+    ],
+    tags: [
+        "???"
+    ]
+};
+
+const saturn = {
+    name: "Saturn",
+    picture: imgSaturn,
+    ingredients: [
+        "???"
+    ],
+    preparationSteps: [
+        "???"
+    ],
+    garnishes: [
+        "???"
+    ],
+    glasses: [
+        GLASS_TIKI,
+        GLASS_LOWBALL, 
+        GLASS_HIGHBALL
+    ],
+    tags: [
+        "new",
+        "???"
+    ]
+};
+
+const mojito = {
+    name: "Mojito",
+    picture: imgMojito,
+    ingredients: [
+        "???"
+    ],
+    preparationSteps: [
+        "???"
+    ],
+    garnishes: [
+        "???"
+    ],
+    glasses: [
+        GLASS_HIGHBALL
+    ],
+    tags: [
+        "new",
+        "???"
+    ]
+};
+
+const amarettosour = {
+    name: "Amaretto Sour",
+    picture: imgAmarettosour,
+    ingredients: [
+        "???"
+    ],
+    preparationSteps: [
+        "???"
+    ],
+    garnishes: [
+        "???"
+    ],
+    glasses: [
+        GLASS_NICKANDNORA,
+        GLASS_LOWBALL
+    ],
+    tags: [
+        "???"
+    ]
+};
+
+const americano = {
+    name: "Americano",
+    picture: imgAmericano,
+    ingredients: [
+        "???"
+    ],
+    preparationSteps: [
+        "???"
+    ],
+    garnishes: [
+        "???"
+    ],
+    glasses: [
+        GLASS_HIGHBALL
+    ],
+    tags: [
+        "new",
+        "???"
+    ]
+};
+
+const boulevardier = {
+    name: "Boulevardier",
+    picture: imgBoulevardier,
+    ingredients: [
+        "???"
+    ],
+    preparationSteps: [
+        "???"
+    ],
+    garnishes: [
+        "???"
+    ],
+    glasses: [
+        GLASS_LOWBALL
+    ],
+    tags: [
+        "new",
+        "???"
+    ]
+};
+
+const millionaire = {
+    name: "Millionaire",
+    picture: imgMillionaire,
+    ingredients: [
+        "???"
+    ],
+    preparationSteps: [
+        "???"
+    ],
+    garnishes: [
+        "???"
+    ],
+    glasses: [
+        GLASS_NICKANDNORA
+    ],
+    tags: [
+        "new",
+        "???"
+    ]
+};
+
+const billionaire = {
+    name: "Billionaire",
+    picture: imgBillionaire,
+    ingredients: [
+        "???"
+    ],
+    preparationSteps: [
+        "???"
+    ],
+    garnishes: [
+        "???"
+    ],
+    glasses: [
+        GLASS_NICKANDNORA
+    ],
+    tags: [
+        "new",
+        "???"
+    ]
+};
+
+const coffeeandcigarettes = {
+    name: "Coffee and Cigarettes",
+    picture: imgCoffeeandcigarettes,
+    ingredients: [
+        "???"
+    ],
+    preparationSteps: [
+        "???"
+    ],
+    garnishes: [
+        "???"
+    ],
+    glasses: [
+        GLASS_NICKANDNORA
+    ],
+    tags: [
+        "new",
+        "???"
+    ]
+};
+
+
 
 
 const cocktails = [
@@ -318,8 +726,28 @@ const cocktails = [
     royalbermudayachtclub, 
     bloodandsand,
     manhattan, 
-    penicillin
-];
+    penicillin,
+    whiterussian,
+    oldfashioned,
+    mrswizzle,
+    bloodymary,
+    sexonthebeach,
+    daiquiri,
+    elpresidente,
+    caipirinha,
+    pinacolada,
+    trinidadsour,
+    aperolspritz,
+    saturn,
+    mojito,
+    amarettosour,
+    americano,
+    boulevardier,
+    millionaire,
+    billionaire,
+    coffeeandcigarettes
+]//.sort((a, b) => a.name.localeCompare(b.name))
+
 
 
 export default cocktails;

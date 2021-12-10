@@ -1,23 +1,24 @@
 import React from "react";
-import mix_dry_shake from "../icons/steps/mix_dry_shake.png";
-import mix_wet_shake from "../icons/steps/mix_wet_shake.png";
-import single_strain from "../icons/steps/strain_single.png";
-import mix_build from "../icons/steps/mix_stir.png";
-import mix_stir from "../icons/steps/mix_stir.png";
-import open_pour from "../icons/steps/pour.png";
-import fine_strain from "../icons/steps/strain_fine.png";
-import empty_image from "../icons/steps/empty.png";
-import muddle from "../icons/steps/muddle.png";
+
+import imgMix_dry_shake from "../icons/steps/mix_dry_shake.png";
+import imgMix_wet_shake from "../icons/steps/mix_wet_shake.png";
+import imgSingle_strain from "../icons/steps/strain_single.png";
+import imgMix_build from "../icons/steps/mix_stir.png";
+import imgMix_stir from "../icons/steps/mix_stir.png";
+import imgOpen_pour from "../icons/steps/pour.png";
+import imgFine_strain from "../icons/steps/strain_fine.png";
+import imgEmpty from "../icons/steps/empty.png";
+import imgMuddle from "../icons/steps/muddle.png";
 
 const picturesMap: any = {
-    DRY_SHAKE: mix_dry_shake,
-    WET_SHAKE: mix_wet_shake,
-    BUILD: mix_build,
-    STIR: mix_stir,
-    OPEN_POUR: open_pour,
-    FINE_STRAIN: fine_strain,
-    SINGLE_STRAIN: single_strain,
-    MUDDLE: muddle
+    DRY_SHAKE: imgMix_dry_shake,
+    WET_SHAKE: imgMix_wet_shake,
+    BUILD: imgMix_build,
+    STIR: imgMix_stir,
+    OPEN_POUR: imgOpen_pour,
+    FINE_STRAIN: imgFine_strain,
+    SINGLE_STRAIN: imgSingle_strain,
+    MUDDLE: imgMuddle
 }
 
 const labelsMap: any = {
@@ -40,7 +41,7 @@ function findInLabelsMap(step: any): any {
 
 function findInPicturesMap(step: any): any {
     if(picturesMap[step] == null)
-        return empty_image;
+        return imgEmpty;
     else 
         return picturesMap[step];
 }
