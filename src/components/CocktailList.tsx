@@ -52,6 +52,8 @@ const CocktailListItem: React.FC<any> = ({cocktail}) =>
 // @ts-ignore
 export const CocktailList: React.FC<any> = ({cocktails}) => 
     <div title="cocktails" style={{paddingBottom: '20px'}}>
+    <div style={{display: 'flex', marginTop: '5px', marginLeft: '5px'}}>{cocktails.length} cocktails</div>
+        
       {
         cocktails.map(
           (cocktail: any) => <CocktailListItem cocktail={cocktail}/>

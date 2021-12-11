@@ -86,6 +86,10 @@ const whiskysour = {
     tags: [
         "sour",
         "favorite"
+    ],
+    history: [
+    ],
+    notes: [
     ]
 };
 
@@ -111,6 +115,10 @@ const negroni = {
     ],
     tags: [
         "bitter"
+    ],
+    history: [
+    ],
+    notes: [
     ]
 };
 
@@ -138,6 +146,10 @@ const aviation = {
         "bitter",
         "sour",
         "favorite",
+    ],
+    history: [
+    ],
+    notes: [
     ]
 };
 
@@ -170,6 +182,10 @@ const maitai = {
         "rum", 
         "fancy",
         "tiki"
+    ],
+    history: [
+    ],
+    notes: [
     ]
 };
 
@@ -197,6 +213,10 @@ const margarita = {
         "mezcal",
         "tequila",
         "sour"
+    ],
+    history: [
+    ],
+    notes: [
     ]
 };
 
@@ -223,6 +243,10 @@ const royalbermudayachtclub = {
         "sour",
         "refreshing",
         "Trader Vic"
+    ],
+    history: [
+    ],
+    notes: [
     ]
 };
 
@@ -252,6 +276,10 @@ const bloodandsand = {
     tags: [
         "sour",
         "refreshing"
+    ],
+    history: [
+    ],
+    notes: [
     ]
 };
 
@@ -282,7 +310,9 @@ const manhattan = {
         "spirit-forward",
         "love it"
     ],
-    note: [
+    history: [
+    ],
+    notes: [
         "A 'Perfect Manhattan' is a Manhattan with half sweet and half dry Vermouth"
     ]
 };
@@ -318,6 +348,10 @@ const penicillin = {
         "favorite",
         "modern classic 2005",
         "refreshing"
+    ],
+    history: [
+    ],
+    notes: [
     ]
 };
 
@@ -325,19 +359,31 @@ const whiterussian = {
     name: "White Russian",
     picture: imgWhiterussian,
     ingredients: [
-        "???"
+        "4cl Vodka",
+        "4cl Coffee Liqueur (Mr. Black)",
+        "Splash of Heavy Whip Cream",
+        "possibly a little (<1cl) Sugar Sirup or Amaretto"
     ],
     preparationSteps: [
-        "???"
+        PREP_BUILD,
+        "Stir Vodka and Coffee Liqueur on ice in glass until cold",
+        "Shake cream until heavy and pour on top",
     ],
     garnishes: [
-        "???"
+        "Maraschino Cherries",
+        "maybe nutmeg or chocolate on top"
+
     ],
     glasses: [
         GLASS_LOWBALL
     ],
     tags: [
-        "???"
+        "Coffee",
+        "creamy"
+    ],
+    history: [
+    ],
+    notes: [
     ]
 };
 
@@ -345,19 +391,29 @@ const oldfashioned = {
     name: "Old-Fashioned",
     picture: imgOldfashioned,
     ingredients: [
-        "???"
+        "8ml Demarara Sirup",
+        "6cl Bourbon (Woodford Reserve or 4 Roses. Also works with Tagavulin Scotch",
+        "2 good dashes of Angostura Bitters",
+        "Orange zeste twist"
     ],
     preparationSteps: [
-        "???"
+        PREP_BUILD,
+        "Build with big ball of ice"
     ],
     garnishes: [
-        "???"
+        "Orange zeste"
     ],
     glasses: [
         GLASS_LOWBALL
     ],
     tags: [
-        "???"
+        "classic",
+        "strong",
+        "spirit-forward"
+    ],
+    history: [
+    ],
+    notes: [
     ]
 };
 
@@ -365,19 +421,26 @@ const mrswizzle = {
     name: "Mr Swizzle",
     picture: imgMrswizzle,
     ingredients: [
-        "???"
+        "4,5cl Demerara Rum (zB. El Dorado)",
+
     ],
     preparationSteps: [
-        "???"
+        PREP_BUILD
     ],
     garnishes: [
-        "???"
+        "lemon garnish (channel knife?)"
     ],
     glasses: [
         GLASS_HIGHBALL
     ],
     tags: [
-        "???"
+        "coffee",
+        "refreshing"
+    ],
+    history: [
+    ],
+    notes: [
+        "Kaffeenote kommt schön, aber nicht aufdringlich zur Geltung. So wie die Zitrone. Erfrischend, sommerlich, gut!"
     ]
 };
 
@@ -385,19 +448,40 @@ const bloodymary = {
     name: "Bloody Mary",
     picture: imgBloodymary,
     ingredients: [
-        "???"
+        "half a celery stem (muddle)",
+        "100ml tomato juice",
+        "5cl Vodka",
+        "10-15 ml lemon juice",
+        "6 dashes worcetershire",
+        "6 dashes tabasco",
+        "1 barspoon of honey sirup",
+        "1 punch (celer) salt & pepper"
     ],
     preparationSteps: [
-        "???"
+        PREP_WET_SHAKE,
+        "Carefully pour back and forth in shaker on ice for it not to get foamy"
     ],
     garnishes: [
-        "???"
+        "Celery",
+        "Rosmary/Thume branch",
+        "Olive",
+        "fried bacon",
+        "Tomate",
+        "possibly mini-burger or sandwich :)"
     ],
     glasses: [
         GLASS_HIGHBALL
     ],
     tags: [
-        "???"
+        "savory",
+        "salty",
+        "spicy",
+        "fancy"
+    ],
+    history: [
+    ],
+    notes: [
+        "Source: https://www.youtube.com/watch?v=9bvEJx4PsUM"
     ]
 };
 
@@ -405,20 +489,33 @@ const sexonthebeach = {
     name: "Sex on the Beach",
     picture: imgSexonthebeach,
     ingredients: [
-        "???"
+        "3cl Orange juice",
+        "1,5cl Peach liqueur",
+        "3cl Vodka",
+        "3cl Cranberry juice"
     ],
     preparationSteps: [
-        "???"
+        PREP_WET_SHAKE,
+        PREP_BUILD,
+        "shake or build; cranberry juice last"
     ],
     garnishes: [
-        "???"
+        "Orange wedge",
+        "Maraschino Cherry",
+        "Maybe umbrella"
     ],
     glasses: [
         GLASS_HIGHBALL
     ],
     tags: [
         "new",
-        "???"
+        "refreshing",
+        "sweet"
+    ],
+    history: [
+    ],
+    notes: [
+        "Source: https://www.youtube.com/watch?v=xufc7RzP-W8"
     ]
 };
 
@@ -426,20 +523,28 @@ const daiquiri = {
     name: "Daiquiri",
     picture: imgDaiquiri,
     ingredients: [
-        "???"
+        "6cl white rum",
+        "2cl lime juice",
+        "1cl sugar sirup",
+        "1 lime zeste into shaker"
     ],
     preparationSteps: [
-        "???"
+        PREP_WET_SHAKE,
+        PREP_FINE_STRAIN,
+        "wet short very hard and a bit longer than you should! Dillution is important here!"
     ],
     garnishes: [
-        "???"
+        "lime wheel or garnish"
     ],
     glasses: [
         GLASS_NICKANDNORA
     ],
     tags: [
-        "new",
-        "???"
+        "new"
+    ],
+    history: [
+    ],
+    notes: [
     ]
 };
 
@@ -447,19 +552,34 @@ const elpresidente = {
     name: "El Presidente",
     picture: imgElpresidente,
     ingredients: [
-        "???"
+        "4,5cl Lillet Blanc (or Blanc Vermouth)",
+        "4,5cl Cuban Rum (or Demarara or Plantation 5 or Abuelo or El Dorado or white)",
+        "7ml Dry Curacao",
+        "1 barspoon Grenadine",
+        "Orange twist"
     ],
     preparationSteps: [
-        "???"
+        PREP_STIR,
+        PREP_SINGLE_STRAIN
     ],
     garnishes: [
-        "???"
+        "long Orange zeste (channel knife)",
+        "Maraschino Cherry"
     ],
     glasses: [
         GLASS_NICKANDNORA
     ],
     tags: [
-        "???"
+        "a bit like manhattan",
+        "strong",
+        "solid",
+        "spirit-forward",
+        "showcases the rum"
+    ],
+    history: [
+    ],
+    notes: [
+        "Source: How to drink: https://www.youtube.com/watch?v=_O_TCeL_gV0&t=769s"
     ]
 };
 
@@ -467,19 +587,31 @@ const caipirinha = {
     name: "Caipirinha",
     picture: imgCaipirinha,
     ingredients: [
-        "???"
+        "1 lime",
+        "15ml Sugar Sirup",
+        "5-6cl Cachaca (best: Novo Fogo Silver"
     ],
     preparationSteps: [
-        "???"
+        PREP_BUILD,
+        PREP_MUDDLE,
+        "cut lime in eighths; remove white, muddle very hard in glass, esp. the peel",
+        "fill with ice and heavy shake in glass (or shaker)",
+        PREP_WET_SHAKE
+
     ],
     garnishes: [
-        "???"
+        "Mint or basil"
     ],
     glasses: [
         GLASS_LOWBALL
     ],
     tags: [
-        "???"
+        "refreshing",
+        "sour"
+    ],
+    history: [
+    ],
+    notes: [
     ]
 };
 
@@ -487,20 +619,36 @@ const pinacolada = {
     name: "Pina Colada",
     picture: imgPinacolada,
     ingredients: [
-        "???"
+        "70ml Pinapple juice",
+        "30g Coconut cream (70% Fruchtfleisch (so pretty thick) from Edeka",
+        "15ml lime juice (so that it's not so creamy but fresher",
+        "1cl Orgeat",
+        "1cl Falernum",
+        "5cl Rum (any)"
     ],
     preparationSteps: [
-        "???"
+        PREP_WET_SHAKE,
+        "crushingly hard wet shake",
+        "can be served in real pineapple :-)"
     ],
     garnishes: [
-        "???"
+        "pineapple",
+        "mint",
+        "coconut rim",
+        "umbrella"
     ],
     glasses: [
         GLASS_TIKI,
         GLASS_HIGHBALL
     ],
     tags: [
-        "???"
+        "sweet",
+        "refreshing",
+        "tiki"
+    ],
+    history: [
+    ],
+    notes: [
     ]
 };
 
@@ -508,19 +656,37 @@ const trinidadsour = {
     name: "Trinidad Sour",
     picture: imgTrinidadsour,
     ingredients: [
-        "???"
+        "30ml Orgeat",
+        "30ml Angostura Bitters",
+        "15ml 100 Proof Rye Whisky (e.g. Rittenhouse)",
+        "22,5ml Lemon juice"
     ],
     preparationSteps: [
-        "???"
+        PREP_WET_SHAKE,
+        PREP_FINE_STRAIN
     ],
     garnishes: [
-        "???"
+        "nothing",
+        "maybe Mint or lemon zeste"
     ],
     glasses: [
         GLASS_NICKANDNORA
     ],
     tags: [
-        "???"
+        "wow",
+        "divine",
+        "amazing",
+        "favorite",
+        "sweet",
+        "bitter",
+        "sour"
+    ],
+    history: [
+    ],
+    notes: [
+        "https://www.youtube.com/watch?v=_BEaYWQjSu0",
+        "could try with an egg white, like how to drink did",
+        "Sweet, sour, and bitter wrestle for attention!"
     ]
 };
 
@@ -528,19 +694,27 @@ const aperolspritz = {
     name: "Aperol Spritz",
     picture: imgAperolspritz,
     ingredients: [
-        "???"
+        "Ice",
+        "4cl Aperol",
+        "8cl Prosecco (just fill it up)"
     ],
     preparationSteps: [
-        "???"
+        PREP_BUILD
     ],
     garnishes: [
-        "???"
+        "Orange wheel",
+        "maybe mint or rosemary"
     ],
     glasses: [
         GLASS_REDWINE
     ],
     tags: [
-        "???"
+        "refreshing",
+        "slightly bitter"
+    ],
+    history: [
+    ],
+    notes: [
     ]
 };
 
@@ -548,13 +722,21 @@ const saturn = {
     name: "Saturn",
     picture: imgSaturn,
     ingredients: [
-        "???"
+        "30ml Lemon Juice",
+        "15ml Passion Fruit Juice (or puree or liqueur)",
+        "15ml Simple Sirup",
+        "15ml Orget",
+        "15ml Falernum (John D. Taylor's Velvet)",
+        "75ml London Dry Gin (Tanqueray)"
     ],
     preparationSteps: [
-        "???"
+        PREP_WET_SHAKE,
+        PREP_OPEN_POUR,
+        "Heavy wet shake and open pour"
+
     ],
     garnishes: [
-        "???"
+        "Lemon peel wrapped around a Maraschino Cherry (like a Saturn)"
     ],
     glasses: [
         GLASS_TIKI,
@@ -563,7 +745,12 @@ const saturn = {
     ],
     tags: [
         "new",
-        "???"
+        "tiki"
+    ],
+    history: [
+    ],
+    notes: [
+        "How to Drink: https://www.youtube.com/watch?v=rt-foO5u2z8"
     ]
 };
 
@@ -585,6 +772,10 @@ const mojito = {
     tags: [
         "new",
         "???"
+    ],
+    history: [
+    ],
+    notes: [
     ]
 };
 
@@ -592,20 +783,32 @@ const amarettosour = {
     name: "Amaretto Sour",
     picture: imgAmarettosour,
     ingredients: [
-        "???"
+        "4,5cl Amaretto",
+        "2,5cl Bourbon. I used Bulleit. But should be higher proof (e.g. Barrel Proof 100), otherwise too sweet",
+        "3cl Lemon juice",
+        "8ml sugar sirup (careful, not more, it's already sweet!",
+        "15ml egg white (1/2 egg)"
     ],
     preparationSteps: [
-        "???"
+        PREP_DRY_SHAKE,
+        PREP_WET_SHAKE,
+        PREP_FINE_STRAIN
     ],
     garnishes: [
-        "???"
+        "1 Maraschino Cherry on stick in drink",
+        "with Angostura Bitters Hearts in circle around"
     ],
     glasses: [
         GLASS_NICKANDNORA,
         GLASS_LOWBALL
     ],
     tags: [
-        "???"
+        "good, but a bit too sweet. I prefer original Whisky Sour",
+        "sweet"
+    ],
+    history: [
+    ],
+    notes: [
     ]
 };
 
@@ -613,20 +816,30 @@ const americano = {
     name: "Americano",
     picture: imgAmericano,
     ingredients: [
-        "???"
+        "4-5cl Campari",
+        "4-5cl sweet red Vermouth (e.g. Cocchi)",
+        "80ml soda water"
     ],
     preparationSteps: [
-        "???"
+        PREP_BUILD,
+        "pour Campari and Vermouth on ice in collins for it to get cold, fill up with water"
     ],
     garnishes: [
-        "???"
+        "Orange wheel"
     ],
     glasses: [
-        GLASS_HIGHBALL
+        GLASS_HIGHBALL,
+        GLASS_LOWBALL
     ],
     tags: [
         "new",
-        "???"
+        "light",
+        "low-proof"
+    ],
+    history: [
+    ],
+    notes: [
+        "https://www.youtube.com/watch?v=lgy6vEX_hQg&t=362s"
     ]
 };
 
@@ -634,20 +847,25 @@ const boulevardier = {
     name: "Boulevardier",
     picture: imgBoulevardier,
     ingredients: [
-        "???"
+        "4cl Bourbon",
+        "4cl sweet red Vermouth",
+        "2cl Campari"
     ],
     preparationSteps: [
-        "???"
+        PREP_BUILD
     ],
     garnishes: [
-        "???"
+        "Orange zeste"
     ],
     glasses: [
         GLASS_LOWBALL
     ],
     tags: [
-        "new",
-        "???"
+        "new"
+    ],
+    history: [
+    ],
+    notes: [
     ]
 };
 
@@ -655,20 +873,30 @@ const millionaire = {
     name: "Millionaire",
     picture: imgMillionaire,
     ingredients: [
-        "???"
+        "6cl Bourbon",
+        "15ml Lemon juice",
+        "22ml Grand Marnier (or Curacao or Cointreau)",
+        "8ml Absinth",
+        "15ml Grenadine",
+        "15ml egg white"
     ],
     preparationSteps: [
-        "???"
+        PREP_DRY_SHAKE,
+        PREP_WET_SHAKE
     ],
     garnishes: [
-        "???"
+        "grated nutmeg on top of foam"
     ],
     glasses: [
         GLASS_NICKANDNORA
     ],
     tags: [
-        "new",
-        "???"
+        "new"
+    ],
+    history: [
+    ],
+    notes: [
+        "Source: Steve the Bartender: https://www.youtube.com/watch?v=8J8Sw_HseWQ"
     ]
 };
 
@@ -676,20 +904,36 @@ const billionaire = {
     name: "Billionaire",
     picture: imgBillionaire,
     ingredients: [
-        "???"
+        "6cl Bourbon (high proof). e.g. Bulleit",
+        "3cl Lemon juice",
+        "15ml Campari",
+        "15ml Simple Sirup",
+        "8ml Absinthe bitters (or just Absinthe+maybe Angostura+Chocolate Bitters)"
     ],
     preparationSteps: [
-        "???"
+        PREP_WET_SHAKE,
+        PREP_FINE_STRAIN
     ],
     garnishes: [
-        "???"
+        "Lemon wheel at border of glass"
     ],
     glasses: [
         GLASS_NICKANDNORA
     ],
     tags: [
-        "new",
-        "???"
+        "love it",
+        "liquorice",
+        "very dry bitter",
+        "tart",
+        "dark",
+        "earthy",
+        "dry",
+        "sour"
+    ],
+    history: [
+    ],
+    notes: [
+        "https://www.youtube.com/watch?v=rt-foO5u2z8"
     ]
 };
 
@@ -697,20 +941,27 @@ const coffeeandcigarettes = {
     name: "Coffee and Cigarettes",
     picture: imgCoffeeandcigarettes,
     ingredients: [
-        "???"
+        "6cl Scotch Islay Whisky (Caol Ila 12y, Bowmore, Talisker, Lagavulin,..) just a bit of smoke",
+        "15ml Coffee Liqueur",
+        "5ml sweet red Vermouth",
+        "2 dashes of Chocolate Bitters"
     ],
     preparationSteps: [
-        "???"
+        PREP_STIR,
+        PREP_SINGLE_STRAIN
     ],
     garnishes: [
-        "???"
     ],
     glasses: [
         GLASS_NICKANDNORA
     ],
     tags: [
-        "new",
-        "???"
+        "new"
+    ],
+    history: [
+    ],
+    notes: [
+        "Source: Steve the Bartender: https://www.youtube.com/watch?v=crVAp5WIgXo"
     ]
 };
 
@@ -739,14 +990,14 @@ const cocktails = [
     trinidadsour,
     aperolspritz,
     saturn,
-    mojito,
+    //mojito,
     amarettosour,
     americano,
     boulevardier,
     millionaire,
     billionaire,
     coffeeandcigarettes
-]//.sort((a, b) => a.name.localeCompare(b.name))
+].sort((a, b) => a.name.localeCompare(b.name))
 
 
 

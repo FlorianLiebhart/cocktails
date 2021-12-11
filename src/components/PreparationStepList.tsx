@@ -3,7 +3,7 @@ import React from "react";
 import imgMix_dry_shake from "../icons/steps/mix_dry_shake.png";
 import imgMix_wet_shake from "../icons/steps/mix_wet_shake.png";
 import imgSingle_strain from "../icons/steps/strain_single.png";
-import imgMix_build from "../icons/steps/mix_stir.png";
+import imgMix_build from "../icons/steps/mix_build.png";
 import imgMix_stir from "../icons/steps/mix_stir.png";
 import imgOpen_pour from "../icons/steps/pour.png";
 import imgFine_strain from "../icons/steps/strain_fine.png";
