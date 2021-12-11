@@ -13,14 +13,30 @@ function App() {
             return true;
         }
 
-        var lcFilter = filter.toLowerCase();
+        var filters = filter.toLowerCase().split(",").map(x => x.trim());
 
-        return cocktail.name.toLowerCase().includes(lcFilter) || 
-          cocktail.ingredients.join(" ").toLowerCase().includes(lcFilter) ||
-          cocktail.preparationSteps.join(" ").toLowerCase().includes(lcFilter) ||
-          cocktail.garnishes.join(" ").toLowerCase().includes(lcFilter) ||
-          cocktail.glasses.join(" ").toLowerCase().includes(lcFilter) ||
-          cocktail.tags.join(" ").toLowerCase().includes(lcFilter);
+        return filters.every(function(filter) { 
+
+            if (filter.startsWith("-")) {
+              var negativeFilter=filter.substring(1);
+              return !(
+                cocktail.name.toLowerCase().includes(negativeFilter) || 
+                cocktail.ingredients.join(" ").toLowerCase().includes(negativeFilter) ||
+                cocktail.preparationSteps.join(" ").toLowerCase().includes(negativeFilter) ||
+                cocktail.garnishes.join(" ").toLowerCase().includes(negativeFilter) ||
+                cocktail.glasses.join(" ").toLowerCase().includes(negativeFilter) ||
+                cocktail.tags.join(" ").toLowerCase().includes(negativeFilter)
+              )
+            }
+            else {
+              return cocktail.name.toLowerCase().includes(filter) || 
+              cocktail.ingredients.join(" ").toLowerCase().includes(filter) ||
+              cocktail.preparationSteps.join(" ").toLowerCase().includes(filter) ||
+              cocktail.garnishes.join(" ").toLowerCase().includes(filter) ||
+              cocktail.glasses.join(" ").toLowerCase().includes(filter) ||
+              cocktail.tags.join(" ").toLowerCase().includes(filter)
+            }
+        })
     }
 
     return (
