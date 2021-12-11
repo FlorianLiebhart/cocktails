@@ -42,7 +42,7 @@ const CocktailListItem: React.FC<any> = ({cocktail}) =>
             <div title="glasses" style={{minWidth: '80px', maxWidth: '80px'}}>
                 <GlassList glasses={cocktail.glasses}/>
             </div>
-            <div title="tags" style={{marginLeft: '10px'}}>
+            <div title="tags" style={{marginLeft: '10px', width: '150px'}}>
                 <TagList tags={cocktail.tags}/>
             </div>
         </div>

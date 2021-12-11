@@ -12,30 +12,38 @@ function App() {
         if (filter === null) {
             return true;
         }
+        
 
-        var filters = filter.toLowerCase().split(",").map(x => x.trim());
+        var filters = filter.toLowerCase().trim().split(",").map(x => x.trim());
 
-        return filters.every(function(filter) { 
+        return filters.every(function(f) { 
 
+            var searchOnlyTags = false;
+            var searchNegated = false;
+            var filter = f;
+
+            if (f.startsWith("*")){
+              searchOnlyTags = true;
+              filter = f.substring(1);
+            }
             if (filter.startsWith("-")) {
-              var negativeFilter=filter.substring(1);
-              return !(
-                cocktail.name.toLowerCase().includes(negativeFilter) || 
-                cocktail.ingredients.join(" ").toLowerCase().includes(negativeFilter) ||
-                cocktail.preparationSteps.join(" ").toLowerCase().includes(negativeFilter) ||
-                cocktail.garnishes.join(" ").toLowerCase().includes(negativeFilter) ||
-                cocktail.glasses.join(" ").toLowerCase().includes(negativeFilter) ||
-                cocktail.tags.join(" ").toLowerCase().includes(negativeFilter)
+              searchNegated = true;
+              filter = filter.substring(1);
+            }  
+
+            var result = (
+                !searchOnlyTags && cocktail.name.toLowerCase().includes(filter) || 
+                !searchOnlyTags && cocktail.ingredients.join(" ").toLowerCase().includes(filter) ||
+                !searchOnlyTags && cocktail.preparationSteps.join(" ").toLowerCase().includes(filter) ||
+                !searchOnlyTags && cocktail.garnishes.join(" ").toLowerCase().includes(filter) ||
+                !searchOnlyTags && cocktail.glasses.join(" ").toLowerCase().includes(filter) ||
+                cocktail.tags.join(" ").toLowerCase().includes(filter)
               )
-            }
-            else {
-              return cocktail.name.toLowerCase().includes(filter) || 
-              cocktail.ingredients.join(" ").toLowerCase().includes(filter) ||
-              cocktail.preparationSteps.join(" ").toLowerCase().includes(filter) ||
-              cocktail.garnishes.join(" ").toLowerCase().includes(filter) ||
-              cocktail.glasses.join(" ").toLowerCase().includes(filter) ||
-              cocktail.tags.join(" ").toLowerCase().includes(filter)
-            }
+            
+            if (searchNegated)
+              return !result;
+            else 
+              return result;
         })
     }
 

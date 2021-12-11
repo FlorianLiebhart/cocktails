@@ -392,7 +392,7 @@ const oldfashioned = {
     picture: imgOldfashioned,
     ingredients: [
         "8ml Demarara Sirup",
-        "6cl Bourbon (Woodford Reserve or 4 Roses. Also works with Tagavulin Scotch",
+        "6cl Bourbon (Woodford Reserve or 4 Roses. Also works with Scotch (Tagavulin))",
         "2 good dashes of Angostura Bitters",
         "Orange zeste twist"
     ],
@@ -589,7 +589,7 @@ const caipirinha = {
     ingredients: [
         "1 lime",
         "15ml Sugar Sirup",
-        "5-6cl Cachaca (best: Novo Fogo Silver"
+        "5-6cl Cachaca (best: Novo Fogo Silver)"
     ],
     preparationSteps: [
         PREP_BUILD,
