@@ -2,7 +2,9 @@ import React from "react";
 import {PreparationStepList} from "./PreparationStepList";
 import {GlassList} from "./GlassList";
 import {TagList} from "./TagList";
-import {IngredientList} from "./IngredientList";
+
+import newTagImg from "../domain/images/new.png";
+import recommendationImg from "../domain/images/recommendation.png";
 
 
 const CocktailListItem: React.FC<any> = ({cocktail}) => 
@@ -14,6 +16,23 @@ const CocktailListItem: React.FC<any> = ({cocktail}) =>
             <h1>
                 {cocktail.name}
             </h1>
+            {
+               cocktail.tags.includes("new")?<img src={newTagImg} style={{maxHeight: '40px', maxWidth:'40px', position: 'relative', left: '3px', top: '30px'}}/>:<div/>
+            }
+
+            {
+               cocktail.tags.includes("favorite")?<img src={recommendationImg} style={{
+                 maxHeight: '50px', 
+                 maxWidth:'50px', 
+                 position: 'relative', 
+                 left: '10px', 
+                 top: '10px',
+                 border: '0px',
+                 borderColor: 'goldenrod',
+                 borderStyle: 'double',
+                 borderRadius: '100px'
+               }}/>:<div/>                  
+            }
         </div>
         <div id={cocktail.id} title="cocktail content" style={{
             display: 'flex',

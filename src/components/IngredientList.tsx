@@ -18,21 +18,9 @@ const IngredientListItem: React.FC<any> = ({ingredient}) =>
             <div className="pic" title="ingredient picture" style={{minHeight: '150px', maxHeight: '150px', minWidth:'150px', maxWidth:'150px'}}>
                 <img src={ingredient.picture} alt={ingredient.name} style={{maxHeight: '150px', maxWidth:'150px'}}/>
             </div>
-            <div title="ingredients" style={{width: '350px', maxWidth: '400px'}}>
-                <ul>
-                    {ingredient.aka.map((ingredient: any) => <li>
-                        {ingredient}
-                    </li>)}
-                </ul>
-            </div>
             <div title="ingredient description" style={{width: '350px', maxWidth: '400px'}}>
                 <div>
                     {ingredient.description}
-                </div>
-            </div>
-            <div title="ingredient category" style={{width: '350px', maxWidth: '400px'}}>
-                <div>
-                    {ingredient.category}
                 </div>
             </div>
             <div title="ingredient aka" style={{width: '350px', maxWidth: '400px'}}>
@@ -41,6 +29,11 @@ const IngredientListItem: React.FC<any> = ({ingredient}) =>
                         {aka}
                     </li>)}
                 </ul>
+            </div>
+            <div title="ingredient category" style={{width: '350px', maxWidth: '400px'}}>
+                <div>
+                    {ingredient.category}
+                </div>
             </div>
         </div>
         <hr style={{marginBlockStart: '20px'}}/>

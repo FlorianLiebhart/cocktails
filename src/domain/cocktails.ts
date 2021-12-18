@@ -59,6 +59,7 @@ import imgNucleardaiquiri from './images/cocktails/nucleardaiquiri.png';
 import imgCorpsereviver from './images/cocktails/corpsereviver.png';
 import imgBijou from './images/cocktails/bijou.png';
 import imgSazerac from './images/cocktails/sazerac.png';
+import imgDelicioussour from './images/cocktails/delicioussour.png';
 
 const whiskysour = {
     id: "cocktail1",
@@ -146,15 +147,15 @@ const aviation = {
     picture: imgAviation,
     ingredients: [
         "45ml Gin (Tanqueray)",
-        "10ml Lemon Juice",
         "15ml Maraschino Liqueur",
+        "10ml Lemon Juice",
         "5ml Violet Liqueur",
         "Lemon twist"
     ],
     ingredientsGuest: [
         "Gin",
-        "Fresh Lemon Juice",
         "Maraschino Liqueur",
+        "Fresh Lemon Juice",
         "Violet Liqueur",
         "Lemon Twist"
     ],
@@ -230,7 +231,7 @@ const margarita = {
     name: "Margarita",
     picture: imgMargarita,
     ingredients: [
-        "5cl silver tequila (e.g. Don Julio Blanco)",
+        "5cl Silver Tequila (e.g. Don Julio Blanco) Mezcal",
         "2,5cl lime juice",
         "1,5cl Cointreau/Curacao"
     ],
@@ -252,9 +253,8 @@ const margarita = {
         GLASS_NICKANDNORA
     ],
     tags: [
-        "mezcal",
-        "tequila",
-        "sour"
+        "sour",
+        "salty"
     ],
     history: [
     ],
@@ -336,6 +336,8 @@ const bloodandsand = {
     ],
     tags: [
         "sour",
+        "fruity",
+        "sweet",
         "refreshing"
     ],
     history: [
@@ -633,7 +635,9 @@ const sexonthebeach = {
     tags: [
         "new",
         "refreshing",
-        "sweet"
+        "sweet",
+        "fruity",
+        "light"
     ],
     history: [
     ],
@@ -840,7 +844,7 @@ const trinidadsour = {
         "bitter",
         "sour",
         "sweet, bitter, and sour wrestle for attention!",
-        "Schlacht der Götter"
+        "Battle of the Gods"
     ],
     history: [
     ],
@@ -992,7 +996,8 @@ const amarettosour = {
     ],
     tags: [
         "good, but a bit too sweet. I prefer original Whisky Sour",
-        "sweet"
+        "sweet",
+        "sour"
     ],
     history: [
     ],
@@ -1005,13 +1010,13 @@ const americano = {
     name: "Americano",
     picture: imgAmericano,
     ingredients: [
-        "4-5cl Campari",
         "4-5cl Sweet Red Vermouth (e.g. Cocchi)",
+        "4-5cl Campari",
         "80ml soda water"
     ],
     ingredientsGuest: [
-        "Campari",
         "Sweet Red Vermouth",
+        "Campari",
         "Soda Water"
     ],
     preparationSteps: [
@@ -1152,7 +1157,8 @@ const billionaire = {
         "dark",
         "earthy",
         "dry",
-        "sour"
+        "sour",
+        "favorite"
     ],
     history: [
     ],
@@ -1371,6 +1377,7 @@ const nucleardaiquiri = {
     ],
     tags: [
         "new",
+        "sour",
         "very tart",
         "very strong",
         "2005, Gregor De Gruyther"
@@ -1506,6 +1513,52 @@ const sazerac = {
     ]
 };
 
+const delicioussour = {
+    id: "cocktail37",
+    name: "Delicious Sour",
+    picture: imgDelicioussour,
+    ingredients: [
+        "5 cl Apple Brandy (Calvados Papidoux V.S.O.P. or Laird's Applejack)",
+        "3 cl Lemon Juice",
+        "1,5 cl Peach Liqueur (e.g. Merlet Crème de Peche)",
+        "1,5 cl sugar sirup",
+        "half an egg white",
+        "Lemon Twist",
+        "Mabye a dash of bitters"
+    ],
+    ingredientsGuest: [
+        "Apple Brandy",
+        "Peach Liqueur",
+        "Lemon Juice",
+        "Sugar",
+        "Egg White",
+        "Lemon"
+    ],
+    preparationSteps: [
+        PREP_DRY_SHAKE,
+        PREP_WET_SHAKE,
+        PREP_FINE_STRAIN,
+        "prepare like a whisky sour"
+    ],
+    garnishes: [
+        "Maraschino Cherry",
+        "Lemon Zeste"
+    ],
+    glasses: [
+        GLASS_LOWBALL,
+        GLASS_NICKANDNORA
+    ],
+    tags: [
+        "new",
+        "sour",
+        "sweet"
+    ],
+    history: [
+    ],
+    notes: [
+    ]
+};
+
 
 const cocktails = [
     whiskysour, 
@@ -1543,8 +1596,9 @@ const cocktails = [
     nucleardaiquiri,
     corpsereviver,
     bijou,
-    sazerac
-]//.sort((a, b) => a.name.localeCompare(b.name))
+    sazerac,
+    delicioussour
+].sort((a, b) => a.name.localeCompare(b.name))
 
 
 

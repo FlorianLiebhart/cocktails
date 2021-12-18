@@ -55,7 +55,7 @@ export const PreparationStepList = ({preparationSteps}) =>
           <div style={{height: 48, width: 48, padding: 5}}>
             <img alt={findInLabelsMap(step)} style={{maxWidth: 48, maxHeight: 48, padding: 5}} src={findInPicturesMap(step)}/>
           </div>
-          <div>&nbsp;{findInLabelsMap(step)}</div>
+          <div style={{paddingLeft: '5px'}}>{findInLabelsMap(step)}</div>
         </div>
     )}
   </div>;

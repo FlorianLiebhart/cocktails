@@ -3,6 +3,9 @@ import {PreparationStepList} from "./PreparationStepList";
 import {GlassList} from "./GlassList";
 import {TagList} from "./TagList";
 
+import newTagImg from "../domain/images/new.png";
+import recommendationImg from "../domain/images/recommendation.png";
+
 
 const GuestCocktailListItem: React.FC<any> = ({cocktail}) => 
     <div title="cocktail">
@@ -13,14 +16,31 @@ const GuestCocktailListItem: React.FC<any> = ({cocktail}) =>
             <h1>
                 {cocktail.name}
             </h1>
+            {
+               cocktail.tags.includes("new")?<img src={newTagImg} style={{maxHeight: '40px', maxWidth:'40px', position: 'relative', left: '3px', top: '30px'}}/>:<div/>
+            }
+
+            {
+               cocktail.tags.includes("favorite")?<img src={recommendationImg} style={{
+                 maxHeight: '50px', 
+                 maxWidth:'50px', 
+                 position: 'relative', 
+                 left: '10px', 
+                 top: '10px',
+                 border: '0px',
+                 borderColor: 'goldenrod',
+                 borderStyle: 'double',
+                 borderRadius: '100px'
+               }}/>:<div/>                  
+            }
         </div>
-        <div title="cocktail content" style={{
+        <div id={cocktail.id} title="cocktail content" style={{
             display: 'flex',
             alignItems: 'flex-start',
             textAlign: 'left'
         }}>
-            <div title="cocktail picture" style={{height: '150px', minWidth:'150px', maxWidth:'150px'}}>
-                <img src={cocktail.picture} alt={cocktail.name} style={{height: '150px', width:'150px'}}/>
+            <div className="pic" title="cocktail picture" style={{minHeight: '150px', maxHeight: '150px', minWidth:'150px', maxWidth:'150px'}}>
+                <img src={cocktail.picture} alt={cocktail.name} style={{maxHeight: '150px', maxWidth:'150px'}}/>
             </div>
             <div title="ingredients" style={{width: '350px', maxWidth: '400px'}}>
                 <ul>

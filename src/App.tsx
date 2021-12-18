@@ -12,9 +12,6 @@ import styled from "styled-components";
 function App() {
     const [filter, setFilter] = useState<string | null>(null);
 
-    var guestMode = false;
-
-
     const filterCocktails = (cocktail: any) => {
         if (filter === null) {
             return true;
@@ -41,7 +38,7 @@ function App() {
         //   }
         // }
 
-        var filters = filter.toLowerCase().trim().split(",").map(x => x.trim());
+        var filters = filter.toLowerCase().replaceAll("whiskey","whisky").trim().split(",").map(x => x.trim());
 
         return filters.every(function(f) { 
 
@@ -49,23 +46,43 @@ function App() {
             var searchNegated = false;
             var filter = f;
 
-            if (f.startsWith("*")){
+            // switch (f.substring(0,2)) {
+            //   case "*-" || "-*": {
+            //     searchOnlyTags = true;
+            //     searchNegated = true;
+            //   }
+            //   case "*":
+            //     searchOnlyTags = true;
+            //   case "-":
+            //     searchNegated = true;
+            //   case _:
+
+            // }
+
+            if (f.substring(0,2).includes("*") && f.substring(0,2).includes("-")){
               searchOnlyTags = true;
-              filter = f.substring(1);
+              searchNegated = true;
+              filter = f.substring(2);
             }
-            if (filter.startsWith("-")) {
+
+            if (f.startsWith("-")) {
               searchNegated = true;
               filter = filter.substring(1);
-            }  
+            }
+
+            if (f.startsWith("*")) {
+              searchOnlyTags = true;
+              filter = filter.substring(1);
+            }
 
             var result = (
-                !searchOnlyTags && cocktail.name.toLowerCase().includes(filter) || 
-                !searchOnlyTags && cocktail.ingredients.join(" ").toLowerCase().includes(filter) ||
-                !searchOnlyTags && cocktail.ingredientsGuest.join(" ").toLowerCase().includes(filter) ||
-                !searchOnlyTags && cocktail.preparationSteps.join(" ").toLowerCase().includes(filter) ||
-                !searchOnlyTags && cocktail.garnishes.join(" ").toLowerCase().includes(filter) ||
-                !searchOnlyTags && cocktail.glasses.join(" ").toLowerCase().includes(filter) ||
-                cocktail.tags.join(" ").toLowerCase().includes(filter)
+                !searchOnlyTags && cocktail.name.toLowerCase().replaceAll("whiskey","whisky").includes(filter) || 
+                !searchOnlyTags && cocktail.ingredients.join(" ").toLowerCase().replaceAll("whiskey","whisky").includes(filter) ||
+                !searchOnlyTags && cocktail.ingredientsGuest.join(" ").toLowerCase().replaceAll("whiskey","whisky").includes(filter) ||
+                !searchOnlyTags && cocktail.preparationSteps.join(" ").toLowerCase().replaceAll("whiskey","whisky").includes(filter) ||
+                !searchOnlyTags && cocktail.garnishes.join(" ").toLowerCase().replaceAll("whiskey","whisky").includes(filter) ||
+                !searchOnlyTags && cocktail.glasses.join(" ").toLowerCase().replaceAll("whiskey","whisky").includes(filter) ||
+                cocktail.tags.join(" ").toLowerCase().replaceAll("whiskey","whisky").includes(filter)
               )
 
             if (searchNegated)
@@ -153,8 +170,8 @@ function App() {
 
 
     return (
-        <div id="pic" className="App" title="lol" style={{margin: '0px 30px'}}>
-          <img src={cocktailbarImg} style={{height: '250px', marginBottom: '2px'}}/>
+        <div id="pic" className="App" title="Florian's Finest" style={{margin: '0px 30px'}}>
+          <a href={window.location.pathname=="/cocktails"?"/admin":"/cocktails"}><img src={cocktailbarImg} style={{height: '250px', marginBottom: '2px'}}/></a>
             <input
                 placeholder={"Search for something"}
                 style={{
@@ -173,9 +190,10 @@ function App() {
             />
             <Router>
               <Route exact path="/cocktails">
-                {
-                  guestMode?<GuestCocktailList cocktails={cocktails.filter(filterCocktails)}/>:<CocktailList cocktails={cocktails.filter(filterCocktails)}/>
-                }
+                <GuestCocktailList cocktails={cocktails.filter(filterCocktails)}/>
+              </Route>
+              <Route exact path="/admin">
+                <CocktailList cocktails={cocktails.filter(filterCocktails)}/>
               </Route>
               <Route exact path="/ingredients">
                 <IngredientList ingredients={ingredients.filter(filterIngredients)}/>
