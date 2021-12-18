@@ -1502,7 +1502,6 @@ const sazerac = {
     notes: [
         "Jamie Gordon",
         "In French, menans 'Jewel', because of the colors the different liquors: Seethrough: Diamand, Green: Emerald, Red: Ruby",
-
         "How to drink: https://www.youtube.com/watch?v=2Sgek_isG88"
     ]
 };

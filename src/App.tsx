@@ -1,8 +1,11 @@
 import React, {useState} from 'react';
+import {BrowserRouter as Router, Route} from "react-router-dom";
 import './App.css';
 import {CocktailList} from "./components/CocktailList";
+import {IngredientList} from "./components/IngredientList";
 import {GuestCocktailList} from "./components/GuestCocktailList";
 import cocktails from "./domain/cocktails";
+import ingredients from "./domain/ingredients";
 import cocktailbarImg from "./domain/images/cocktailbar.jpg";
 import styled from "styled-components";
 
@@ -111,15 +114,47 @@ function App() {
 
             // <Button active="true" onClick={handleButton}></Button>
 
+    const filterIngredients = (ingredient: any) => {
+        if (filter === null) {
+            return true;
+        }
+
+        var filters = filter.toLowerCase().trim().split(",").map(x => x.trim());
+
+        return filters.every(function(f) { 
+
+            var searchOnlyTags = false;
+            var searchNegated = false;
+            var filter = f;
+
+            if (f.startsWith("*")){
+              searchOnlyTags = true;
+              filter = f.substring(1);
+            }
+            if (filter.startsWith("-")) {
+              searchNegated = true;
+              filter = filter.substring(1);
+            }  
+
+            var result = (
+                !searchOnlyTags && ingredient.name.toLowerCase().includes(filter) || 
+                !searchOnlyTags && ingredient.description.toLowerCase().includes(filter) || 
+                !searchOnlyTags && ingredient.category.toLowerCase().includes(filter) || 
+                !searchOnlyTags && ingredient.aka.join(" ").toLowerCase().includes(filter) ||
+                ingredient.tags.join(" ").toLowerCase().includes(filter)
+              )
+
+            if (searchNegated)
+              return !result;
+            else 
+              return result;
+        })
+    }
 
 
     return (
-
-      // Render a styled text input with the standard input color, and one with a custom input color
-        
         <div id="pic" className="App" title="lol" style={{margin: '0px 30px'}}>
           <img src={cocktailbarImg} style={{height: '250px', marginBottom: '2px'}}/>
-
             <input
                 placeholder={"Search for something"}
                 style={{
@@ -136,10 +171,16 @@ function App() {
                     setFilter(ev.target.value);
                 }}
             />
-            {
-              guestMode?<GuestCocktailList cocktails={cocktails.filter(filterCocktails)}/>:<CocktailList cocktails={cocktails.filter(filterCocktails)}/>
-            }
-            
+            <Router>
+              <Route exact path="/cocktails">
+                {
+                  guestMode?<GuestCocktailList cocktails={cocktails.filter(filterCocktails)}/>:<CocktailList cocktails={cocktails.filter(filterCocktails)}/>
+                }
+              </Route>
+              <Route exact path="/ingredients">
+                <IngredientList ingredients={ingredients.filter(filterIngredients)}/>
+              </Route>
+            </Router>
         </div>
     );
 }

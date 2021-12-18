@@ -2,6 +2,7 @@ import React from "react";
 import {PreparationStepList} from "./PreparationStepList";
 import {GlassList} from "./GlassList";
 import {TagList} from "./TagList";
+import {IngredientList} from "./IngredientList";
 
 
 const CocktailListItem: React.FC<any> = ({cocktail}) => 
