@@ -14,13 +14,13 @@ const CocktailListItem: React.FC<any> = ({cocktail}) =>
                 {cocktail.name}
             </h1>
         </div>
-        <div title="cocktail content" style={{
+        <div id={cocktail.id} title="cocktail content" style={{
             display: 'flex',
             alignItems: 'flex-start',
             textAlign: 'left'
         }}>
-            <div title="cocktail picture" style={{height: '150px', minWidth:'150px', maxWidth:'150px'}}>
-                <img src={cocktail.picture} alt={cocktail.name} style={{height: '150px', width:'150px'}}/>
+            <div className="pic" title="cocktail picture" style={{minHeight: '150px', maxHeight: '150px', minWidth:'150px', maxWidth:'150px'}}>
+                <img src={cocktail.picture} alt={cocktail.name} style={{maxHeight: '150px', maxWidth:'150px'}}/>
             </div>
             <div title="ingredients" style={{width: '350px', maxWidth: '400px'}}>
                 <ul>
