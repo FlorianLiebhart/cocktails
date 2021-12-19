@@ -171,7 +171,7 @@ function App() {
 
     return (
         <div id="pic" className="App" title="Florian's Finest" style={{margin: '0px 30px'}}>
-          <a href={window.location.pathname=="/cocktails"?"/admin":"/cocktails"}><img src={cocktailbarImg} style={{height: '250px', marginBottom: '2px'}}/></a>
+          <a href={window.location.pathname=="/"?"/bartender":"/"}><img src={cocktailbarImg} style={{height: '250px', marginBottom: '2px'}}/></a>
             <input
                 placeholder={"Search for something"}
                 style={{
@@ -189,10 +189,10 @@ function App() {
                 }}
             />
             <Router>
-              <Route exact path="/cocktails">
+              <Route exact path="/">
                 <GuestCocktailList cocktails={cocktails.filter(filterCocktails)}/>
               </Route>
-              <Route exact path="/admin">
+              <Route exact path="/bartender">
                 <CocktailList cocktails={cocktails.filter(filterCocktails)}/>
               </Route>
               <Route exact path="/ingredients">

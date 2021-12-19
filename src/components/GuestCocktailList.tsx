@@ -5,7 +5,9 @@ import {TagList} from "./TagList";
 
 import newTagImg from "../domain/images/new.png";
 import recommendationImg from "../domain/images/recommendation.png";
-
+import recommendationSimoneImg from "../domain/images/recommendationsimone.png";
+import recommendationFloraImg from "../domain/images/recommendationflora.png";
+import recommendationChristianImg from "../domain/images/recommendationchristian.png";
 
 const GuestCocktailListItem: React.FC<any> = ({cocktail}) => 
     <div title="cocktail">
@@ -19,9 +21,47 @@ const GuestCocktailListItem: React.FC<any> = ({cocktail}) =>
             {
                cocktail.tags.includes("new")?<img src={newTagImg} style={{maxHeight: '40px', maxWidth:'40px', position: 'relative', left: '3px', top: '30px'}}/>:<div/>
             }
-
             {
                cocktail.tags.includes("favorite")?<img src={recommendationImg} style={{
+                 maxHeight: '50px', 
+                 maxWidth:'50px', 
+                 position: 'relative', 
+                 left: '10px', 
+                 top: '10px',
+                 border: '0px',
+                 borderColor: 'goldenrod',
+                 borderStyle: 'double',
+                 borderRadius: '100px'
+               }}/>:<div/>                  
+            }
+            {
+               cocktail.tags.includes("simoneapproved")?<img src={recommendationSimoneImg} style={{
+                 maxHeight: '50px', 
+                 maxWidth:'50px', 
+                 position: 'relative', 
+                 left: '10px', 
+                 top: '10px',
+                 border: '0px',
+                 borderColor: 'goldenrod',
+                 borderStyle: 'double',
+                 borderRadius: '100px'
+               }}/>:<div/>                  
+            }
+            {
+               cocktail.tags.includes("floraapproved")?<img src={recommendationFloraImg} style={{
+                 maxHeight: '50px', 
+                 maxWidth:'50px', 
+                 position: 'relative', 
+                 left: '10px', 
+                 top: '10px',
+                 border: '0px',
+                 borderColor: 'goldenrod',
+                 borderStyle: 'double',
+                 borderRadius: '100px'
+               }}/>:<div/>                  
+            }
+            {
+               cocktail.tags.includes("christianapproved")?<img src={recommendationChristianImg} style={{
                  maxHeight: '50px', 
                  maxWidth:'50px', 
                  position: 'relative', 

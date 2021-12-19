@@ -53,6 +53,7 @@ import imgBillionaire from './images/cocktails/billionaire.png';
 import imgCoffeeandcigarettes from './images/cocktails/coffeeandcigarettes.png';
 import imgLastword from './images/cocktails/lastword.png';
 import imgFinalward from './images/cocktails/finalward.png';
+import imgDublinminstrel from './images/cocktails/dublinminstrel.png';
 import imgNakedandfamous from './images/cocktails/nakedandfamous.png';
 import imgDarknstormy from './images/cocktails/darknstormy.png';
 import imgNucleardaiquiri from './images/cocktails/nucleardaiquiri.png';
@@ -60,10 +61,12 @@ import imgCorpsereviver from './images/cocktails/corpsereviver.png';
 import imgBijou from './images/cocktails/bijou.png';
 import imgSazerac from './images/cocktails/sazerac.png';
 import imgDelicioussour from './images/cocktails/delicioussour.png';
+import imgBeesknees from './images/cocktails/beesknees.png';
+import imgCosmopolitan from './images/cocktails/cosmopolitan.png';
 
 const whiskysour = {
     id: "cocktail1",
-    name: "Whisky (Boston) Sour",
+    name: "Whisky Sour (Boston)",
     picture: imgWhiskySour,
     ingredients: [
         "6cl Whisky (4cl Bourbon, zB. Bulleit, 2cl LaPhroaigh)",
@@ -218,7 +221,9 @@ const maitai = {
         "strong",
         "rum", 
         "fancy",
-        "Trader Vic"
+        "Trader Vic",
+        "simoneapproved",
+        "christianapproved"
     ],
     history: [
     ],
@@ -338,7 +343,8 @@ const bloodandsand = {
         "sour",
         "fruity",
         "sweet",
-        "refreshing"
+        "refreshing",
+        "christianapproved"
     ],
     history: [
     ],
@@ -594,7 +600,8 @@ const bloodymary = {
         "savory",
         "salty",
         "spicy",
-        "fancy"
+        "fancy",
+        "simoneapproved"
     ],
     history: [
     ],
@@ -608,10 +615,10 @@ const sexonthebeach = {
     name: "Sex on the Beach",
     picture: imgSexonthebeach,
     ingredients: [
-        "3cl Orange juice",
-        "1,5cl Peach liqueur",
         "3cl Vodka",
-        "3cl Cranberry juice"
+        "3cl Orange juice",
+        "3cl Cranberry juice",
+        "1,5cl Peach liqueur"
     ],
     ingredientsGuest: [
         "Vodka",
@@ -791,7 +798,8 @@ const pinacolada = {
         "pineapple",
         "mint",
         "coconut rim",
-        "umbrella"
+        "umbrella",
+        "simoneapproved"
     ],
     glasses: [
         GLASS_TIKI,
@@ -894,18 +902,18 @@ const saturn = {
     name: "Saturn",
     picture: imgSaturn,
     ingredients: [
+        "75ml London Dry Gin (Tanqueray)",
         "30ml Lemon Juice",
-        "15ml Passion Fruit Juice (or puree or liqueur)",
-        "15ml Sugar Sirup",
-        "15ml Orget",
-        "15ml Falernum (John D. Taylor's Velvet)",
-        "75ml London Dry Gin (Tanqueray)"
+        "15ml Passion Fruit Juice (or puree or liqueur. I bought it at Biowelt Schlessmann)",
+        "15ml Sugar Sirup (maybe a little less sweet, 1cl",
+        "15ml Orgeat",
+        "15ml Falernum (John D. Taylor's Velvet)"
     ],
     ingredientsGuest: [
         "London Dry Gin",
         "Fresh Lemon Juice",
         "Passion Fruit Juice",
-        "Orget",
+        "Orgeat",
         "Falernum",
         "Sugar"
     ],
@@ -924,14 +932,20 @@ const saturn = {
         GLASS_HIGHBALL
     ],
     tags: [
-        "new",
-        "tiki"
+        "awesome",
+        "fruity",
+        "sweet",
+        "vacation feeling",
+        "best tiki so far",
+        "favorite",
+        "simoneapproved"
     ],
     history: [
     ],
     notes: [
         "How to Drink: https://www.youtube.com/watch?v=rt-foO5u2z8"
-    ]
+    ],
+    price: "4,5€ (50+50+50+50+240)"
 };
 
 const mojito = {
@@ -1083,7 +1097,7 @@ const millionaire = {
         "15ml Lemon Juice",
         "22ml Grand Marnier (or Curacao or Cointreau)",
         "8ml Absinth",
-        "15ml Grenadine",
+        "15ml Grenadine (use less. I think this is why it was so disgusting. Maybe just 1cl)",
         "15ml egg white"
     ],
     ingredientsGuest: [
@@ -1254,7 +1268,7 @@ const finalward = {
     ingredientsGuest: [
         "Rye Whisky",
         "Green Chartreuse",
-        "Maraschino LIqueur",
+        "Maraschino Liqueur",
         "Fresh Lemon Juice"
     ],
     preparationSteps: [
@@ -1356,7 +1370,9 @@ const nucleardaiquiri = {
         "30ml Lime Juice",
         "7,5ml Falernum (vllt ja auch 10ml)",
         "tendentiell: vllt ein kleines bissl weniger Lime, und ein bisschen mehr Falernum, zB. 25ml Lime. 10ml Falernum",
-        "Variation: 22,5ml, 22,5ml, 22,5ml und 10ml (Falernum). Also try with different rums"
+        "Variation: 22,5ml, 22,5ml, 22,5ml und 10ml (Falernum). Also try with different rums",
+        "really needs the stronger rum",
+        "I tried with ~10ml Falernum and 3cl lime, but I think I can stick to the original recipe"
 
     ],
     ingredientsGuest: [
@@ -1376,11 +1392,12 @@ const nucleardaiquiri = {
         GLASS_NICKANDNORA
     ],
     tags: [
-        "new",
         "sour",
         "very tart",
         "very strong",
-        "2005, Gregor De Gruyther"
+        "very good, tastes like herbs",
+        "2005, Gregor De Gruyther",
+        "favorite"
     ],
     history: [
     ],
@@ -1406,7 +1423,7 @@ const corpsereviver = {
     ingredientsGuest: [
         "Dry Gin",
         "Lillet Blanc",
-        "Orange Liquer",
+        "Orange Liqueur",
         "Fresh Lemon Juice",
         "Absinthe Rinse"
     ],
@@ -1422,8 +1439,11 @@ const corpsereviver = {
         GLASS_NICKANDNORA
     ],
     tags: [
-        "new",
-        "classic"
+        "classic",
+        "pretty sweet",
+        "fruity",
+        "orange",
+        "cherry (esp with Luxardo),"
     ],
     history: [
     ],
@@ -1480,7 +1500,7 @@ const sazerac = {
         "7,5ml Sugar Sirup",
         "4 dashes of Peychaud's Bitters",
         "1 dash of Angostura Bitters",
-        "1-2 dashes (rinse) of Absinthe",
+        "1-2 dashes (rinse) of Absinthe (make sure not to use too much - pretty prominent)",
         "lemon twist"
     ],
     ingredientsGuest: [
@@ -1502,7 +1522,11 @@ const sazerac = {
         GLASS_LOWBALL
     ],
     tags: [
-        "new"
+        "spirit-forward",
+        "classic",
+        "strong",
+        "absithne very prominent",
+        "is not bad. Similar to old-fashioned, but not quite as good"   
     ],
     history: [
     ],
@@ -1520,8 +1544,8 @@ const delicioussour = {
     ingredients: [
         "5 cl Apple Brandy (Calvados Papidoux V.S.O.P. or Laird's Applejack)",
         "3 cl Lemon Juice",
-        "1,5 cl Peach Liqueur (e.g. Merlet Crème de Peche)",
-        "1,5 cl sugar sirup",
+        "1,5 cl Peach Liqueur (don't use more!. It was really tastable already)",
+        "1,5 cl sugar sirup (maybe a little bit less sweet (maybe 1cl sugar sirup))",
         "half an egg white",
         "Lemon Twist",
         "Mabye a dash of bitters"
@@ -1529,7 +1553,7 @@ const delicioussour = {
     ingredientsGuest: [
         "Apple Brandy",
         "Peach Liqueur",
-        "Lemon Juice",
+        "Fresh Lemon Juice",
         "Sugar",
         "Egg White",
         "Lemon"
@@ -1549,13 +1573,134 @@ const delicioussour = {
         GLASS_NICKANDNORA
     ],
     tags: [
-        "new",
         "sour",
-        "sweet"
+        "sweet",
+        "fruity",
+        "delicious",
+        "favorite",
+        "tastes like apple, peach pretty prominent as well",
+        "christianapproved"
     ],
     history: [
     ],
     notes: [
+        "source: https://mixology.eu/delicious-sour-cocktail-calvados/"
+    ]
+};
+
+const beesknees = {
+    id: "cocktail38",
+    name: "Bee's Knees",
+    picture: imgBeesknees,
+    ingredients: [
+        "6cl Gin",
+        "3cl Honey Sirup",
+        "1,5cl Lemon Juice"
+    ],
+    ingredientsGuest: [
+        "Gin",
+        "Honey",
+        "Fresh Lemon Juice"
+    ],
+    preparationSteps: [
+        PREP_WET_SHAKE,
+        PREP_FINE_STRAIN
+    ],
+    garnishes: [
+        "Lemon Wheel"
+    ],
+    glasses: [
+        GLASS_NICKANDNORA
+    ],
+    tags: [
+        "new"
+    ],
+    history: [
+    ],
+    notes: [
+        "source: https://mixology.eu/delicious-sour-cocktail-calvados/"
+    ]
+};
+
+const cosmopolitan = {
+    id: "cocktail39",
+    name: "Cosmopolitan",
+    picture: imgCosmopolitan,
+    ingredients: [
+        "60 ml Citrus Vodka",
+        "15 ml Lime Juice",
+        "30 ml Orange Liqueur (Curacao)",
+        "30 ml Cranberry Juice (if you use pure juice, maybe: just 15ml juice; and total of 15ml simple sirup, shake a bit longer for more dillution)",
+        "8 ml Simple Sirup (15ml if pure cranberry juice)",
+        "Optional: Barspoon of Maraschino Liqueur (Luxardo) ",
+        "Garnish with a Lime Wheel"
+    ],
+    ingredientsGuest: [
+        "Vodka",
+        "Orange Liqueur ",
+        "Cranberry Juice",
+        "Fresh Lime Juice",
+        "Sugar",
+        "Maraschino Liqueur"
+    ],
+    preparationSteps: [
+        PREP_WET_SHAKE,
+        PREP_FINE_STRAIN
+    ],
+    garnishes: [
+        "Lemon Wheel"
+    ],
+    glasses: [
+        GLASS_NICKANDNORA
+    ],
+    tags: [
+        "pretty sweet",
+        "girly",
+        "fruity",
+        "chewing gum",
+        "1990s"
+    ],
+    history: [
+    ],
+    notes: [
+        "source: https://www.youtube.com/watch?v=vKv8cnh2ocU&t=333s"
+    ]
+};
+
+const dublinminstrel = {
+    id: "cocktail40",
+    name: "Dublin Minstrel",
+    picture: imgDublinminstrel,
+    ingredients: [
+        "2cl Irish Whisky",
+        "2cl Green Chartreuse",
+        "2cl Maraschino Liqueur (e.g. Luxardo)",
+        "2cl Lime Juice",
+        "(variation of Final Ward)"
+    ],
+    ingredientsGuest: [
+        "Irish Whisky",
+        "Green Chartreuse",
+        "Maraschino Liqueur",
+        "Fresh Lime Juice"
+    ],
+    preparationSteps: [
+        PREP_WET_SHAKE,
+        PREP_FINE_STRAIN
+    ],
+    garnishes: [
+        "Lime zeste"
+    ],
+    glasses: [
+        GLASS_NICKANDNORA
+    ],
+    tags: [
+        "new"
+    ],
+    history: [
+    ],
+    notes: [
+        "from legendary barman Phil Ward of NYC’s ancient and venerated Pegu Club"
     ]
 };
 
@@ -1591,13 +1736,16 @@ const cocktails = [
     coffeeandcigarettes,
     lastword,
     finalward,
+    dublinminstrel,
     nakedandfamous,
     darknstormy,
     nucleardaiquiri,
     corpsereviver,
     bijou,
     sazerac,
-    delicioussour
+    delicioussour,
+    beesknees,
+    cosmopolitan
 ].sort((a, b) => a.name.localeCompare(b.name))
 
 
