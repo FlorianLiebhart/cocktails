@@ -223,7 +223,8 @@ const maitai = {
         "fancy",
         "Trader Vic",
         "simoneapproved",
-        "christianapproved"
+        "christianapproved",
+        "floraapproved"
     ],
     history: [
     ],
@@ -432,7 +433,8 @@ const penicillin = {
         "amazing",
         "favorite",
         "modern classic 2005",
-        "refreshing"
+        "refreshing",
+        "smoky"
     ],
     history: [
     ],
@@ -903,9 +905,9 @@ const saturn = {
     picture: imgSaturn,
     ingredients: [
         "75ml London Dry Gin (Tanqueray)",
-        "30ml Lemon Juice",
+        "30ml Lemon Juice (maybe try with lime instead next time)",
         "15ml Passion Fruit Juice (or puree or liqueur. I bought it at Biowelt Schlessmann)",
-        "15ml Sugar Sirup (maybe a little less sweet, 1cl",
+        "10ml Sugar Sirup (maybe only 5ml, used to be 15ml, still a bit sweet)",
         "15ml Orgeat",
         "15ml Falernum (John D. Taylor's Velvet)"
     ],
@@ -936,7 +938,7 @@ const saturn = {
         "fruity",
         "sweet",
         "vacation feeling",
-        "best tiki so far",
+        "great tiki",
         "favorite",
         "simoneapproved"
     ],
@@ -1126,7 +1128,8 @@ const millionaire = {
         "stays on your tongue forever",
         "worst drink I've had so far",
         "nutmeg totally unnecessary",
-        "rm -rf millionare"
+        "rm -rf millionare",
+        "floraheavydisapprove"
     ],
     history: [
     ],
@@ -1300,6 +1303,7 @@ const nakedandfamous = {
         "2cl Yellow Chartreuse (if only green: maybe 1/3 less and replace by honey sirup",
         "2cl Aperol",
         "2cl Lime Juice",
+        "a bit low quantity, "
     ],
     ingredientsGuest: [
         "Mezcal",
@@ -1318,7 +1322,14 @@ const nakedandfamous = {
         GLASS_NICKANDNORA
     ],
     tags: [
-        "new"
+        "favorite",
+        "sour",
+        "perfectly balanced lime",
+        "tequila tastes not too priminent but well noticable",
+        "just the right amount of sweet",
+        "refreshing",
+        "pretty pink color",
+        "floraapproved"
     ],
     history: [
     ],
@@ -1474,13 +1485,17 @@ const bijou = {
         "stir for a long time :)"
     ],
     garnishes: [
-        "One Marachino Cherry"
+        "One Marachino Cherry (needs the cherry!)"
     ],
     glasses: [
         GLASS_NICKANDNORA
     ],
     tags: [
-        "new"
+        "beautiful clear color",
+        "spirit-forward, but just a touch",
+        "slighty tart",
+        "slight hints of honey (due to the Vermouth)",
+        "smooth"
     ],
     history: [
     ],

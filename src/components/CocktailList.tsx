@@ -8,6 +8,7 @@ import recommendationImg from "../domain/images/recommendation.png";
 import recommendationSimoneImg from "../domain/images/recommendationsimone.png";
 import recommendationFloraImg from "../domain/images/recommendationflora.png";
 import recommendationChristianImg from "../domain/images/recommendationchristian.png";
+import floraheavydisapprove from "../domain/images/floraheavydisapprove.png";
 
 
 // Howto: Best style: https://www.sitepoint.com/react-components-styling-options/
@@ -41,6 +42,9 @@ const CocktailListItem: React.FC<any> = ({cocktail}) =>
             }
             {
                cocktail.tags.includes("christianapproved")?<img src={recommendationChristianImg} style={recommendationStyle}/>:<div/>                  
+            }
+            {
+               cocktail.tags.includes("floraheavydisapprove")?<img src={floraheavydisapprove} style={recommendationStyle}/>:<div/>                  
             }
             {
                cocktail.tags.includes("floraapproved")?<img src={recommendationFloraImg} style={{

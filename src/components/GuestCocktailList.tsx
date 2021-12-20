@@ -7,6 +7,7 @@ import newTagImg from "../domain/images/new.png";
 import recommendationImg from "../domain/images/recommendation.png";
 import recommendationSimoneImg from "../domain/images/recommendationsimone.png";
 import recommendationFloraImg from "../domain/images/recommendationflora.png";
+import floraheavydisapprove from "../domain/images/floraheavydisapprove.png";
 import recommendationChristianImg from "../domain/images/recommendationchristian.png";
 
 const GuestCocktailListItem: React.FC<any> = ({cocktail}) => 
@@ -49,6 +50,18 @@ const GuestCocktailListItem: React.FC<any> = ({cocktail}) =>
             }
             {
                cocktail.tags.includes("floraapproved")?<img src={recommendationFloraImg} style={{
+                 maxHeight: '50px', 
+                 maxWidth:'50px', 
+                 position: 'relative', 
+                 left: '10px', 
+                 top: '10px',
+                 border: '0px',
+                 borderColor: 'goldenrod',
+                 borderStyle: 'double',
+                 borderRadius: '100px'
+               }}/>:<div/>                  
+            }{
+               cocktail.tags.includes("floraheavydisapprove")?<img src={floraheavydisapprove} style={{
                  maxHeight: '50px', 
                  maxWidth:'50px', 
                  position: 'relative', 
