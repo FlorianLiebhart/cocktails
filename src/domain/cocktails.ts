@@ -68,6 +68,7 @@ import imgMrbalihai from './images/cocktails/mrbalihali.png';
 import imgColdbrewshakerato from './images/cocktails/coldbrewshakerato.png';
 import imgZombie from './images/cocktails/zombie.png';
 import imgMercilessvirgin from './images/cocktails/mercilessvirgin.png';
+import imgMomisette from './images/cocktails/momisette.png';
 
 const whiskysour = {
     id: "cocktail1",
@@ -1545,7 +1546,6 @@ const sazerac = {
     tags: [
         "spirit-forward",
         "classic",
-        "strong",
         "absithne very prominent",
         "is not bad. Similar to old-fashioned, but not quite as good"   
     ],
@@ -1888,7 +1888,8 @@ const zombie = {
     ],
     tags: [
         "new",
-        "tiki"
+        "tiki",
+        "ultra strong"
     ],
     history: [
     ],
@@ -1906,7 +1907,7 @@ const mercilessvirgin = {
     name: "Merciless Virgin",
     picture: imgMercilessvirgin,
     ingredients: [
-        "45ml parts Aged rum",
+        "45ml Blened lightly Aged Rum (maybe Appleton Estate 12y)",
         "15ml Cherry (Heering)",
         "15ml Falernum ",
         "8ml Orange Liqueur (Curacao)",
@@ -1919,7 +1920,7 @@ const mercilessvirgin = {
         "Aged Rum",
         "Cherry",
         "Falernum",
-        "Orange Liquer",
+        "Orange Liqueur",
         "Fresh Lemon Juice",
         "Bitters"
     ],
@@ -1941,6 +1942,49 @@ const mercilessvirgin = {
     history: [
     ],
     notes: [
+        "Smuggler's Cove",
+        "source: cocktailpartyapp; someone did it here: https://www.youtube.com/watch?v=laT5nxxCeKs&t=64s"
+    ]
+};
+
+const momisette = {
+    id: "cocktail46",
+    name: "Momisette",
+    picture: imgMomisette,
+    ingredients: [
+        "45 ml Absinthe",
+        "22.5 ml Orgeat",
+        "15 ml Lemon Juice",
+        "60-90 ml Sparkling Mineral Water"
+    ],
+    ingredientsGuest: [
+        "Absinthe",
+        "Orgeat",
+        "Fresh Lemon Juice",
+        "Sparkling Mineral Water"
+    ],
+    preparationSteps: [
+        PREP_WET_SHAKE,
+        "Wet shake everything but the water",
+        PREP_FINE_STRAIN,
+        "Pour cocktail and water at the same time on huge long ice that covers the glass",
+        "Serve with straw"
+    ],
+    garnishes: [,
+        "Not necessary to garnish mummies. Maybe mint or lemon zeste"
+    ],
+    glasses: [
+        GLASS_HIGHBALL
+    ],
+    tags: [
+        "new",
+        "Momisette = 'little mummy'"
+    ],
+    history: [
+    ],
+    notes: [
+        "Start making my own Orgeat: https://youtu.be/CvEDhkR6K14",
+        "source: Anders Erickson: https://www.youtube.com/watch?v=ABntm6FL8wc"
     ]
 };
 
@@ -1994,7 +2038,8 @@ const cocktails = [
     mrbalihai,
     coldbrewshakerato,
     zombie,
-    mercilessvirgin
+    mercilessvirgin,
+    momisette
 ]//.sort((a, b) => a.name.localeCompare(b.name))
 
 
