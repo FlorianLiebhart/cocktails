@@ -63,6 +63,11 @@ import imgSazerac from './images/cocktails/sazerac.png';
 import imgDelicioussour from './images/cocktails/delicioussour.png';
 import imgBeesknees from './images/cocktails/beesknees.png';
 import imgCosmopolitan from './images/cocktails/cosmopolitan.png';
+import imgMargaritanegra from './images/cocktails/margaritanegra.png';
+import imgMrbalihai from './images/cocktails/mrbalihali.png';
+import imgColdbrewshakerato from './images/cocktails/coldbrewshakerato.png';
+import imgZombie from './images/cocktails/zombie.png';
+import imgMercilessvirgin from './images/cocktails/mercilessvirgin.png';
 
 const whiskysour = {
     id: "cocktail1",
@@ -1303,7 +1308,7 @@ const nakedandfamous = {
         "2cl Yellow Chartreuse (if only green: maybe 1/3 less and replace by honey sirup",
         "2cl Aperol",
         "2cl Lime Juice",
-        "a bit low quantity, "
+        "it's low quantity for a nick n nora. Maybe use iceball"
     ],
     ingredientsGuest: [
         "Mezcal",
@@ -1471,7 +1476,8 @@ const bijou = {
         "30ml Gin (possibly Needle)",
         "30ml Sweet Red Vermouth",
         "22,5ml Green Chartreuse",
-        "2 Dashes Orange Bitters"
+        "2 Dashes Orange Bitters",
+        "it's low quantity for a nick n nora"
     ],
     ingredientsGuest: [
         "Gin",
@@ -1719,6 +1725,228 @@ const dublinminstrel = {
     ]
 };
 
+const margaritanegra = {
+    id: "cocktail41",
+    name: "Margarita Negra",
+    picture: imgMargaritanegra,
+    ingredients: [
+        "15 ml Agave Syrup (or Simple Sirup if non-existnet)",
+        "30 ml Lime Juice",
+        "30 ml Tequila Blanco (e.g. Casamigos, but really any will work) Mezcal",
+        "30 ml Mr. Black Coffee Liquor"
+    ],
+    ingredientsGuest: [
+        "Tequila Blanco",
+        "Coffee Liquor",
+        "Agave Syrup",
+        "Fresh Lime Juice"
+    ],
+    preparationSteps: [
+        PREP_WET_SHAKE,
+        PREP_FINE_STRAIN,
+        "in double rocks glass on one big ice cube"
+    ],
+    garnishes: [,
+        "Rim glass with salt or/and Tajin spice mix",
+        "Lime Wheel"
+    ],
+    glasses: [
+        GLASS_LOWBALL
+    ],
+    tags: [
+        "new"
+    ],
+    history: [ 
+    ],
+    notes: [
+        "source: how to drink: https://www.youtube.com/watch?v=KRzlsE9Y6NU"
+    ]
+};
+
+const mrbalihai = {
+    id: "cocktail42",
+    name: "Mr. Bali Hai",
+    picture: imgMrbalihai,
+    ingredients: [
+        "5-10ml (Demarara) Sugar Sirup (orig. recipe: 15ml. laut how to drink: 30ml, laut behind the bar: '5-10ml'. I think 30 is way too much",
+        "20ml Lemon Juice (original recipe: 30ml, 15ml sugar. So I think 20ml and 5-10ml is fine)",
+        "45ml Pineapple Juice",
+        "22ml (mal testen) Coffee Liqueur",
+        "45ml Dark Rum (e.g. Demarara, like ",
+        "30ml (maybe less? maybe only 20ml) White Rum, something funky, not aged. Like Wray & Nephew White Overproof (maybe even Smith and Cross, even though it's dark. Try and compare! :)",
+        "=> probably would be best if I didnt have more than 6cl Rum alltogether.",
+        "Maybe I can do 1oz dark rum, 1oz unaged funky white"
+    ],
+    ingredientsGuest: [
+        "Dark Rum",
+        "White Rum",
+        "Pineapple Juice",
+        "Coffee Liqueur",
+        "Fresh Lemon Juice",
+        "Sugar"
+    ],
+    preparationSteps: [
+        PREP_WET_SHAKE,
+        PREP_OPEN_POUR
+    ],
+    garnishes: [,
+        "Umbrella, sticked in Orange wedge or Pineapple"
+    ],
+    glasses: [
+        GLASS_TIKI
+    ],
+    tags: [
+        "new",
+        "tiki"
+    ],
+    history: [
+        "Jeff 'Beachbum' Berry"
+    ],
+    notes: [
+        "source: behind the bar: https://www.youtube.com/watch?v=peneCjz0-Ec",
+        "source: how to drink: https://www.youtube.com/watch?v=KRzlsE9Y6NU"
+    ]
+};
+
+const coldbrewshakerato = {
+    id: "cocktail43",
+    name: "Cold Brew Shakerato",
+    picture: imgColdbrewshakerato,
+    ingredients: [
+        "it's like a 'shaken Negroni'",
+        "30 ml Fresh Orange Juice",
+        "30 ml Campari (maybe use less?, as I also use less in Negroni)",
+        "30 ml London Dry Gin (e.g. Tanqueray)",
+        "30 ml Mr Black Coffee Liquor",
+        "(optional: 1 pinch of salt. Not sure tho. Maybe first try without and taste later",
+        "Orange twist"
+    ],
+    ingredientsGuest: [
+        "London Dry Gin",
+        "Campari",
+        "Coffee Liqueur",
+        "Fresh Orange Juice"
+    ],
+    preparationSteps: [
+        PREP_WET_SHAKE,
+        PREP_FINE_STRAIN
+    ],
+    garnishes: [,
+        "Orange Zeste"
+    ],
+    glasses: [
+        GLASS_NICKANDNORA
+    ],
+    tags: [
+        "new"
+    ],
+    history: [
+    ],
+    notes: [
+        "source: how to drink: https://www.youtube.com/watch?v=KRzlsE9Y6NU"
+    ]
+};
+
+
+const zombie = {
+    id: "cocktail44",
+    name: "Zombie",
+    picture: imgZombie,
+    ingredients: [
+        "45ml blended aged rum: Abuelo",
+        "45ml Appleton estate/Goslings/Plantation 5",
+        "30ml Overproof rum: e.g. Lemon Hart or Hamilton 151 Demarara Rum; or Plantaiton 151 or Smith and Cross, also Wray & Nephew Overproof",
+        "15ml Falernum",
+        "22ml Fresh Lime Juice",
+        "8ml Grapefruit Juice",
+        "7ml Cinnamon Sirup",
+        "5ml (2 barspoon) Grenadine",
+        "1 barspoon Absinthe (careful!)",
+        "2 dashes bitters Peychaud's or Angostura"
+    ],
+    ingredientsGuest: [
+        "Aged Rums",
+        "Overproof Rum",
+        "Falernum",
+        "Fresh Lime Juice",
+        "Fresh Grapefruit Juice",
+        "Cinnamon Sirup",
+        "Grenadine",
+        "Absinthe",
+        "Bitters"
+    ],
+    preparationSteps: [
+        PREP_WET_SHAKE,
+        PREP_OPEN_POUR,
+        "hard wet shake"
+    ],
+    garnishes: [,
+        "Fresh mint and an Umbrella (maybe grapefruit/lime wedge), cherry, whatever lies around,... Go Crazy. It's a tiki :)"
+    ],
+    glasses: [
+        GLASS_TIKI
+    ],
+    tags: [
+        "new",
+        "tiki"
+    ],
+    history: [
+    ],
+    notes: [
+        "1934 Don the Beachcomber",
+        "Jeff 'Beachbum' Berry",
+        "source: Anders Erickson: https://www.youtube.com/watch?v=_eCla7H-TA0",
+        "source: how to drink: https://www.youtube.com/watch?v=69OEP-kW5aI&t=190s",
+        "source: Steve the Bartender: https://www.youtube.com/watch?v=eUy-K0p6sLA"
+    ]
+};
+
+const mercilessvirgin = {
+    id: "cocktail45",
+    name: "Merciless Virgin",
+    picture: imgMercilessvirgin,
+    ingredients: [
+        "45ml parts Aged rum",
+        "15ml Cherry (Heering)",
+        "15ml Falernum ",
+        "8ml Orange Liqueur (Curacao)",
+        "22,5ml Lemon juice",
+        "15ml Sparkling water (pour in glass)",
+        "a dash of bitters",
+        "lemon twist"
+    ],
+    ingredientsGuest: [
+        "Aged Rum",
+        "Cherry",
+        "Falernum",
+        "Orange Liquer",
+        "Fresh Lemon Juice",
+        "Bitters"
+    ],
+    preparationSteps: [
+        PREP_WET_SHAKE,
+        PREP_OPEN_POUR,
+        "hard wet shake"
+    ],
+    garnishes: [,
+        "Maraschino Cherries, Lemon Zeste"
+    ],
+    glasses: [
+        GLASS_TIKI
+    ],
+    tags: [
+        "new",
+        "tiki"
+    ],
+    history: [
+    ],
+    notes: [
+    ]
+};
+
+
+
+
 
 const cocktails = [
     whiskysour, 
@@ -1760,8 +1988,14 @@ const cocktails = [
     sazerac,
     delicioussour,
     beesknees,
-    cosmopolitan
-].sort((a, b) => a.name.localeCompare(b.name))
+    cosmopolitan,
+    dublinminstrel,
+    margaritanegra,
+    mrbalihai,
+    coldbrewshakerato,
+    zombie,
+    mercilessvirgin
+]//.sort((a, b) => a.name.localeCompare(b.name))
 
 
 
