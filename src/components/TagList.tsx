@@ -40,13 +40,14 @@ export const TagList = ({tags}) =>
             lctag.includes("dry") ? '#556b2f': // darkolivegreen
             lctag.includes("strong") || 
               lctag.includes("spirit-forward") ? '#8b0000': // darkred
-            lctag.includes("spicy") || 
-              lctag.includes("hot") ? '#ff7645': // orangered
             lctag == "wow" || 
               lctag == "amazing" ||
               lctag == "favorite" ||
               lctag == "love it" ||
-              lctag == "divine" ? '#ffd700': // gold
+              lctag == "divine" ||
+              lctag.includes("favorite") ? '#ffd700': // gold
+            lctag.includes("spicy") || 
+              lctag.includes("hot") ? '#ff7645': // orangered
             '#ffffff'
           
         }}>

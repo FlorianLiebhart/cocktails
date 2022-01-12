@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import {BrowserRouter as Router, Route} from "react-router-dom";
 import './App.css';
 import {CocktailList} from "./components/CocktailList";
+import {CartList} from "./components/CartList";
 import {IngredientList} from "./components/IngredientList";
 import {GuestCocktailList} from "./components/GuestCocktailList";
 import cocktails from "./domain/cocktails";
@@ -9,7 +10,26 @@ import ingredients from "./domain/ingredients";
 import cocktailbarImg from "./domain/images/cocktailbar.jpg";
 import styled from "styled-components";
 
+const useStateWithLocalStorage = (localStorageKey: string) => {
+  const [cartvalue, setValue ] = React.useState(
+    localStorage.getItem(localStorageKey) || ''
+  );
+
+  React.useEffect(() => {
+    localStorage.setItem(localStorageKey, cartvalue);
+  }, [cartvalue]);
+
+  return [cartvalue, setValue];
+};
+
 function App() {
+    const [cartvalue, setValue] = useStateWithLocalStorage(
+      'myValueInLocalStorage'
+    );
+
+    const onCartChange = (event: any) => setValue<string | Dispatch<SetStateAction<string>>>(event.target.title);
+
+
     const [filter, setFilter] = useState<string | null>(null);
 
     const filterCocktails = (cocktail: any) => {
@@ -17,28 +37,8 @@ function App() {
             return true;
         }
         
-        // if (filter == "guest") {
-        //   guestMode = true;
-        //   const thisCocktail = (document.getElementById(cocktail.id) as HTMLInputElement);
 
-        //   if (thisCocktail != null) {
-        //     console.log(thisCocktail)
-
-        //     thisCocktail.classList.add("hello")
-        //   }
-        // }
-
-        // if (filter == "barkeeper" && cocktail != null) {
-        //   guestMode = false;
-        //   const thisCocktail = (document.getElementById(cocktail.id) as HTMLInputElement);
-
-        //   if (thisCocktail != null) {
-        //     console.log(thisCocktail)
-        //     thisCocktail.classList.remove("hello")
-        //   }
-        // }
-
-        var filters = filter.toLowerCase().replaceAll("whiskey","whisky").trim().split(",").map(x => x.trim());
+        var filters = filter.toLowerCase().replaceAll("whiskey","whisky").split(",");
 
         return filters.every(function(f) { 
 
@@ -170,37 +170,44 @@ function App() {
 
 
     return (
+      <div id="main">
         <div id="pic" className="App" title="Florian's Finest" style={{margin: '0px 30px'}}>
           <a href={window.location.pathname=="/"?"/bartender":"/"}><img src={cocktailbarImg} style={{height: '250px', marginBottom: '2px'}}/></a>
-            <input
-                placeholder={"Search for something"}
-                style={{
-                  display: 'flex',
-                  height: '48px', 
-                  width: '98%',
-                  borderRadius: '10px',
-                  borderStyle: 'solid',
-                  borderWidth: '1px',
-                  paddingLeft: '10px',
-                  paddingRight: '10px'
-                }}
-                onChange={(ev) => {
-                    setFilter(ev.target.value);
-                }}
-            />
-            <Router>
-              <Route exact path="/">
-                <GuestCocktailList cocktails={cocktails.filter(filterCocktails)}/>
-              </Route>
-              <Route exact path="/bartender">
-                <CocktailList cocktails={cocktails.filter(filterCocktails)}/>
-              </Route>
-              <Route exact path="/ingredients">
-                <IngredientList ingredients={ingredients.filter(filterIngredients)}/>
-              </Route>
-            </Router>
+          <a href="" title="blabla" onClick={onCartChange}><img src={cocktailbarImg} style={{height: '250px', marginBottom: '2px'}}/></a>
         </div>
+        <input
+            placeholder={"Search for something"}
+            style={{
+              display: 'flex',
+              height: '48px', 
+              width: '98%',
+              borderRadius: '10px',
+              borderStyle: 'solid',
+              borderWidth: '1px',
+              paddingLeft: '10px',
+              paddingRight: '10px'
+            }}
+            onChange={(ev) => {
+                setFilter(ev.target.value);
+            }}
+        />
+        <Router>
+          <Route exact path="/">
+            <GuestCocktailList cocktails={cocktails.filter(filterCocktails)}/>
+          </Route>
+          <Route exact path="/bartender">
+            <CocktailList cocktails={cocktails.filter(filterCocktails)}/>
+          </Route>
+          <Route exact path="/ingredients">
+            <IngredientList ingredients={ingredients.filter(filterIngredients)}/>
+          </Route>
+        </Router>
+        <div id="cart" style={{position: 'fixed', left: '0px', bottom: '0px', height: "70px", backgroundColor: "#ebebeb", width: "100%"}}>
+          <CartList cart={cartvalue}/>
+
+        </div>
+      </div>
     );
-}
+}//cart={["#cocktail1", "#cocktail2"]}/>
 
 export default App;

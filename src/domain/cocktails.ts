@@ -69,6 +69,10 @@ import imgColdbrewshakerato from './images/cocktails/coldbrewshakerato.png';
 import imgZombie from './images/cocktails/zombie.png';
 import imgMercilessvirgin from './images/cocktails/mercilessvirgin.png';
 import imgMomisette from './images/cocktails/momisette.png';
+import imgArtichokehold from './images/cocktails/artichokehold.png';
+import imgEastside from './images/cocktails/eastside.png';
+import imgGordonsbreakfast from './images/cocktails/gordonsbreakfast.png';
+import imgRamosginfizz from './images/cocktails/ramosginfizz.png';
 
 const whiskysour = {
     id: "cocktail1",
@@ -97,7 +101,7 @@ const whiskysour = {
     ],
     garnishes: [
         "Lemon Zeste",
-        "2 Maraschino Cherries",
+        "2 Maraschino Cherries"
     ],
     glasses: [
         GLASS_NICKANDNORA,
@@ -119,20 +123,21 @@ const negroni = {
     name: "Negroni",
     picture: imgNegroni,
     ingredients: [
-        "Gin (Tanqueray, Needle)",
+        "4cl Gin (Tanqueray, Needle)",
         "4cl Sweet Red Vermouth",
         "2cl Campari",
-        "2-3 Dashes Orange Bitters",
+        "optional: 2 Dashes Orange Bitters",
         "Orange Twist"
     ],
     ingredientsGuest: [
         "Gin",
         "Sweet Red Vermouth",
         "Campari",
-        "Bitters",
+        "Orange Bitters",
         "Orange Twist"
     ],
     preparationSteps: [
+        PREP_STIR,
         PREP_SINGLE_STRAIN
     ],
     garnishes: [
@@ -142,7 +147,9 @@ const negroni = {
         GLASS_LOWBALL
     ],
     tags: [
-        "bitter"
+        "bitter",
+        "favorite",
+        "like a stronger, more bitter version of Aperol Spritz"
     ],
     history: [
     ],
@@ -155,10 +162,10 @@ const aviation = {
     name: "Aviation",
     picture: imgAviation,
     ingredients: [
-        "45ml Gin (Tanqueray)",
+        "45ml Gin (Tanqueray, or Illusionist :)))",
         "15ml Maraschino Liqueur",
         "10ml Lemon Juice",
-        "5ml Violet Liqueur",
+        "5ml Violet Liqueur (10 dashes)",
         "Lemon twist"
     ],
     ingredientsGuest: [
@@ -194,7 +201,7 @@ const maitai = {
     name: "Mai Tai",
     picture: imgMaitai,
     ingredients: [
-        "2cl Smith n Cross",
+        "2cl Smith and Cross",
         "2cl Demarara Rum (e.g. El Dorado 8 year",
         "2cl Abuelo",
         "3cl Lime juice",
@@ -233,6 +240,12 @@ const maitai = {
         "floraapproved"
     ],
     history: [
+        "1944 by Trader Vic (aka Victor Bergeron)",
+        "Erickson: https://www.youtube.com/watch?v=gYJsPE1demY&t=197s",
+        "Behind the bar: https://www.youtube.com/watch?v=VQZ2pxn4rwo",
+        "How to drink (I took this one): https://www.youtube.com/watch?v=_O_TCeL_gV0&t=769s"
+
+
     ],
     notes: [
     ]
@@ -266,7 +279,8 @@ const margarita = {
     ],
     tags: [
         "sour",
-        "salty"
+        "salty",
+        "favorite"
     ],
     history: [
     ],
@@ -364,7 +378,7 @@ const manhattan = {
     name: "Manhattan",
     picture: imgManhattan,
     ingredients: [
-        "6cl Rye Whisky (or Bourbon. Also good with Scotch though!)",
+        "6cl Rye Whisky (Rittenhouse) (or Bourbon. Also good with Scotch though!)",
         "3cl Sweet Red Vermouth",
         "2 good dashes Anogstura Bitters",
         "1 dash of Angostura Orange Bitters",
@@ -397,7 +411,8 @@ const manhattan = {
     history: [
     ],
     notes: [
-        "A 'Perfect Manhattan' is a Manhattan with half sweet and half dry Vermouth"
+        "A 'Perfect Manhattan' is a Manhattan with half sweet and half dry Vermouth",
+        "One of the best Manhattan is with Rittenhouse, acc. to How to drink (Episode that tried to kill me: https://www.youtube.com/watch?v=_QsCrcLG6Mo)"
     ]
 };
 
@@ -669,6 +684,7 @@ const daiquiri = {
         "6cl white rum",
         "2cl lime juice",
         "1cl sugar sirup",
+        "i probably should go 2:1:0,5 instead, but gotta check out..",
         "1 lime zeste into shaker"
     ],
     ingredientsGuest: [
@@ -680,7 +696,7 @@ const daiquiri = {
     preparationSteps: [
         PREP_WET_SHAKE,
         PREP_FINE_STRAIN,
-        "wet short very hard and a bit longer than you should! Dillution is important here!"
+        "wet shake very hard and a bit longer than you should! Dillution is important here!"
     ],
     garnishes: [
         "lime wheel or garnish"
@@ -816,7 +832,8 @@ const pinacolada = {
     tags: [
         "sweet",
         "refreshing",
-        "tiki"
+        "tiki",
+        "simoneapproved"
     ],
     history: [
     ],
@@ -860,7 +877,8 @@ const trinidadsour = {
         "bitter",
         "sour",
         "sweet, bitter, and sour wrestle for attention!",
-        "Battle of the Gods"
+        "Battle of the Gods",
+        "sabrinaapproved"
     ],
     history: [
     ],
@@ -943,7 +961,7 @@ const saturn = {
         "awesome",
         "fruity",
         "sweet",
-        "vacation feeling",
+        "Combination of Gin and Tiki is weird and wonderful",
         "great tiki",
         "favorite",
         "simoneapproved"
@@ -961,27 +979,39 @@ const mojito = {
     name: "Mojito",
     picture: imgMojito,
     ingredients: [
-        "???"
+        "~8-10 mint leaves",
+        "1 lime",
+        "2cl (Demarara) Sugar Sirup (or 2 Tbsp of Sugar (white or brown)",
+        "6cl White Rum",
+        "60-90ml sparkling water"
     ],
     ingredientsGuest: [
-        "???"
+        "White Rum",
+        "Fresh Lime Juice",
+        "Sugar",
+        "Mint"
     ],
     preparationSteps: [
-        "???"
+        PREP_BUILD,
+        PREP_MUDDLE,
+        "cut the lime in edges, remove middle, muddle and swirl with mint, sugar, rum in the glass with a barspoon, gently press it (dont rip apart)",
+        "Fill with ice, stir for a long time",
+        "top off with sparklingwater; serve with a straw"
     ],
     garnishes: [
-        "???"
+        "mint twig"
     ],
     glasses: [
         GLASS_HIGHBALL
     ],
     tags: [
-        "new",
-        "???"
+        "refreshing",
+        "favorite"
     ],
     history: [
     ],
     notes: [
+        "Source: Anders Erickson: https://www.youtube.com/watch?v=KMypSCazyRw&t=54s"
     ]
 };
 
@@ -1105,7 +1135,7 @@ const millionaire = {
         "15ml Lemon Juice",
         "22ml Grand Marnier (or Curacao or Cointreau)",
         "8ml Absinth",
-        "15ml Grenadine (use less. I think this is why it was so disgusting. Maybe just 1cl)",
+        "15ml Grenadine (use less. I think this is why it was so disgusting. Maybe just 5ml)",
         "15ml egg white"
     ],
     ingredientsGuest: [
@@ -1335,6 +1365,7 @@ const nakedandfamous = {
         "just the right amount of sweet",
         "refreshing",
         "pretty pink color",
+        "nicely, lightly tart",
         "floraapproved"
     ],
     history: [
@@ -1345,12 +1376,13 @@ const nakedandfamous = {
 
 const darknstormy = {
     id: "cocktail32",
-    name: "Dark n' Stormy",
+    name: "Dark 'n Stormy",
     picture: imgDarknstormy,
     ingredients: [
         "120-150ml Ginger Beer",
-        "45ml Gosling's Black Seal Rum",
-        "5-10ml Lime Juice (a wedge)"
+        "5cl Gosling's Black Seal Rum",
+        "10ml lime juice (may be bottled)",
+        "lime wedge"
     ],
     ingredientsGuest: [
         "Ginger Beer",
@@ -1359,17 +1391,18 @@ const darknstormy = {
     ],
     preparationSteps: [
         PREP_BUILD,
-        "fill collins glass with ice, fill with ginger beer, put rum on top and add a lime wedge"
+        "fill collins glass with ice, fill 4/5 with ginger beer, fill in lime juice, put rum on top and add a lime wedge"
     ],
     garnishes: [
-        "Lime wedge or wheel (depending if lemon juice is already inside)"
+        "Lime wedge"
     ],
     glasses: [
         GLASS_HIGHBALL
     ],
     tags: [
-        "new",
-        "refreshing"
+        "refreshing",
+        "sweet",
+        "light"
     ],
     history: [
     ],
@@ -1382,12 +1415,10 @@ const nucleardaiquiri = {
     name: "Nuclear Daiquiri",
     picture: imgNucleardaiquiri,
     ingredients: [
-        "30ml Overproof White Rum ('Wray & Nephew Overproof', but maybe I can use Smith n Cross instead, cuz I need high proof, or just my Angostura white rum)",
+        "30ml Overproof White Rum ('Wray & Nephew Overproof'; or half half smith n cross and Anogstura white rum)",
         "22,5ml Green Chartreuse",
         "30ml Lime Juice",
-        "7,5ml Falernum (vllt ja auch 10ml)",
-        "tendentiell: vllt ein kleines bissl weniger Lime, und ein bisschen mehr Falernum, zB. 25ml Lime. 10ml Falernum",
-        "Variation: 22,5ml, 22,5ml, 22,5ml und 10ml (Falernum). Also try with different rums",
+        "7,5ml Falernum",
         "really needs the stronger rum",
         "I tried with ~10ml Falernum and 3cl lime, but I think I can stick to the original recipe"
 
@@ -1432,9 +1463,10 @@ const corpsereviver = {
     ingredients: [
         "22,5ml Dry Gin (e.g. Botanist)",
         "22,5ml Lillet Blanc (but best with Cocchi Americano)",
-        "22,5ml Cointreau",
+        "22,5ml Orange Liqueur (best Grand Manier (cuz fruitier), or Curacao) ",
         "22,5ml Lemon Juice",
-        "2 Dashes Absinth"
+        "2 Dashes Absinth",
+        "optional: a barspoon of Maraschino Liqueur"
 
     ],
     ingredientsGuest: [
@@ -1730,10 +1762,12 @@ const margaritanegra = {
     name: "Margarita Negra",
     picture: imgMargaritanegra,
     ingredients: [
-        "15 ml Agave Syrup (or Simple Sirup if non-existnet)",
+        "12 ml Agave Syrup (or Simple Sirup if non-existnet)",
         "30 ml Lime Juice",
         "30 ml Tequila Blanco (e.g. Casamigos, but really any will work) Mezcal",
-        "30 ml Mr. Black Coffee Liquor"
+        "30 ml Mr. Black Coffee Liquor",
+        "tajin and salt (if no Tajin, maybe use a few drops of tabasco run around the rim)",
+        "benefits from a light dash of chocolate bitters :-)"
     ],
     ingredientsGuest: [
         "Tequila Blanco",
@@ -1754,7 +1788,16 @@ const margaritanegra = {
         GLASS_LOWBALL
     ],
     tags: [
-        "new"
+        "favorite",
+        "tastes great with the salt and spicy chily",
+        "salty",
+        "citrussy",
+        "refreshing",
+        "coffee",
+        "summer",
+        "great balance",
+        "light",
+        "exciting"
     ],
     history: [ 
     ],
@@ -1768,14 +1811,13 @@ const mrbalihai = {
     name: "Mr. Bali Hai",
     picture: imgMrbalihai,
     ingredients: [
-        "5-10ml (Demarara) Sugar Sirup (orig. recipe: 15ml. laut how to drink: 30ml, laut behind the bar: '5-10ml'. I think 30 is way too much",
+        "15ml (Demarara) Sugar Sirup",
         "20ml Lemon Juice (original recipe: 30ml, 15ml sugar. So I think 20ml and 5-10ml is fine)",
         "45ml Pineapple Juice",
-        "22ml (mal testen) Coffee Liqueur",
-        "45ml Dark Rum (e.g. Demarara, like ",
-        "30ml (maybe less? maybe only 20ml) White Rum, something funky, not aged. Like Wray & Nephew White Overproof (maybe even Smith and Cross, even though it's dark. Try and compare! :)",
-        "=> probably would be best if I didnt have more than 6cl Rum alltogether.",
-        "Maybe I can do 1oz dark rum, 1oz unaged funky white"
+        "22ml Coffee Liqueur",
+        "45ml Dark/Aged Rum (non-funky) (e.g. El Dorado 8, Plantation 5, Appleton Estate, Abuelo, Gosling",
+        "15ml Funky (White) Rum (e.g. Wray & Nephew, Smith and Cross, Appleton; or just other white rum)",
+        "benefits from a dash of chocolate bitters"
     ],
     ingredientsGuest: [
         "Dark Rum",
@@ -1796,8 +1838,10 @@ const mrbalihai = {
         GLASS_TIKI
     ],
     tags: [
-        "new",
-        "tiki"
+        "tiki",
+        "mainly rum and coffee, hitns of pineapple",
+        "light",
+        "not too exciting. If you like coffee + rum -> great"
     ],
     history: [
         "Jeff 'Beachbum' Berry"
@@ -1818,7 +1862,6 @@ const coldbrewshakerato = {
         "30 ml Campari (maybe use less?, as I also use less in Negroni)",
         "30 ml London Dry Gin (e.g. Tanqueray)",
         "30 ml Mr Black Coffee Liquor",
-        "(optional: 1 pinch of salt. Not sure tho. Maybe first try without and taste later",
         "Orange twist"
     ],
     ingredientsGuest: [
@@ -1838,7 +1881,13 @@ const coldbrewshakerato = {
         GLASS_NICKANDNORA
     ],
     tags: [
-        "new"
+        "pretty dry",
+        "coffee",
+        "slightly bitter orange coffee aperatif",
+        "bright, refreshing",
+        "good",
+        "definately interesting",
+        "like a dark chocolate with orange notes"
     ],
     history: [
     ],
@@ -1955,7 +2004,7 @@ const momisette = {
         "45 ml Absinthe",
         "22.5 ml Orgeat",
         "15 ml Lemon Juice",
-        "60-90 ml Sparkling Mineral Water"
+        "90 ml Sparkling Mineral Water"
     ],
     ingredientsGuest: [
         "Absinthe",
@@ -1967,7 +2016,7 @@ const momisette = {
         PREP_WET_SHAKE,
         "Wet shake everything but the water",
         PREP_FINE_STRAIN,
-        "Pour cocktail and water at the same time on huge long ice that covers the glass",
+        "Pour cocktail and water on a huge long ice that covers the collins, otherwise the glass will be only 3/4 full",
         "Serve with straw"
     ],
     garnishes: [,
@@ -1977,8 +2026,13 @@ const momisette = {
         GLASS_HIGHBALL
     ],
     tags: [
-        "new",
-        "Momisette = 'little mummy'"
+        "Momisette = 'little mummy'",
+        "tast a lot like anis with a little sweetness in the middle from the orgeat",
+        "refreshing",
+        "the sparkling water is a must",
+        "light",
+        "a bit one-dimensional, like non-sweet ouzo",
+        "don't like it all that much"
     ],
     history: [
     ],
@@ -1987,6 +2041,227 @@ const momisette = {
         "source: Anders Erickson: https://www.youtube.com/watch?v=ABntm6FL8wc"
     ]
 };
+
+const artichokehold = {
+    id: "cocktail47",
+    name: "Artichoke Hold",
+    picture: imgArtichokehold,
+    ingredients: [
+        "15ml Orgeat",
+        "15ml Elderflower Sirup",
+        "22.5ml Lime Juice",
+        "22.5ml Cynar",
+        "22.5ml Overproof Jamaican Rum (Smith and Cross, please don't use anything else)",
+        "Mint Sprig Garnish"
+    ],
+    ingredientsGuest: [
+        "Overproof Jamaican Rum",
+        "Cynar",
+        "Elderflower Sirup",
+        "Orgeat",
+        "Fresh Lime Juice",
+        "Mint"
+    ],
+    preparationSteps: [
+        PREP_WET_SHAKE,
+        PREP_OPEN_POUR,
+        "Shake the living hell out of this drink, into a slush, and open pour in tumbler"
+    ],
+    garnishes: [,
+        "Mint sprig"
+    ],
+    glasses: [
+        GLASS_LOWBALL,
+        GLASS_TIKI
+    ],
+    tags: [
+        "fuck yes",
+        "wow",
+        "favorite",
+        "divine",
+        "sour",
+        "savory",
+        "bitter level is just perfect, covers your whole mouth",
+        "Oh father, thy light has shone upon me",
+        "amazing with the heavily crushed ice in the shaker",
+        "mint goes perfectly with it to give it a fresh note",
+        "an amazing drink",
+        "smith and cross - MUST",
+        "perfection.",
+        "light",
+        "extremely refreshing",
+        "I wanted to continue my tasting notes, but it's already all gone now.. :-(",
+        "it has already been gone for 10 minutes. But it is still there...",
+        "I feel dirty after drinking this",
+        "simoneapproved"
+    ],
+    history: [
+    ],
+    notes: [
+        "source: educated barlfy: https://www.youtube.com/watch?v=Ja3FPq3f9fE"
+    ]
+};
+
+const eastside = {
+    id: "cocktail48",
+    name: "Eastside",
+    picture: imgEastside,
+    ingredients: [
+        "8 Mint leaves",
+        "3-4 slices of cucumber",
+        "2cl Sugar Sirup",
+        "3cl Lime Juice",
+        "6cl Gin (Tanqueray or Needle, both fine :))",
+        "sweet-sour balance very important, 30ml lime and 20ml sugar should be fine, but I need to play around with it more; maybe less sugar (15ml?) and maybe even less lime",
+        "for myself, I'd wanna try 6cl Gin, 25ml Lime, 15ml Sugar Sirup"
+    ],
+    ingredientsGuest: [
+        "Gin",
+        "Fresh Lime Juice",
+        "Sugar",
+        "Cucumber",
+        "Mint"
+    ],
+    preparationSteps: [
+        PREP_MUDDLE,
+        PREP_WET_SHAKE,
+        PREP_FINE_STRAIN,
+        "Mint on bottom of shaker, cucumber slices and other stuff on top, lightly muddle, then wet shake + fine strain into Coop; maybe on big Ice"
+    ],
+    garnishes: [,
+        "Cucumber Scroll on a pick"
+    ],
+    glasses: [
+        GLASS_NICKANDNORA
+    ],
+    tags: [
+        "good",
+        "sour",
+        "cucumber very nice",
+        "lightly minty",
+        "refreshing"
+    ],
+    history: [
+    ],
+    notes: [
+        "Sources: Steve the Bartender, Behind the bar, und Educated Barfly: https://www.youtube.com/watch?v=7Co6K-J1Xiw"
+    ]
+};
+
+
+const gordonsbreakfast = {
+    id: "cocktail49",
+    name: "Gordon's Breakfast",
+    picture: imgGordonsbreakfast,
+    ingredients: [
+        "1 Lime cut into 6 wedges",
+        "4-5 Pieces of Cucumber",
+        "2cl Simple Syrup",
+        "6cl Gin (e.g. Tanqueray or Needle, both fine)",
+        "4 dashes Tabasco (but this will be already fiery :)",
+        "3 dashes Worcestershire Sauce",
+        "bit of salt and pepper"
+    ],
+    ingredientsGuest: [
+        "Gin",
+        "Lime",
+        "Sugar",
+        "Tabasco",
+        "Spices",
+    ],
+    preparationSteps: [
+        PREP_MUDDLE,
+        PREP_WET_SHAKE,
+        PREP_OPEN_POUR,
+        "Cut lime into 6 wedges, remove whites",
+        "muddle with the other ingredients, wet shake, and open pour (ice crisps are actually nice)"
+
+    ],
+    garnishes: [,
+        "Fresh Cucumber slices inside"
+    ],
+    glasses: [
+        GLASS_LOWBALL
+    ],
+    tags: [
+        "pretty hot and spicy",
+        "savory",
+        "sour",
+        "extremely refreshing",
+        "light",
+        "I like it very much!",
+        "favorite",
+        "favorite for cucumber and spicy cocktail",
+        "simoneapproved"
+    ],
+    history: [
+    ],
+    notes: [
+        "Cocktailpartyapp and Educated Barfly: https://www.youtube.com/watch?v=_Y7WkOuy0Wk"
+    ]
+};
+
+const ramosginfizz = {
+    id: "cocktail50",
+    name: "Ramos Gin Fizz",
+    picture: imgRamosginfizz,
+    ingredients: [
+        "15 ml Simple Sirup",
+        "15 ml Lemon Juice",
+        "15 ml Lime Juice",
+        "2-3 dashes Orange Blossom Water",
+        "30 ml heavy Cream",
+        "1 Egg White",
+        "60 ml Gin (e.g. dry, Tanqueray, Illusionist (I used it, + 15 dashes of violet), could try Brockmans for once!",
+        "few drops of Vanilla extract or fresh vanilla (possibly vanilla flavoured sugar sirup)",
+        "60 ml (very cold) carbonated water (add later)"
+    ],
+    ingredientsGuest: [
+        "Gin",
+        "Fresh Lemon and Lime Juice",
+        "Cream",
+        "Egg White",
+        "Sugar",
+        "Orange Blossom Water",
+        "Vanilla"
+    ],
+    preparationSteps: [
+        PREP_WET_SHAKE,
+        PREP_OPEN_POUR,
+        "Chill all ingredients!",
+        "Shake (without the water) with 3 ice cubes the HELL out of it until full dissolve (e.g. 3 minutes), and keep going (maybe even with blender ball)",
+        "Fill into highball (no ice); put in freezer for around 10 mins.",
+        "make a whole with straw, add a few drops of orange flower water and fill in the water, until the froth sticks out of the glass",
+        "serve with straw",
+        "can also be blended"
+    ],
+    garnishes: [,
+        "few drops of orange flower water for the scent"
+    ],
+    glasses: [
+        GLASS_HIGHBALL
+    ],
+    tags: [
+        "perfect citrus-cream balance",
+        "refreshing",
+        "milk-shaky",
+        "creamy",
+        "sparkly",
+        "fizzy",
+        "wonderful liquid cloud",
+        "citrus from the gin",
+        "great texture",
+        "boozy ice cream :-)",
+        "favorite"
+    ],
+    history: [
+    ],
+    notes: [
+        "How To drink heavy recommendation: https://www.youtube.com/watch?v=jvf-0xpZ1VM&t=635s"
+    ]
+};
+
+
 
 
 
@@ -2014,7 +2289,6 @@ const cocktails = [
     trinidadsour,
     aperolspritz,
     saturn,
-    //mojito,
     amarettosour,
     americano,
     boulevardier,
@@ -2033,13 +2307,17 @@ const cocktails = [
     delicioussour,
     beesknees,
     cosmopolitan,
-    dublinminstrel,
     margaritanegra,
     mrbalihai,
     coldbrewshakerato,
     zombie,
     mercilessvirgin,
-    momisette
+    momisette,
+    mojito,
+    artichokehold,
+    eastside,
+    gordonsbreakfast,
+    ramosginfizz
 ]//.sort((a, b) => a.name.localeCompare(b.name))
 
 

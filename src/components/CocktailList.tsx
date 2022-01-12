@@ -8,22 +8,55 @@ import recommendationImg from "../domain/images/recommendation.png";
 import recommendationSimoneImg from "../domain/images/recommendationsimone.png";
 import recommendationFloraImg from "../domain/images/recommendationflora.png";
 import recommendationChristianImg from "../domain/images/recommendationchristian.png";
+import recommendationSabrinaImg from "../domain/images/recommendationsabrina.png";
 import floraheavydisapprove from "../domain/images/floraheavydisapprove.png";
+import regexifyString from 'regexify-string';
+import ReactMarkdown from 'react-markdown'
+import ReactDom from 'react-dom'
 
 
 // Howto: Best style: https://www.sitepoint.com/react-components-styling-options/
 // Inline style, like I am using, is the worst of all...
 const recommendationStyle: CSSProperties = {
-    maxHeight: '50px', 
-    maxWidth:'50px',
+    maxHeight: '65px', 
+    maxWidth:'65px',
     position: 'relative',
     left: '10px', 
     top: '10px'
 };
 
 
+// class Ingredient extends React.Component {
+//   render() {
+//      return <div>
+//         {"5-10ml (Demarara) Sugar Sirup \n (orig".split("\n")
+//           .map(t => <span>{t}</span>)
+//           .reduce((prev, curr) => [prev, <br/>, curr])}
+//      </div>
+//   }
+// }
+
+
+// const Ingredient: React.FC<any> = ({ingredient}) => {
+
+//     return ReactDom.render(<ReactMarkdown># Hello, *world*!</ReactMarkdown>, document.body)
+
+
+// //     const result = regexifyString({
+// //         pattern: /\[.*?\]/gim,
+// //         decorator: (match, index) => {
+// //             return <span>{match}</span>;
+// //         },
+// //         input: 'some [text] with simple example',
+// //     });
+// //     return result;
+// // //   // return ingredient.split("\n").join(<br/>);
+// }
+
+
+
 const CocktailListItem: React.FC<any> = ({cocktail}) => 
-    <div title="cocktail">
+    <div id={cocktail.id} title="cocktail">
         <div title="cocktail title" style={{
             display: 'flex',
             alignItems: 'flex-start'
@@ -44,19 +77,16 @@ const CocktailListItem: React.FC<any> = ({cocktail}) =>
                cocktail.tags.includes("christianapproved")?<img src={recommendationChristianImg} style={recommendationStyle}/>:<div/>                  
             }
             {
-               cocktail.tags.includes("floraheavydisapprove")?<img src={floraheavydisapprove} style={recommendationStyle}/>:<div/>                  
+               cocktail.tags.includes("floraapproved")?<img src={recommendationFloraImg} style={recommendationStyle}/>:<div/>                  
             }
             {
-               cocktail.tags.includes("floraapproved")?<img src={recommendationFloraImg} style={{
-                 maxHeight: '50px', 
-                 maxWidth:'50px', 
-                 position: 'relative', 
-                 left: '10px', 
-                 top: '10px'
-               }}/>:<div/>                  
+               cocktail.tags.includes("sabrinaapproved")?<img src={recommendationSabrinaImg} style={recommendationStyle}/>:<div/>                  
+            }
+            {
+               cocktail.tags.includes("floraheavydisapprove")?<img src={floraheavydisapprove} style={recommendationStyle}/>:<div/>                  
             }
         </div>
-        <div id={cocktail.id} title="cocktail content" style={{
+        <div title="cocktail content" style={{
             display: 'flex',
             alignItems: 'flex-start',
             textAlign: 'left'
@@ -67,7 +97,10 @@ const CocktailListItem: React.FC<any> = ({cocktail}) =>
             <div title="ingredients" style={{width: '350px', maxWidth: '400px'}}>
                 <ul>
                     {cocktail.ingredients.map((ingredient: any) => <li>
-                        {ingredient}
+                        {
+                            ingredient
+                            // <Ingredient ingredient={ingredient}/>
+                        }
                     </li>)}
                 </ul>
             </div>
@@ -76,15 +109,15 @@ const CocktailListItem: React.FC<any> = ({cocktail}) =>
             </div>
             <div title="garnishes" style={{width: '250px', maxWidth: '250px'}}>
                 <ul>
-                    {cocktail.garnishes.map((ingredient: any) => <li>
-                        {ingredient}
+                    {cocktail.garnishes.map((garnish: any) => <li>
+                        {garnish}
                     </li>)}
                 </ul>
             </div>
             <div title="glasses" style={{minWidth: '80px', maxWidth: '80px'}}>
                 <GlassList glasses={cocktail.glasses}/>
             </div>
-            <div title="tags" style={{marginLeft: '10px', width: '150px'}}>
+            <div title="tags" style={{marginLeft: '10px', width: '200px'}}>
                 <TagList tags={cocktail.tags}/>
             </div>
         </div>
