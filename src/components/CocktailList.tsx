@@ -10,18 +10,15 @@ import recommendationFloraImg from "../domain/images/recommendationflora.png";
 import recommendationChristianImg from "../domain/images/recommendationchristian.png";
 import recommendationSabrinaImg from "../domain/images/recommendationsabrina.png";
 import floraheavydisapprove from "../domain/images/floraheavydisapprove.png";
-import regexifyString from 'regexify-string';
-import ReactMarkdown from 'react-markdown'
-import ReactDom from 'react-dom'
 
 
 // Howto: Best style: https://www.sitepoint.com/react-components-styling-options/
 // Inline style, like I am using, is the worst of all...
 const recommendationStyle: CSSProperties = {
-    maxHeight: '65px', 
-    maxWidth:'65px',
+    maxHeight: '65px',
+    maxWidth: '65px',
     position: 'relative',
-    left: '10px', 
+    left: '10px',
     top: '10px'
 };
 
@@ -54,8 +51,7 @@ const recommendationStyle: CSSProperties = {
 // }
 
 
-
-const CocktailListItem: React.FC<any> = ({cocktail}) => 
+const CocktailListItem: React.FC<any> = ({cocktail, onClick}) =>
     <div id={cocktail.id} title="cocktail">
         <div title="cocktail title" style={{
             display: 'flex',
@@ -65,25 +61,36 @@ const CocktailListItem: React.FC<any> = ({cocktail}) =>
                 {cocktail.name}
             </h1>
             {
-               cocktail.tags.includes("new")?<img src={newTagImg} style={{maxHeight: '40px', maxWidth:'40px', position: 'relative', left: '3px', top: '30px'}}/>:<div/>
+                cocktail.tags.includes("new") ? <img src={newTagImg} style={{
+                    maxHeight: '40px',
+                    maxWidth: '40px',
+                    position: 'relative',
+                    left: '3px',
+                    top: '30px'
+                }}/> : <div/>
             }
             {
-               cocktail.tags.includes("favorite")?<img src={recommendationImg} style={recommendationStyle}/>:<div/>                  
+                cocktail.tags.includes("favorite") ? <img src={recommendationImg} style={recommendationStyle}/> : <div/>
             }
             {
-               cocktail.tags.includes("simoneapproved")?<img src={recommendationSimoneImg} style={recommendationStyle}/>:<div/>                  
+                cocktail.tags.includes("simoneapproved") ?
+                    <img src={recommendationSimoneImg} style={recommendationStyle}/> : <div/>
             }
             {
-               cocktail.tags.includes("christianapproved")?<img src={recommendationChristianImg} style={recommendationStyle}/>:<div/>                  
+                cocktail.tags.includes("christianapproved") ?
+                    <img src={recommendationChristianImg} style={recommendationStyle}/> : <div/>
             }
             {
-               cocktail.tags.includes("floraapproved")?<img src={recommendationFloraImg} style={recommendationStyle}/>:<div/>                  
+                cocktail.tags.includes("floraapproved") ?
+                    <img src={recommendationFloraImg} style={recommendationStyle}/> : <div/>
             }
             {
-               cocktail.tags.includes("sabrinaapproved")?<img src={recommendationSabrinaImg} style={recommendationStyle}/>:<div/>                  
+                cocktail.tags.includes("sabrinaapproved") ?
+                    <img src={recommendationSabrinaImg} style={recommendationStyle}/> : <div/>
             }
             {
-               cocktail.tags.includes("floraheavydisapprove")?<img src={floraheavydisapprove} style={recommendationStyle}/>:<div/>                  
+                cocktail.tags.includes("floraheavydisapprove") ?
+                    <img src={floraheavydisapprove} style={recommendationStyle}/> : <div/>
             }
         </div>
         <div title="cocktail content" style={{
@@ -91,8 +98,10 @@ const CocktailListItem: React.FC<any> = ({cocktail}) =>
             alignItems: 'flex-start',
             textAlign: 'left'
         }}>
-            <div className="pic" title="cocktail picture" style={{minHeight: '150px', maxHeight: '150px', minWidth:'150px', maxWidth:'150px'}}>
-                <img src={cocktail.picture} alt={cocktail.name} style={{maxHeight: '150px', maxWidth:'150px'}}/>
+            <div className="pic" title="cocktail picture"
+
+                 style={{minHeight: '150px', maxHeight: '150px', minWidth: '150px', maxWidth: '150px'}}>
+                <img onClick={onClick} src={cocktail.picture} alt={cocktail.name} style={{maxHeight: '150px', maxWidth: '150px'}}/>
             </div>
             <div title="ingredients" style={{width: '350px', maxWidth: '400px'}}>
                 <ul>
@@ -125,14 +134,13 @@ const CocktailListItem: React.FC<any> = ({cocktail}) =>
     </div>;
 
 // @ts-ignore
-export const CocktailList: React.FC<any> = ({cocktails}) => 
+export const CocktailList: React.FC<any> = ({cocktails, onCocktailClicked}) =>
     <div title="cocktails" style={{paddingBottom: '20px'}}>
-    <div style={{display: 'flex', marginTop: '5px', marginLeft: '5px'}}>{cocktails.length} cocktails</div>
-        
-      {
-        cocktails.map(
-          (cocktail: any) => <CocktailListItem cocktail={cocktail}/>
-        )
-      }
+        <div style={{display: 'flex', marginTop: '5px', marginLeft: '5px'}}>{cocktails.length} cocktails</div>
+        {
+            cocktails.map(
+                (cocktail: any) => <CocktailListItem onClick={() => onCocktailClicked(cocktail)} cocktail={cocktail}/>
+            )
+        }
     </div>;
 

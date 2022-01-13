@@ -10,15 +10,15 @@ import ingredients from "./domain/ingredients";
 import cocktailbarImg from "./domain/images/cocktailbar.jpg";
 
 
-const loadObject = (key: string) => {
+const loadCart = (key: string) => {
     const item = localStorage.getItem(key);
     if (item === null) {
-        return null;
+        return [];
     }
     return JSON.parse(item);
 }
 
-const storeObject = (key: string, value: any) => {
+const storeCart = (key: string, value: any) => {
     if (value === null) {
         localStorage.removeItem(key);
         return;
@@ -27,11 +27,11 @@ const storeObject = (key: string, value: any) => {
 }
 
 const useStateWithLocalStorage = (localStorageKey: string) => {
-    const [cartValue, setCartValueInReactState] = useState<any[]>(loadObject(localStorageKey) || []);
+    const [cartValue, setCartValueInReactState] = useState<any[]>(loadCart(localStorageKey));
 
     const setCartValue: (newValue: any[]) => void = (newValue: any[]) => {
         setCartValueInReactState(newValue);
-        storeObject(localStorageKey, newValue);
+        storeCart(localStorageKey, newValue);
     };
 
     return {cartValue, setCartValue};
@@ -39,13 +39,17 @@ const useStateWithLocalStorage = (localStorageKey: string) => {
 
 function App() {
     const {cartValue, setCartValue} = useStateWithLocalStorage("myPreviousCart");
+    const [filter, setFilter] = useState<string | null>(null);
 
-    const onCartChange = (event: any) => {
-        setCartValue([])
+    const addCocktailToCart = (cocktail: any) => {
+        setCartValue([...cartValue, cocktail]);
     };
 
-
-    const [filter, setFilter] = useState<string | null>(null);
+    const removeFromCart = (index: number) => {
+        const newCart = [...cartValue];
+        newCart.splice(index, 1);
+        setCartValue(newCart);
+    };
 
     const filterCocktails = (cocktail: any) => {
         if (filter === null) {
@@ -190,10 +194,6 @@ function App() {
                     height: '250px',
                     marginBottom: '2px'
                 }}/></a>
-                <a href="" title="blabla" onClick={onCartChange}><img src={cocktailbarImg} style={{
-                    height: '250px',
-                    marginBottom: '2px'
-                }}/></a>
             </div>
             <input
                 placeholder={"Search for something"}
@@ -213,10 +213,10 @@ function App() {
             />
             <Router>
                 <Route exact path="/">
-                    <GuestCocktailList cocktails={cocktails.filter(filterCocktails)}/>
+                    <GuestCocktailList cocktails={cocktails.filter(filterCocktails)} />
                 </Route>
                 <Route exact path="/bartender">
-                    <CocktailList cocktails={cocktails.filter(filterCocktails)}/>
+                    <CocktailList cocktails={cocktails.filter(filterCocktails)} onCocktailClicked={addCocktailToCart}/>
                 </Route>
                 <Route exact path="/ingredients">
                     <IngredientList ingredients={ingredients.filter(filterIngredients)}/>
@@ -230,7 +230,7 @@ function App() {
                 backgroundColor: "#ebebeb",
                 width: "100%"
             }}>
-                <CartList cart={cartValue}/>
+                <CartList cart={cartValue} onItemRemoved={removeFromCart}/>
 
             </div>
         </div>

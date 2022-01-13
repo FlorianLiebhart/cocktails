@@ -1,27 +1,15 @@
 import {
-    PREP_DRY_SHAKE,
-    PREP_WET_SHAKE,
     PREP_BUILD,
-    PREP_STIR,
-    PREP_OPEN_POUR,
+    PREP_DRY_SHAKE,
     PREP_FINE_STRAIN,
+    PREP_MUDDLE,
+    PREP_OPEN_POUR,
     PREP_SINGLE_STRAIN,
-    PREP_MUDDLE
+    PREP_STIR,
+    PREP_WET_SHAKE
 } from "./preparationSteps";
 
-import {
-    GLASS_TIKI,
-    GLASS_CHAMPAGNE,
-    GLASS_COOP,
-    GLASS_HIGHBALL,
-    GLASS_LOWBALL,
-    GLASS_MARGARITA,
-    GLASS_MARTINI,
-    GLASS_MULE,
-    GLASS_NICKANDNORA,
-    GLASS_REDWINE,
-    GLASS_SHOT
-} from "./glasses";
+import {GLASS_HIGHBALL, GLASS_LOWBALL, GLASS_MARGARITA, GLASS_NICKANDNORA, GLASS_REDWINE, GLASS_TIKI} from "./glasses";
 
 import imgWhiskySour from './images/cocktails/whiskysour.png';
 import imgNegroni from './images/cocktails/negroni.png';
@@ -111,10 +99,8 @@ const whiskysour = {
         "sour",
         "favorite"
     ],
-    history: [
-    ],
-    notes: [
-    ]
+    history: [],
+    notes: []
 };
 
 
@@ -151,10 +137,8 @@ const negroni = {
         "favorite",
         "like a stronger, more bitter version of Aperol Spritz"
     ],
-    history: [
-    ],
-    notes: [
-    ]
+    history: [],
+    notes: []
 };
 
 const aviation = {
@@ -190,10 +174,8 @@ const aviation = {
         "sour",
         "favorite",
     ],
-    history: [
-    ],
-    notes: [
-    ]
+    history: [],
+    notes: []
 };
 
 const maitai = {
@@ -232,7 +214,7 @@ const maitai = {
         "tiki",
         "favorite",
         "strong",
-        "rum", 
+        "rum",
         "fancy",
         "Trader Vic",
         "simoneapproved",
@@ -247,8 +229,7 @@ const maitai = {
 
 
     ],
-    notes: [
-    ]
+    notes: []
 };
 
 const margarita = {
@@ -263,7 +244,7 @@ const margarita = {
     ingredientsGuest: [
         "Silver Tequila",
         "Fresh Lime Juice",
-        "Orange Liqueur" 
+        "Orange Liqueur"
     ],
     preparationSteps: [
         PREP_WET_SHAKE,
@@ -282,10 +263,8 @@ const margarita = {
         "salty",
         "favorite"
     ],
-    history: [
-    ],
-    notes: [
-    ]
+    history: [],
+    notes: []
 };
 
 const royalbermudayachtclub = {
@@ -320,10 +299,8 @@ const royalbermudayachtclub = {
         "refreshing",
         "Trader Vic"
     ],
-    history: [
-    ],
-    notes: [
-    ]
+    history: [],
+    notes: []
 };
 
 const bloodandsand = {
@@ -367,10 +344,8 @@ const bloodandsand = {
         "refreshing",
         "christianapproved"
     ],
-    history: [
-    ],
-    notes: [
-    ]
+    history: [],
+    notes: []
 };
 
 const manhattan = {
@@ -408,8 +383,7 @@ const manhattan = {
         "spirit-forward",
         "love it"
     ],
-    history: [
-    ],
+    history: [],
     notes: [
         "A 'Perfect Manhattan' is a Manhattan with half sweet and half dry Vermouth",
         "One of the best Manhattan is with Rittenhouse, acc. to How to drink (Episode that tried to kill me: https://www.youtube.com/watch?v=_QsCrcLG6Mo)"
@@ -457,10 +431,8 @@ const penicillin = {
         "refreshing",
         "smoky"
     ],
-    history: [
-    ],
-    notes: [
-    ]
+    history: [],
+    notes: []
 };
 
 const whiterussian = {
@@ -496,10 +468,8 @@ const whiterussian = {
         "Coffee",
         "creamy"
     ],
-    history: [
-    ],
-    notes: [
-    ]
+    history: [],
+    notes: []
 };
 
 const oldfashioned = {
@@ -533,10 +503,8 @@ const oldfashioned = {
         "strong",
         "spirit-forward"
     ],
-    history: [
-    ],
-    notes: [
-    ]
+    history: [],
+    notes: []
 };
 
 const mrswizzle = {
@@ -574,8 +542,7 @@ const mrswizzle = {
         "coffee",
         "refreshing"
     ],
-    history: [
-    ],
+    history: [],
     notes: [
         "Kaffeenote kommt schön, aber nicht aufdringlich zur Geltung. So wie die Zitrone. Erfrischend, sommerlich, gut!"
     ]
@@ -626,8 +593,7 @@ const bloodymary = {
         "fancy",
         "simoneapproved"
     ],
-    history: [
-    ],
+    history: [],
     notes: [
         "Source: https://www.youtube.com/watch?v=9bvEJx4PsUM"
     ]
@@ -669,8 +635,7 @@ const sexonthebeach = {
         "fruity",
         "light"
     ],
-    history: [
-    ],
+    history: [],
     notes: [
         "Source: https://www.youtube.com/watch?v=xufc7RzP-W8"
     ]
@@ -707,10 +672,8 @@ const daiquiri = {
     tags: [
         "new"
     ],
-    history: [
-    ],
-    notes: [
-    ]
+    history: [],
+    notes: []
 };
 
 const elpresidente = {
@@ -749,8 +712,7 @@ const elpresidente = {
         "spirit-forward",
         "showcases the rum"
     ],
-    history: [
-    ],
+    history: [],
     notes: [
         "Source: How to drink: https://www.youtube.com/watch?v=_O_TCeL_gV0&t=769s"
     ]
@@ -787,10 +749,8 @@ const caipirinha = {
         "refreshing",
         "sour"
     ],
-    history: [
-    ],
-    notes: [
-    ]
+    history: [],
+    notes: []
 };
 
 const pinacolada = {
@@ -835,10 +795,8 @@ const pinacolada = {
         "tiki",
         "simoneapproved"
     ],
-    history: [
-    ],
-    notes: [
-    ]
+    history: [],
+    notes: []
 };
 
 const trinidadsour = {
@@ -880,8 +838,7 @@ const trinidadsour = {
         "Battle of the Gods",
         "sabrinaapproved"
     ],
-    history: [
-    ],
+    history: [],
     notes: [
         "https://www.youtube.com/watch?v=_BEaYWQjSu0",
         "could try with an egg white, like how to drink did",
@@ -917,10 +874,8 @@ const aperolspritz = {
         "refreshing",
         "slightly bitter"
     ],
-    history: [
-    ],
-    notes: [
-    ]
+    history: [],
+    notes: []
 };
 
 const saturn = {
@@ -954,7 +909,7 @@ const saturn = {
     ],
     glasses: [
         GLASS_TIKI,
-        GLASS_LOWBALL, 
+        GLASS_LOWBALL,
         GLASS_HIGHBALL
     ],
     tags: [
@@ -966,8 +921,7 @@ const saturn = {
         "favorite",
         "simoneapproved"
     ],
-    history: [
-    ],
+    history: [],
     notes: [
         "How to Drink: https://www.youtube.com/watch?v=rt-foO5u2z8"
     ],
@@ -1008,8 +962,7 @@ const mojito = {
         "refreshing",
         "favorite"
     ],
-    history: [
-    ],
+    history: [],
     notes: [
         "Source: Anders Erickson: https://www.youtube.com/watch?v=KMypSCazyRw&t=54s"
     ]
@@ -1051,10 +1004,8 @@ const amarettosour = {
         "sweet",
         "sour"
     ],
-    history: [
-    ],
-    notes: [
-    ]
+    history: [],
+    notes: []
 };
 
 const americano = {
@@ -1087,8 +1038,7 @@ const americano = {
         "light",
         "low-proof"
     ],
-    history: [
-    ],
+    history: [],
     notes: [
         "https://www.youtube.com/watch?v=lgy6vEX_hQg&t=362s"
     ]
@@ -1120,10 +1070,8 @@ const boulevardier = {
     tags: [
         "new"
     ],
-    history: [
-    ],
-    notes: [
-    ]
+    history: [],
+    notes: []
 };
 
 const millionaire = {
@@ -1167,8 +1115,7 @@ const millionaire = {
         "rm -rf millionare",
         "floraheavydisapprove"
     ],
-    history: [
-    ],
+    history: [],
     notes: [
         "Source: Steve the Bartender: https://www.youtube.com/watch?v=8J8Sw_HseWQ"
     ]
@@ -1213,8 +1160,7 @@ const billionaire = {
         "sour",
         "favorite"
     ],
-    history: [
-    ],
+    history: [],
     notes: [
         "https://www.youtube.com/watch?v=rt-foO5u2z8"
     ]
@@ -1240,16 +1186,14 @@ const coffeeandcigarettes = {
         PREP_STIR,
         PREP_SINGLE_STRAIN
     ],
-    garnishes: [
-    ],
+    garnishes: [],
     glasses: [
         GLASS_NICKANDNORA
     ],
     tags: [
         "new"
     ],
-    history: [
-    ],
+    history: [],
     notes: [
         "Source: Steve the Bartender: https://www.youtube.com/watch?v=crVAp5WIgXo"
     ]
@@ -1285,8 +1229,7 @@ const lastword = {
         "new",
         "1925"
     ],
-    history: [
-    ],
+    history: [],
     notes: [
         "Source: Anders Erickson: https://www.youtube.com/watch?v=jRcApnG9Hck",
         "also, How to drink: https://www.youtube.com/watch?v=WaZb_BSy4dI&t=179s"
@@ -1323,8 +1266,7 @@ const finalward = {
     tags: [
         "new"
     ],
-    history: [
-    ],
+    history: [],
     notes: [
         "from legendary barman Phil Ward of NYC’s ancient and venerated Pegu Club"
     ]
@@ -1368,10 +1310,8 @@ const nakedandfamous = {
         "nicely, lightly tart",
         "floraapproved"
     ],
-    history: [
-    ],
-    notes: [
-    ]
+    history: [],
+    notes: []
 };
 
 const darknstormy = {
@@ -1404,10 +1344,8 @@ const darknstormy = {
         "sweet",
         "light"
     ],
-    history: [
-    ],
-    notes: [
-    ]
+    history: [],
+    notes: []
 };
 
 const nucleardaiquiri = {
@@ -1447,8 +1385,7 @@ const nucleardaiquiri = {
         "2005, Gregor De Gruyther",
         "favorite"
     ],
-    history: [
-    ],
+    history: [],
     notes: [
         "Educated Barfly: https://www.youtube.com/watch?v=Q1N3Y1ATjS8",
         "very good discussion about proportions: https://cocktailnerds.de/t/nuclear-daiquiri-diskussion/596/25"
@@ -1494,8 +1431,7 @@ const corpsereviver = {
         "orange",
         "cherry (esp with Luxardo),"
     ],
-    history: [
-    ],
+    history: [],
     notes: [
         "Anders Erickson: https://www.youtube.com/watch?v=bGxOcLRCBWk"
     ]
@@ -1536,8 +1472,7 @@ const bijou = {
         "slight hints of honey (due to the Vermouth)",
         "smooth"
     ],
-    history: [
-    ],
+    history: [],
     notes: [
         "Jamie Gordon",
         "In French, menans 'Jewel', because of the colors the different liquors: Seethrough: Diamand, Green: Emerald, Red: Ruby"
@@ -1579,10 +1514,9 @@ const sazerac = {
         "spirit-forward",
         "classic",
         "absithne very prominent",
-        "is not bad. Similar to old-fashioned, but not quite as good"   
+        "is not bad. Similar to old-fashioned, but not quite as good"
     ],
-    history: [
-    ],
+    history: [],
     notes: [
         "Jamie Gordon",
         "In French, menans 'Jewel', because of the colors the different liquors: Seethrough: Diamand, Green: Emerald, Red: Ruby",
@@ -1634,8 +1568,7 @@ const delicioussour = {
         "tastes like apple, peach pretty prominent as well",
         "christianapproved"
     ],
-    history: [
-    ],
+    history: [],
     notes: [
         "source: https://mixology.eu/delicious-sour-cocktail-calvados/"
     ]
@@ -1668,8 +1601,7 @@ const beesknees = {
     tags: [
         "new"
     ],
-    history: [
-    ],
+    history: [],
     notes: [
         "source: https://mixology.eu/delicious-sour-cocktail-calvados/"
     ]
@@ -1713,8 +1645,7 @@ const cosmopolitan = {
         "chewing gum",
         "1990s"
     ],
-    history: [
-    ],
+    history: [],
     notes: [
         "source: https://www.youtube.com/watch?v=vKv8cnh2ocU&t=333s"
     ]
@@ -1750,8 +1681,7 @@ const dublinminstrel = {
     tags: [
         "new"
     ],
-    history: [
-    ],
+    history: [],
     notes: [
         "from legendary barman Phil Ward of NYC’s ancient and venerated Pegu Club"
     ]
@@ -1799,8 +1729,7 @@ const margaritanegra = {
         "light",
         "exciting"
     ],
-    history: [ 
-    ],
+    history: [],
     notes: [
         "source: how to drink: https://www.youtube.com/watch?v=KRzlsE9Y6NU"
     ]
@@ -1889,8 +1818,7 @@ const coldbrewshakerato = {
         "definately interesting",
         "like a dark chocolate with orange notes"
     ],
-    history: [
-    ],
+    history: [],
     notes: [
         "source: how to drink: https://www.youtube.com/watch?v=KRzlsE9Y6NU"
     ]
@@ -1940,8 +1868,7 @@ const zombie = {
         "tiki",
         "ultra strong"
     ],
-    history: [
-    ],
+    history: [],
     notes: [
         "1934 Don the Beachcomber",
         "Jeff 'Beachbum' Berry",
@@ -1988,8 +1915,7 @@ const mercilessvirgin = {
         "new",
         "tiki"
     ],
-    history: [
-    ],
+    history: [],
     notes: [
         "Smuggler's Cove",
         "source: cocktailpartyapp; someone did it here: https://www.youtube.com/watch?v=laT5nxxCeKs&t=64s"
@@ -2034,8 +1960,7 @@ const momisette = {
         "a bit one-dimensional, like non-sweet ouzo",
         "don't like it all that much"
     ],
-    history: [
-    ],
+    history: [],
     notes: [
         "Start making my own Orgeat: https://youtu.be/CvEDhkR6K14",
         "source: Anders Erickson: https://www.youtube.com/watch?v=ABntm6FL8wc"
@@ -2095,8 +2020,7 @@ const artichokehold = {
         "I feel dirty after drinking this",
         "simoneapproved"
     ],
-    history: [
-    ],
+    history: [],
     notes: [
         "source: educated barlfy: https://www.youtube.com/watch?v=Ja3FPq3f9fE"
     ]
@@ -2141,8 +2065,7 @@ const eastside = {
         "lightly minty",
         "refreshing"
     ],
-    history: [
-    ],
+    history: [],
     notes: [
         "Sources: Steve the Bartender, Behind the bar, und Educated Barfly: https://www.youtube.com/watch?v=7Co6K-J1Xiw"
     ]
@@ -2194,8 +2117,7 @@ const gordonsbreakfast = {
         "favorite for cucumber and spicy cocktail",
         "simoneapproved"
     ],
-    history: [
-    ],
+    history: [],
     notes: [
         "Cocktailpartyapp and Educated Barfly: https://www.youtube.com/watch?v=_Y7WkOuy0Wk"
     ]
@@ -2254,28 +2176,22 @@ const ramosginfizz = {
         "boozy ice cream :-)",
         "favorite"
     ],
-    history: [
-    ],
+    history: [],
     notes: [
         "How To drink heavy recommendation: https://www.youtube.com/watch?v=jvf-0xpZ1VM&t=635s"
     ]
 };
 
 
-
-
-
-
-
 const cocktails = [
-    whiskysour, 
-    negroni, 
-    aviation, 
-    maitai, 
-    margarita, 
-    royalbermudayachtclub, 
+    whiskysour,
+    negroni,
+    aviation,
+    maitai,
+    margarita,
+    royalbermudayachtclub,
     bloodandsand,
-    manhattan, 
+    manhattan,
     penicillin,
     whiterussian,
     oldfashioned,
@@ -2320,6 +2236,16 @@ const cocktails = [
     ramosginfizz
 ]//.sort((a, b) => a.name.localeCompare(b.name))
 
+const cocktailsMap: any = {}
+cocktails.forEach(cocktail => {
+    cocktailsMap[cocktail.id] = cocktail;
+});
 
 
 export default cocktails;
+
+export const getCocktail = (cocktailId: string) => {
+    return cocktailsMap[cocktailId];
+}
+
+
