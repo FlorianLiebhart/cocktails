@@ -63,7 +63,7 @@ import imgGordonsbreakfast from './images/cocktails/gordonsbreakfast.png';
 import imgRamosginfizz from './images/cocktails/ramosginfizz.png';
 
 const whiskysour = {
-    id: "cocktail1",
+    id: "whiskysour",
     name: "Whisky Sour (Boston)",
     picture: imgWhiskySour,
     ingredients: [
@@ -105,7 +105,7 @@ const whiskysour = {
 
 
 const negroni = {
-    id: "cocktail2",
+    id: "negroni",
     name: "Negroni",
     picture: imgNegroni,
     ingredients: [
@@ -142,7 +142,7 @@ const negroni = {
 };
 
 const aviation = {
-    id: "cocktail3",
+    id: "aviation",
     name: "Aviation",
     picture: imgAviation,
     ingredients: [
@@ -179,7 +179,7 @@ const aviation = {
 };
 
 const maitai = {
-    id: "cocktail4",
+    id: "maitai",
     name: "Mai Tai",
     picture: imgMaitai,
     ingredients: [
@@ -233,7 +233,7 @@ const maitai = {
 };
 
 const margarita = {
-    id: "cocktail5",
+    id: "margarita",
     name: "Margarita",
     picture: imgMargarita,
     ingredients: [
@@ -268,7 +268,7 @@ const margarita = {
 };
 
 const royalbermudayachtclub = {
-    id: "cocktail6",
+    id: "royalbermudayachtclub",
     name: "Royal Bermuda Yacht Club",
     picture: imgRoyalbermudayachtclub,
     ingredients: [
@@ -304,7 +304,7 @@ const royalbermudayachtclub = {
 };
 
 const bloodandsand = {
-    id: "cocktail7",
+    id: "bloodandsand",
     name: "Blood and Sand",
     picture: imgBloodandsand,
     ingredients: [
@@ -349,7 +349,7 @@ const bloodandsand = {
 };
 
 const manhattan = {
-    id: "cocktail8",
+    id: "manhattan",
     name: "Manhattan",
     picture: imgManhattan,
     ingredients: [
@@ -391,7 +391,7 @@ const manhattan = {
 };
 
 const penicillin = {
-    id: "cocktail9",
+    id: "penicillin",
     name: "Penicillin",
     picture: imgPenicillin,
     ingredients: [
@@ -436,7 +436,7 @@ const penicillin = {
 };
 
 const whiterussian = {
-    id: "cocktail10",
+    id: "whiterussian",
     name: "White Russian",
     picture: imgWhiterussian,
     ingredients: [
@@ -473,7 +473,7 @@ const whiterussian = {
 };
 
 const oldfashioned = {
-    id: "cocktail11",
+    id: "oldfashioned",
     name: "Old-Fashioned",
     picture: imgOldfashioned,
     ingredients: [
@@ -508,7 +508,7 @@ const oldfashioned = {
 };
 
 const mrswizzle = {
-    id: "cocktail12",
+    id: "mrswizzle",
     name: "Mr Swizzle",
     picture: imgMrswizzle,
     ingredients: [
@@ -549,7 +549,7 @@ const mrswizzle = {
 };
 
 const bloodymary = {
-    id: "cocktail13",
+    id: "bloodymary",
     name: "Bloody Mary",
     picture: imgBloodymary,
     ingredients: [
@@ -600,7 +600,7 @@ const bloodymary = {
 };
 
 const sexonthebeach = {
-    id: "cocktail14",
+    id: "sexonthebeach",
     name: "Sex on the Beach",
     picture: imgSexonthebeach,
     ingredients: [
@@ -642,7 +642,7 @@ const sexonthebeach = {
 };
 
 const daiquiri = {
-    id: "cocktail15",
+    id: "daiquiri",
     name: "Daiquiri",
     picture: imgDaiquiri,
     ingredients: [
@@ -677,7 +677,7 @@ const daiquiri = {
 };
 
 const elpresidente = {
-    id: "cocktail16",
+    id: "elpresidente",
     name: "El Presidente",
     picture: imgElpresidente,
     ingredients: [
@@ -719,7 +719,7 @@ const elpresidente = {
 };
 
 const caipirinha = {
-    id: "cocktail17",
+    id: "caipirinha",
     name: "Caipirinha",
     picture: imgCaipirinha,
     ingredients: [
@@ -754,7 +754,7 @@ const caipirinha = {
 };
 
 const pinacolada = {
-    id: "cocktail18",
+    id: "pinacolada",
     name: "Pina Colada",
     picture: imgPinacolada,
     ingredients: [
@@ -800,7 +800,7 @@ const pinacolada = {
 };
 
 const trinidadsour = {
-    id: "cocktail19",
+    id: "trinidadsour",
     name: "Trinidad Sour",
     picture: imgTrinidadsour,
     ingredients: [
@@ -847,7 +847,7 @@ const trinidadsour = {
 };
 
 const aperolspritz = {
-    id: "cocktail20",
+    id: "aperolspritz",
     name: "Aperol Spritz",
     picture: imgAperolspritz,
     ingredients: [
@@ -879,7 +879,7 @@ const aperolspritz = {
 };
 
 const saturn = {
-    id: "cocktail21",
+    id: "saturn",
     name: "Saturn",
     picture: imgSaturn,
     ingredients: [
@@ -929,7 +929,7 @@ const saturn = {
 };
 
 const mojito = {
-    id: "cocktail22",
+    id: "mojito",
     name: "Mojito",
     picture: imgMojito,
     ingredients: [
@@ -969,7 +969,7 @@ const mojito = {
 };
 
 const amarettosour = {
-    id: "cocktail23",
+    id: "amarettosour",
     name: "Amaretto Sour",
     picture: imgAmarettosour,
     ingredients: [
@@ -1009,7 +1009,7 @@ const amarettosour = {
 };
 
 const americano = {
-    id: "cocktail24",
+    id: "americano",
     name: "Americano",
     picture: imgAmericano,
     ingredients: [
@@ -1045,7 +1045,7 @@ const americano = {
 };
 
 const boulevardier = {
-    id: "cocktail25",
+    id: "boulevardier",
     name: "Boulevardier",
     picture: imgBoulevardier,
     ingredients: [
@@ -1075,7 +1075,7 @@ const boulevardier = {
 };
 
 const millionaire = {
-    id: "cocktail26",
+    id: "millionaire",
     name: "Millionaire",
     picture: imgMillionaire,
     ingredients: [
@@ -1122,7 +1122,7 @@ const millionaire = {
 };
 
 const billionaire = {
-    id: "cocktail27",
+    id: "billionaire",
     name: "Billionaire",
     picture: imgBillionaire,
     ingredients: [
@@ -1167,7 +1167,7 @@ const billionaire = {
 };
 
 const coffeeandcigarettes = {
-    id: "cocktail28",
+    id: "coffeeandcigarettes",
     name: "Coffee and Cigarettes",
     picture: imgCoffeeandcigarettes,
     ingredients: [
@@ -1200,7 +1200,7 @@ const coffeeandcigarettes = {
 };
 
 const lastword = {
-    id: "cocktail29",
+    id: "lastword",
     name: "Last Word",
     picture: imgLastword,
     ingredients: [
@@ -1237,7 +1237,7 @@ const lastword = {
 };
 
 const finalward = {
-    id: "cocktail30",
+    id: "finalward",
     name: "Final Ward",
     picture: imgFinalward,
     ingredients: [
@@ -1273,7 +1273,7 @@ const finalward = {
 };
 
 const nakedandfamous = {
-    id: "cocktail31",
+    id: "nakedandfamous",
     name: "Naked & Famous",
     picture: imgNakedandfamous,
     ingredients: [
@@ -1315,7 +1315,7 @@ const nakedandfamous = {
 };
 
 const darknstormy = {
-    id: "cocktail32",
+    id: "darknstormy",
     name: "Dark 'n Stormy",
     picture: imgDarknstormy,
     ingredients: [
@@ -1349,7 +1349,7 @@ const darknstormy = {
 };
 
 const nucleardaiquiri = {
-    id: "cocktail33",
+    id: "nucleardaiquiri",
     name: "Nuclear Daiquiri",
     picture: imgNucleardaiquiri,
     ingredients: [
@@ -1394,7 +1394,7 @@ const nucleardaiquiri = {
 
 
 const corpsereviver = {
-    id: "cocktail34",
+    id: "corpsereviver",
     name: "Corpse Reviver No. 2",
     picture: imgCorpsereviver,
     ingredients: [
@@ -1438,7 +1438,7 @@ const corpsereviver = {
 };
 
 const bijou = {
-    id: "cocktail35",
+    id: "bijou",
     name: "Bijou",
     picture: imgBijou,
     ingredients: [
@@ -1480,7 +1480,7 @@ const bijou = {
 };
 
 const sazerac = {
-    id: "cocktail36",
+    id: "sazerac",
     name: "Sazerac",
     picture: imgSazerac,
     ingredients: [
@@ -1525,7 +1525,7 @@ const sazerac = {
 };
 
 const delicioussour = {
-    id: "cocktail37",
+    id: "delicioussour",
     name: "Delicious Sour",
     picture: imgDelicioussour,
     ingredients: [
@@ -1575,7 +1575,7 @@ const delicioussour = {
 };
 
 const beesknees = {
-    id: "cocktail38",
+    id: "beesknees",
     name: "Bee's Knees",
     picture: imgBeesknees,
     ingredients: [
@@ -1608,7 +1608,7 @@ const beesknees = {
 };
 
 const cosmopolitan = {
-    id: "cocktail39",
+    id: "cosmopolitan",
     name: "Cosmopolitan",
     picture: imgCosmopolitan,
     ingredients: [
@@ -1652,7 +1652,7 @@ const cosmopolitan = {
 };
 
 const dublinminstrel = {
-    id: "cocktail40",
+    id: "dublinminstrel",
     name: "Dublin Minstrel",
     picture: imgDublinminstrel,
     ingredients: [
@@ -1688,7 +1688,7 @@ const dublinminstrel = {
 };
 
 const margaritanegra = {
-    id: "cocktail41",
+    id: "margaritanegra",
     name: "Margarita Negra",
     picture: imgMargaritanegra,
     ingredients: [
@@ -1736,7 +1736,7 @@ const margaritanegra = {
 };
 
 const mrbalihai = {
-    id: "cocktail42",
+    id: "mrbalihai",
     name: "Mr. Bali Hai",
     picture: imgMrbalihai,
     ingredients: [
@@ -1782,7 +1782,7 @@ const mrbalihai = {
 };
 
 const coldbrewshakerato = {
-    id: "cocktail43",
+    id: "coldbrewshakerato",
     name: "Cold Brew Shakerato",
     picture: imgColdbrewshakerato,
     ingredients: [
@@ -1826,7 +1826,7 @@ const coldbrewshakerato = {
 
 
 const zombie = {
-    id: "cocktail44",
+    id: "zombie",
     name: "Zombie",
     picture: imgZombie,
     ingredients: [
@@ -1879,7 +1879,7 @@ const zombie = {
 };
 
 const mercilessvirgin = {
-    id: "cocktail45",
+    id: "mercilessvirgin",
     name: "Merciless Virgin",
     picture: imgMercilessvirgin,
     ingredients: [
@@ -1923,7 +1923,7 @@ const mercilessvirgin = {
 };
 
 const momisette = {
-    id: "cocktail46",
+    id: "momisette",
     name: "Momisette",
     picture: imgMomisette,
     ingredients: [
@@ -1968,7 +1968,7 @@ const momisette = {
 };
 
 const artichokehold = {
-    id: "cocktail47",
+    id: "artichokehold",
     name: "Artichoke Hold",
     picture: imgArtichokehold,
     ingredients: [
@@ -2018,7 +2018,9 @@ const artichokehold = {
         "I wanted to continue my tasting notes, but it's already all gone now.. :-(",
         "it has already been gone for 10 minutes. But it is still there...",
         "I feel dirty after drinking this",
-        "simoneapproved"
+        "simoneapproved",
+        "sabrinaapproved",
+        "danielapproved"
     ],
     history: [],
     notes: [
@@ -2027,7 +2029,7 @@ const artichokehold = {
 };
 
 const eastside = {
-    id: "cocktail48",
+    id: "eastside",
     name: "Eastside",
     picture: imgEastside,
     ingredients: [
@@ -2073,7 +2075,7 @@ const eastside = {
 
 
 const gordonsbreakfast = {
-    id: "cocktail49",
+    id: "gordonsbreakfast",
     name: "Gordon's Breakfast",
     picture: imgGordonsbreakfast,
     ingredients: [
@@ -2124,7 +2126,7 @@ const gordonsbreakfast = {
 };
 
 const ramosginfizz = {
-    id: "cocktail50",
+    id: "ramosginfizz",
     name: "Ramos Gin Fizz",
     picture: imgRamosginfizz,
     ingredients: [
@@ -2136,7 +2138,7 @@ const ramosginfizz = {
         "1 Egg White",
         "60 ml Gin (e.g. dry, Tanqueray, Illusionist (I used it, + 15 dashes of violet), could try Brockmans for once!",
         "few drops of Vanilla extract or fresh vanilla (possibly vanilla flavoured sugar sirup)",
-        "60 ml (very cold) carbonated water (add later)"
+        "50 ml (very cold) carbonated water (add later)"
     ],
     ingredientsGuest: [
         "Gin",
@@ -2174,7 +2176,8 @@ const ramosginfizz = {
         "citrus from the gin",
         "great texture",
         "boozy ice cream :-)",
-        "favorite"
+        "favorite",
+        "sabrinaapproved"
     ],
     history: [],
     notes: [

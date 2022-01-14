@@ -186,10 +186,9 @@ function App() {
         })
     }
 
-
     return (
-        <div id="main">
-            <div id="pic" className="App" title="Florian's Finest" style={{margin: '0px 30px'}}>
+        <div id="main" style={{margin: '0px 20px 40px 20px'}}>
+            <div id="pic" className="App" title="Florian's Finest">
                 <a href={window.location.pathname == "/" ? "/bartender" : "/"}><img src={cocktailbarImg} style={{
                     height: '250px',
                     marginBottom: '2px'
@@ -213,10 +212,10 @@ function App() {
             />
             <Router>
                 <Route exact path="/">
-                    <GuestCocktailList cocktails={cocktails.filter(filterCocktails)} />
+                    <GuestCocktailList cocktails={cocktails.filter(filterCocktails)} onCocktailClicked={addCocktailToCart} style={{marginBottom: "40px"}}/>
                 </Route>
                 <Route exact path="/bartender">
-                    <CocktailList cocktails={cocktails.filter(filterCocktails)} onCocktailClicked={addCocktailToCart}/>
+                    <CocktailList cocktails={cocktails.filter(filterCocktails)} onCocktailClicked={addCocktailToCart} style={{marginBottom: "40px"}}/>
                 </Route>
                 <Route exact path="/ingredients">
                     <IngredientList ingredients={ingredients.filter(filterIngredients)}/>
@@ -228,7 +227,8 @@ function App() {
                 bottom: '0px',
                 height: "70px",
                 backgroundColor: "#ebebeb",
-                width: "100%"
+                width: "100%",
+                borderTop: "solid 1px #a9a9a9"
             }}>
                 <CartList cart={cartValue} onItemRemoved={removeFromCart}/>
 
