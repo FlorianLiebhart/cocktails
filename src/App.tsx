@@ -111,44 +111,6 @@ function App() {
         })
     }
 
-    // const handleButton = ( ) => {
-    //   return ;
-    // }
-
-    // const Button = styled.button`
-    //   color: palevioletred;
-    //   font-size: 1em;
-    //   margin: 1em;
-    //   padding: 0.25em 1em;
-    //   border: 2px solid palevioletred;
-    //   border-radius: 3px;
-    //   background: ${props => props.active ? 'darkred' : 'limegreen'}
-
-    // `;
-
-
-    // const Button = styled.button`
-    //   display: inline-block;
-    //   color: palevioletred;
-    //   font-size: 1em;
-    //   margin: 1em;
-    //   padding: 0.25em 1em;
-    //   border: 2px solid palevioletred;
-    //   border-radius: 3px;
-    //   display: block;
-    // `;
-
-    // const Input = styled.input`
-    //   padding: 0.5em;
-    //   margin: 0.5em;
-    //   color: ${props => props.inputColor || "palevioletred"};
-    //   background: papayawhip;
-    //   border: none;
-    //   border-radius: 3px;
-    // `;
-
-    // <Button active="true" onClick={handleButton}></Button>
-
     const filterIngredients = (ingredient: any) => {
         if (filter === null) {
             return true;
