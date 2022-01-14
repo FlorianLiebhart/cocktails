@@ -7,35 +7,6 @@ import {IngredientComponent} from "./IngredientComponent";
 import {TagsComponent} from "./TagsComponent";
 import {TitleComponent} from "./TitleComponent";
 
-
-// class Ingredient extends React.Component {
-//   render() {
-//      return <div>
-//         {"5-10ml (Demarara) Sugar Sirup \n (orig".split("\n")
-//           .map(t => <span>{t}</span>)
-//           .reduce((prev, curr) => [prev, <br/>, curr])}
-//      </div>
-//   }
-// }
-
-
-// const Ingredient: React.FC<any> = ({ingredient}) => {
-
-//     return ReactDom.render(<ReactMarkdown># Hello, *world*!</ReactMarkdown>, document.body)
-
-
-// //     const result = regexifyString({
-// //         pattern: /\[.*?\]/gim,
-// //         decorator: (match, index) => {
-// //             return <span>{match}</span>;
-// //         },
-// //         input: 'some [text] with simple example',
-// //     });
-// //     return result;
-// // //   // return ingredient.split("\n").join(<br/>);
-// }
-
-
 const CocktailListItem: React.FC<any> = ({cocktail, onClick}) =>
     <div id={cocktail.id} title="cocktail">
         <TitleComponent cocktail={cocktail}/>
@@ -75,3 +46,31 @@ export const CocktailList: React.FC<any> = ({cocktails, onCocktailClicked}) =>
         }
     </div>;
 
+
+
+// class Ingredient extends React.Component {
+//   render() {
+//      return <div>
+//         {"5-10ml (Demarara) Sugar Sirup \n (orig".split("\n")
+//           .map(t => <span>{t}</span>)
+//           .reduce((prev, curr) => [prev, <br/>, curr])}
+//      </div>
+//   }
+// }
+
+
+// const Ingredient: React.FC<any> = ({ingredient}) => {
+
+//     return ReactDom.render(<ReactMarkdown># Hello, *world*!</ReactMarkdown>, document.body)
+
+
+// //     const result = regexifyString({
+// //         pattern: /\[.*?\]/gim,
+// //         decorator: (match, index) => {
+// //             return <span>{match}</span>;
+// //         },
+// //         input: 'some [text] with simple example',
+// //     });
+// //     return result;
+// // //   // return ingredient.split("\n").join(<br/>);
+// }
