@@ -61,6 +61,14 @@ import imgArtichokehold from './images/cocktails/artichokehold.png';
 import imgEastside from './images/cocktails/eastside.png';
 import imgGordonsbreakfast from './images/cocktails/gordonsbreakfast.png';
 import imgRamosginfizz from './images/cocktails/ramosginfizz.png';
+import imgPainkiller from './images/cocktails/painkiller.png';
+import imgEggnog from './images/cocktails/eggnog.png';
+import imgGregnog from './images/cocktails/gregnog.png';
+import imgLongislandicedtea from './images/cocktails/longislandicedtea.png';
+import imgAdiosmotherfucker from './images/cocktails/adiosmotherfucker.png';
+import imgClosingargument from './images/cocktails/closingargument.png';
+import imgChevala from './images/cocktails/chevala.png';
+import imgThewellerman from './images/cocktails/thewellerman.png';
 
 const whiskysour = {
     id: "whiskysour",
@@ -278,7 +286,7 @@ const royalbermudayachtclub = {
         "5ml Curacao"
     ],
     ingredientsGuest: [
-        "Aged Demarara Rum",
+        "Aged Rum",
         "Fresh Lime Juice",
         "Falernum",
         "Orange Liqueur"
@@ -398,6 +406,7 @@ const penicillin = {
         "4 coin slices of ginger (muddle in Shaker)",
         "6cl Blended Scotch Whisky (Monkey Shoulder), mild, smooth",
         "7,5ml LaPhroaigh Whisky 10y (big peaty flavor, smoky",
+        "I would go 100% just Lavavulin",
         "22,5ml Lemon Juice",
         "22,5ml 3:1 honey sirup"
     ],
@@ -429,7 +438,8 @@ const penicillin = {
         "favorite",
         "modern classic 2005",
         "refreshing",
-        "smoky"
+        "smoky",
+        "christianapproved"
     ],
     history: [],
     notes: []
@@ -484,7 +494,7 @@ const oldfashioned = {
     ],
     ingredientsGuest: [
         "Bourbon Whisky",
-        "Brown Sugar",
+        "Sugar",
         "Bitters",
         "Orange Twist"
     ],
@@ -557,7 +567,7 @@ const bloodymary = {
         "100ml tomato juice",
         "5cl Vodka",
         "10-15 ml Lemon Juice",
-        "6 dashes worcetershire",
+        "6 dashes Worcestershire",
         "6 dashes tabasco",
         "1 barspoon of honey sirup",
         "1 punch (celer) salt & pepper"
@@ -646,14 +656,15 @@ const daiquiri = {
     name: "Daiquiri",
     picture: imgDaiquiri,
     ingredients: [
-        "6cl white rum",
-        "2cl lime juice",
-        "1cl sugar sirup",
-        "i probably should go 2:1:0,5 instead, but gotta check out..",
-        "1 lime zeste into shaker"
+        "6cl rum (I did it with 5y Plantation and Appleton. Love the funk in the second one!!!!",
+        "22,5cl lime juice",
+        "1,5cl (best demarara) sugar sirup",
+        "I did 6cl, 3cl, 2cl, but I wanna have it a bit less acid and sweet next time (behind the bar even suggests 3:1:0.5",
+        "too sweet and sour with 6,3,2, esp. when it gets warmer",
+        "1 lime zeste into shaker (forgot that^^)"
     ],
     ingredientsGuest: [
-        "White Rum",
+        "Rum",
         "Fresh Lime Juice",
         "Sugar",
         "Lime Twist"
@@ -661,7 +672,7 @@ const daiquiri = {
     preparationSteps: [
         PREP_WET_SHAKE,
         PREP_FINE_STRAIN,
-        "wet shake very hard and a bit longer than you should! Dillution is important here!"
+        "wet shake extremely hard and a bit longer than you should! Dillution is important here!"
     ],
     garnishes: [
         "lime wheel or garnish"
@@ -670,7 +681,13 @@ const daiquiri = {
         GLASS_NICKANDNORA
     ],
     tags: [
-        "new"
+        "love it with the funk of the appleston estate",
+        "sweet, great with demarara",
+        "extremely easy to drink",
+        "wonderful",
+        "great for tasting the rum",
+        "only a bit sour",
+        "drink fast, has to be breezingly cold!"
     ],
     history: [],
     notes: []
@@ -758,12 +775,12 @@ const pinacolada = {
     name: "Pina Colada",
     picture: imgPinacolada,
     ingredients: [
-        "70ml Pinapple juice",
+        "70ml Pinapple juice (best replace partly with fresh pineapple)",
         "30g Coconut cream (70% Fruchtfleisch (so pretty thick) from Edeka",
         "15ml lime juice (so that it's not so creamy but fresher",
         "1cl Orgeat",
         "1cl Falernum",
-        "5cl Rum (any)"
+        "6cl Rum (any, best include some Smith and Cross in it; maybe Abuelo + Smith and Cross)"
     ],
     ingredientsGuest: [
         "Pinapple Juice",
@@ -776,14 +793,15 @@ const pinacolada = {
     preparationSteps: [
         PREP_WET_SHAKE,
         "crushingly hard wet shake",
+        "best blend it with fresh Pineapple and Ice, though",
         "can be served in real pineapple :-)"
     ],
     garnishes: [
         "pineapple",
+        "pineapple leaves",
         "mint",
         "coconut rim",
-        "umbrella",
-        "simoneapproved"
+        "umbrella"
     ],
     glasses: [
         GLASS_TIKI,
@@ -796,7 +814,9 @@ const pinacolada = {
         "simoneapproved"
     ],
     history: [],
-    notes: []
+    notes: [
+        "I wanna do this low-juice version: https://www.youtube.com/watch?v=sxgzR_KqpZQ"
+    ]
 };
 
 const trinidadsour = {
@@ -1204,7 +1224,7 @@ const lastword = {
     name: "Last Word",
     picture: imgLastword,
     ingredients: [
-        "2cl Dry Gin (e.g. Botanist, for me, maybe Needle)",
+        "2cl Dry Gin (e.g. Botanist, for me, maybe Needle, but I did it with Tanqueray)",
         "2cl Green Chartreuse",
         "2cl Maraschino Liqueur (e.g. Luxardo)",
         "2cl Lime Juice"
@@ -1217,7 +1237,8 @@ const lastword = {
     ],
     preparationSteps: [
         PREP_WET_SHAKE,
-        PREP_FINE_STRAIN
+        PREP_FINE_STRAIN,
+        "low quantity"
     ],
     garnishes: [
         "Maraschino Cherry"
@@ -1226,7 +1247,19 @@ const lastword = {
         GLASS_NICKANDNORA
     ],
     tags: [
-        "new",
+        "very good drink",
+        "chill and refreshing",
+        "sour",
+        "short evolution",
+        "very drinkable",
+        "herbal",
+        "drink quickly",
+        "bright",
+        "love it",
+        "so good and refreshing and short",
+        "sour aftertaste",
+        "perfectly sweet",
+        "favorite",
         "1925"
     ],
     history: [],
@@ -1264,7 +1297,14 @@ const finalward = {
         GLASS_NICKANDNORA
     ],
     tags: [
-        "new"
+        "lovely",
+        "eaven easier to drink, lighter, than the final ward",
+        "not as bright, but a bit more sweeter than final ward",
+        "short evolution",
+        "bit sweet, bit sour, good balance",
+        "reminds me of honey",
+        "last word much more interesting and better with the gin",
+        "darker, not as bright than last word"
     ],
     history: [],
     notes: [
@@ -1615,8 +1655,8 @@ const cosmopolitan = {
         "60 ml Citrus Vodka",
         "15 ml Lime Juice",
         "30 ml Orange Liqueur (Curacao)",
-        "30 ml Cranberry Juice (if you use pure juice, maybe: just 15ml juice; and total of 15ml simple sirup, shake a bit longer for more dillution)",
-        "8 ml Simple Sirup (15ml if pure cranberry juice)",
+        "30 ml Cranberry Juice (if you use pure juice, maybe: just 15ml juice; and total of 15ml simple sugar sirup, shake a bit longer for more dillution)",
+        "8 ml Simple Sugar Sirup (15ml if pure cranberry juice)",
         "Optional: Barspoon of Maraschino Liqueur (Luxardo) ",
         "Garnish with a Lime Wheel"
     ],
@@ -1692,7 +1732,7 @@ const margaritanegra = {
     name: "Margarita Negra",
     picture: imgMargaritanegra,
     ingredients: [
-        "12 ml Agave Syrup (or Simple Sirup if non-existnet)",
+        "12 ml Agave Sirup (or Simple Sugar Sirup if non-existnet)",
         "30 ml Lime Juice",
         "30 ml Tequila Blanco (e.g. Casamigos, but really any will work) Mezcal",
         "30 ml Mr. Black Coffee Liquor",
@@ -1702,7 +1742,7 @@ const margaritanegra = {
     ingredientsGuest: [
         "Tequila Blanco",
         "Coffee Liquor",
-        "Agave Syrup",
+        "Agave Sirup",
         "Fresh Lime Juice"
     ],
     preparationSteps: [
@@ -2081,7 +2121,7 @@ const gordonsbreakfast = {
     ingredients: [
         "1 Lime cut into 6 wedges",
         "4-5 Pieces of Cucumber",
-        "2cl Simple Syrup",
+        "2cl Simple Sugar Sirup",
         "6cl Gin (e.g. Tanqueray or Needle, both fine)",
         "4 dashes Tabasco (but this will be already fiery :)",
         "3 dashes Worcestershire Sauce",
@@ -2130,7 +2170,7 @@ const ramosginfizz = {
     name: "Ramos Gin Fizz",
     picture: imgRamosginfizz,
     ingredients: [
-        "15 ml Simple Sirup",
+        "15 ml Simple Sugar Sirup",
         "15 ml Lemon Juice",
         "15 ml Lime Juice",
         "2-3 dashes Orange Blossom Water",
@@ -2138,7 +2178,7 @@ const ramosginfizz = {
         "1 Egg White",
         "60 ml Gin (e.g. dry, Tanqueray, Illusionist (I used it, + 15 dashes of violet), could try Brockmans for once!",
         "few drops of Vanilla extract or fresh vanilla (possibly vanilla flavoured sugar sirup)",
-        "50 ml (very cold) carbonated water (add later)"
+        "50 ml (very cold) carbonated water (add later, with one big shot, not slowly!)"
     ],
     ingredientsGuest: [
         "Gin",
@@ -2185,6 +2225,401 @@ const ramosginfizz = {
     ]
 };
 
+const painkiller = {
+    id: "painkiller",
+    name: "Painkiller",
+    picture: imgPainkiller,
+    ingredients: [
+        "This is the version of Pussers, but I'd wanna try the low-juice version in the notes",
+        "the lower juice version was a bit too strong (maybe use plantation 5y pure",
+        "I used for both variants 50:50 plantation 5 and plantation overproof",
+        "cream of coconut i made by doing 60% coconut milk (i used creola de coco from Lien Ying, Rewe) and 40% sugar sirup",
+        "30ml Orange Juice",
+        "30ml Cream of Coconut (which basically is 60% thick coconut milk and 40% sugar sirup)",
+        "120ml Pineapple Juice (next time use 100ml",
+        "60ml Rum (Greg used Plantation 5 year old and loved it. Could do 4cl of that + 2cl Smith and Cross, or 50:50 with Plantation Overproof :)",
+        "nutmeg"
+    ],
+    ingredientsGuest: [
+        "Pineapple Juice",
+        "Rum",
+        "Orange Juice",
+        "Cream of Coconut"
+    ],
+    preparationSteps: [
+        PREP_WET_SHAKE,
+        PREP_OPEN_POUR,
+        "Shake frothy and open pour :)"
+    ],
+    garnishes: [,
+        "freshly grated nutmeg",
+        "Maybe the leaves of a pineapple, or mint (just something green :))"
+    ],
+    glasses: [
+        GLASS_TIKI,
+        GLASS_LOWBALL
+    ],
+    tags: [
+        "very refreshing",
+        "light",
+        "fruity",
+        "sweet, but not too sweet",
+        "nutmeg smell is amazing",
+        "similar to Pina Colada"
+    ],
+    history: [],
+    notes: [
+        "How To drink: https://www.youtube.com/watch?v=di1O9mppUcE",
+        "recipe of the lower juice one: 60ml braunen Virgin Islands Overproof Rum, 45ml Ananassaft, 22,5ml Cream of Coconut, 15ml Orangensaft",
+        "I like the lower-juice version, but it is a bit too strong i think. Next time, use pure plantation 5y (not 50:50 with 69%), more coconut",
+        "insteda of modifying the lower-juice version, just improve the original version a bit by reducing pinapple juice"
+    ]
+};
+
+const eggnog = {
+    id: "eggnog",
+    name: "Egg Nog",
+    picture: imgEggnog,
+    ingredients: [
+        "15ml Simple Sugar Sirup",
+        "30ml Heavy Cream",
+        "25ml Bourbon Whisky (100 proof, e.g. Old Grand-Dad Bonded), I used bulleit bourbon, next time use rittenhouse rye",
+        "22.5ml Overproof Jamaican Rum (Smith and Cross)",
+        "1 Whole Egg",
+        "Grated Cinnamon",
+        "Grated Nutmeg"
+    ],
+    ingredientsGuest: [
+        "Egg",
+        "Cream",
+        "Overproof Jamaican Rum",
+        "High Proof Bourbon Whiskey",
+        "Sugar",
+        "Cinnamon",
+        "Nutmeg"
+    ],
+    preparationSteps: [
+        PREP_DRY_SHAKE,
+        PREP_WET_SHAKE,
+        PREP_SINGLE_STRAIN,
+        "All ingredient + some grated cinnamon and nutmeg in shaker",
+        "Dry Shake frothy, wet shake with 2 Ice Cubes until full dissolve",
+        "Garnish again with freshly grated nutmeg and orange"
+    ],
+    garnishes: [,
+        "Freshly grated Cinnamon",
+        "Freshly grated Nutmeg"
+    ],
+    glasses: [
+        GLASS_NICKANDNORA,
+    ],
+    tags: [
+        "tastes great",
+        "sweet",
+        "low proof",
+        "very drinkable",
+        "a bit more bourbon (maybe 3cl bourbon, 25ml rum",
+        "favorite"
+    ],
+    history: [],
+    notes: [
+        "Educated Barfly: https://www.youtube.com/watch?v=kHq-nVZFBjg"
+    ]
+};
+
+const gregnog = {
+    id: "gregnog",
+    name: "Greg Nog",
+    picture: imgGregnog,
+    ingredients: [
+        "15ml Simple Sugar Sirup (2:1)",
+        "15ml Luxardo Maraschino Liqueur",
+        "6cl Bourbon Whisky (high proof, e.g. Baker's or Old Gran dad)",
+        "1 Whole Egg",
+        "90ml Milk",
+        "nutmeg", 
+        "orange zeste"
+    ],
+    ingredientsGuest: [
+        "Milk",
+        "High Proof Bourbon Whiskey",
+        "Egg",
+        "Maraschino Liqueur",
+        "Sugar",
+        "Grated Orange Peel",
+        "Nutmeg"
+    ],
+    preparationSteps: [
+        PREP_DRY_SHAKE,
+        PREP_WET_SHAKE,
+        PREP_SINGLE_STRAIN,
+        "Dry and wet shake frothy and strain into lowball",
+        "Top off with ~90ml milk",
+        "Garnish with freshly grated nutmeg and orange"
+    ],
+    garnishes: [,
+        "Freshly grated nutmeg",
+        "Freshly grated Orange"
+    ],
+    glasses: [
+        GLASS_LOWBALL
+    ],
+    tags: [
+        "sweeter and lighter than egg nog",
+        "very light",
+        "franziskaapproved"
+    ],
+    history: [],
+    notes: [
+        "How To drink: Greg's favorite eggnog: https://www.youtube.com/watch?v=KyG93WoVZFY"
+    ]
+};
+
+const longislandicedtea = {
+    id: "longislandicedtea",
+    name: "Long Island Iced Tea",
+    picture: imgLongislandicedtea,
+    ingredients: [
+        "(All white spirits; can use cheaper stuff; use really anything :))",
+        "22ml Lemon Juice",
+        "8ml Sugar Sirup (2:1) (maybe use no sugar, or a bit less coke (i used probably around 50-60ml)",
+        "15ml Gin (London Dry; e.g. Ford or Beefeater)",
+        "15ml Rum (Jeffry Morgenthaler suggest Plantation 3 Star White; or also El Dorado 3)",
+        "15ml Tequila (Silver Blanco; but anything 100% agave should be fine). Would love to see how a smoky one works here",
+        "15ml Vodka",
+        "15ml Orange Liqueur (Cointreau, or Curacau)",
+        "22ml Coca Cola",
+    ],
+    ingredientsGuest: [
+        "Lemon Juice",
+        "Coca Cola",
+        "London Dry Gin",
+        "(White) Rum",
+        "Blanco Tequila",
+        "Vodka",
+        "Orange Liqueur",
+        "Sugar"
+    ],
+    preparationSteps: [
+        PREP_WET_SHAKE,
+        PREP_SINGLE_STRAIN,
+        "Put long ice in Highball Glass",
+        "Can also use a bigger glass and open pour",
+        "Top off with Coca Cola",
+        "Lemon twist",
+        "Serve with straw"
+    ],
+    garnishes: [,
+        "Lemon zeste or wheel",
+        "maybe Maraschino Cherry",
+        "maybe umbrella"
+    ],
+    glasses: [
+        GLASS_HIGHBALL
+    ],
+    tags: [
+        "party drink",
+        "not bad",
+        "bit sweet",
+        "christianapproved"
+    ],
+    history: [],
+    notes: [
+        "How To drink (Jeffry Morgenthaler's Recipe, which is a bit of a refined versio: https://www.youtube.com/watch?v=1xloS9kycPA",
+        "Anders Erickson: https://www.youtube.com/watch?v=jLTLBQqWzq8"
+    ]
+};
+
+const adiosmotherfucker = {
+    id: "adiosmotherfucker",
+    name: "Adios Motherfucker (AMF)",
+    picture: imgAdiosmotherfucker,
+    ingredients: [
+        "(All white spirits; can use cheaper stuff; use really anything :))",
+        "22ml Lemon Juice",
+        "8ml Sugar Sirup (2:1)",
+        "15ml Gin (London Dry; e.g. Ford or Beefeater)",
+        "15ml Rum (Jeffry Morgenthaler suggest Plantation 3 Star White; or also El Dorado 3)",
+        "15ml Tequila (Silver Blanco; but anything 100% agave should be fine). Would love to see how a smoky one works here",
+        "15ml Vodka",
+        "15ml Orange Liqueur (Cointreau, or Curacau)",
+        "22ml Lemon-Lime Soda (Sprite, Bitter Lemon)",
+    ],
+    ingredientsGuest: [
+        "Lemon Juice",
+        "Lemon-Lime Soda",
+        "London Dry Gin",
+        "(White) Rum",
+        "Blanco Tequila",
+        "Vodka",
+        "Orange Liqueur",
+        "Sugar"
+    ],
+    preparationSteps: [
+        PREP_WET_SHAKE,
+        PREP_SINGLE_STRAIN,
+        "Put long ice or ice cubes in Highball Glass",
+        "Can also use a bigger glass and open pour",
+        "Top off with Lemon-Lime Soda",
+        "Lemon twist",
+        "Serve with straw"
+    ],
+    garnishes: [,
+        "Lemon wheel inside glass"
+    ],
+    glasses: [
+        GLASS_HIGHBALL
+    ],
+    tags: [
+        "new"
+    ],
+    history: [],
+    notes: [
+        "Educated Barfly: https://www.youtube.com/watch?v=oe_AuNM_rPY"
+    ]
+};
+
+const closingargument = {
+    id: "closingargument",
+    name: "Closing Argument",
+    picture: imgClosingargument,
+    ingredients: [
+        "2cl Mezcal (e.g. Del Maguey VIDA mezcal :-))",
+        "2cl Green Chartreuse",
+        "2cl Maraschino Liqueur (use Luxardo)",
+        "2cl Lime Juice"
+    ],
+    ingredientsGuest: [
+        "Mezcal",
+        "Green Chartreuse",
+        "Maraschino Liqueur",
+        "Fresh Lime Juice"
+    ],
+    preparationSteps: [
+        PREP_WET_SHAKE,
+        PREP_FINE_STRAIN,
+        "low quantity (maybe make more or smaller glass)"
+    ],
+    garnishes: [
+        "Lime zeste"
+    ],
+    glasses: [
+        GLASS_NICKANDNORA
+    ],
+    tags: [
+        "favorite",
+        "divine",
+        "man, what an amazing drink",
+        "my new #1?",
+        "a variation of the last word",
+        "that is one damn fine cocktail",
+        "awesome small smokiness",
+        "nice",
+        "suck my ass and call me nancy",
+        "fuck me"
+    ],
+    history: [],
+    notes: [
+        "Source: https://www.diffordsguide.com/cocktails/recipe/3448/closing-argument"
+    ]
+};
+
+
+const chevala = {
+    id: "chevala",
+    name: "Chevala",
+    picture: imgChevala,
+    ingredients: [
+        "Apparently, the difference between Michelada and Chevala is the extra Tequila and Tomato Juice",
+        "15ml Mezcal",
+        "60ml tomato juice",
+        "30ml Soy sauce",
+        "15ml Worcester sauce",
+        "15ml lime juice",
+        "10ml agave syrup (optional)",
+        "5 dashes Tabasco (this will be hot)",
+        "Pinch black pepper",
+        "Mexican beer (Corona)"
+    ],
+    ingredientsGuest: [
+        "Mexican lager",
+        "Tomato Juice",
+        "Mezcal",
+        "Spices"
+    ],
+    preparationSteps: [
+        PREP_BUILD,
+        "Rim a glass with lime and Tajin",
+        "Put everything in glass on some ice, top off with Mexican beer"
+
+    ],
+    garnishes: [
+        "Lime wheel or wedge",
+        "Tajin rim"
+    ],
+    glasses: [
+        GLASS_NICKANDNORA
+    ],
+    tags: [
+        "Savory",
+        "spicy",
+        "hot"
+    ],
+    history: [],
+    notes: [
+        "Source: Behind the bar (I did this version): https://www.youtube.com/watch?v=9bvEJx4PsUM",
+        "Source: How to drink: https://www.youtube.com/watch?v=8SdGXL2-M1s",
+    ]
+};
+
+const thewellerman = {
+    id: "thewellerman",
+    name: "The Wellerman",
+    picture: imgThewellerman,
+    ingredients: [
+        "15 ml Simple Sirup (could maybe use a little more acc. to Greg. Maybe use 22,5 ml)",
+        "30 ml Lemon Juice",
+        "60 ml Rum (Should be Demarara, Pot stilled; e.g. El Dorado 8; toasty sugar oak)",
+        "Heaping barspoonful of Matcha Powder",
+        "1 Egg White",
+        "Dry Shake",
+        "Add ice and shake again",
+        "Strain into coup or sour glass",
+        "Garnish with dots of Angostura Aromatic Bitters (skull and cross bones if you dare)"
+    ],
+    ingredientsGuest: [
+        "Aged Rum",
+        "Fresh Lemon Juice",
+        "Simple Sirup",
+        "Matcha Powder",
+        "Egg White"
+    ],
+    preparationSteps: [
+        PREP_DRY_SHAKE,
+        PREP_WET_SHAKE
+
+    ],
+    garnishes: [
+        "Doesnt really need garnish, maybe a skull design with angostura bitters",
+        "or maybe ankor"
+    ],
+    glasses: [
+        GLASS_NICKANDNORA
+    ],
+    tags: [
+        "very lemony",
+        "sour",
+        "grassy",
+        "silky",
+        "good",
+        "simoneapproved"
+    ],
+    history: [],
+    notes: [
+        "2021 by Greg :-)",
+        "Source: How to drink: https://www.youtube.com/watch?v=gLlIMN1RTJE"
+    ]
+};
 
 const cocktails = [
     whiskysour,
@@ -2236,7 +2671,15 @@ const cocktails = [
     artichokehold,
     eastside,
     gordonsbreakfast,
-    ramosginfizz
+    ramosginfizz,
+    painkiller,
+    eggnog,
+    gregnog,
+    longislandicedtea,
+    adiosmotherfucker,
+    closingargument,
+    chevala,
+    thewellerman
 ]//.sort((a, b) => a.name.localeCompare(b.name))
 
 const cocktailsMap: any = {}

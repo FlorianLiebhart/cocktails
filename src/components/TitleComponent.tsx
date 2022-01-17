@@ -8,6 +8,7 @@ import recommendationChristianImg from "../domain/images/recommendationchristian
 import recommendationSabrinaImg from "../domain/images/recommendationsabrina.png";
 import floraheavydisapproveImg from "../domain/images/floraheavydisapprove.png";
 import recommendationDanielImg from "../domain/images/recommendationdaniel.png";
+import recommendationFranziskaImg from "../domain/images/recommendationfranziska.png";
 import newTagImg from "../domain/images/new.png";
 
 
@@ -60,5 +61,8 @@ export const TitleComponent: React.FC<any> = ({cocktail}) =>
         }
         {
             cocktail.tags.includes("danielapproved")?<img src={recommendationDanielImg} style={recommendationStyle}/>:<div/>
+        }
+        {
+            cocktail.tags.includes("franziskaapproved")?<img src={recommendationFranziskaImg} style={recommendationStyle}/>:<div/>
         }
     </div>

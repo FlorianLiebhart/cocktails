@@ -16,6 +16,7 @@
     "react-markdown": "^7.1.1",
     "react-router-dom": "^5.1.2",
     "react-scripts": "4.0.3",
+    "realm": "^10.11.0",
     "regexify-string": "^1.0.17",
     "styled-components": "^5.3.3",
     "typescript": "^4.5.2",
