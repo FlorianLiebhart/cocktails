@@ -69,6 +69,8 @@ import imgAdiosmotherfucker from './images/cocktails/adiosmotherfucker.png';
 import imgClosingargument from './images/cocktails/closingargument.png';
 import imgChevala from './images/cocktails/chevala.png';
 import imgThewellerman from './images/cocktails/thewellerman.png';
+import imgBitterlastword from './images/cocktails/bitterlastword.png';
+import imgWordsmith from './images/cocktails/wordsmith.png';
 
 const whiskysour = {
     id: "whiskysour",
@@ -280,9 +282,9 @@ const royalbermudayachtclub = {
     name: "Royal Bermuda Yacht Club",
     picture: imgRoyalbermudayachtclub,
     ingredients: [
-        "5cl Rum (e.g. El Dorado 5, Appleton Estate, Abuelo, El Dorado 8)",
         "2cl lime juice",
         "15ml Falernum",
+        "5cl Dark/Aged Rum (e.g. El Dorado 5, Appleton Estate, Abuelo, El Dorado 8)",
         "5ml Curacao"
     ],
     ingredientsGuest: [
@@ -316,12 +318,12 @@ const bloodandsand = {
     name: "Blood and Sand",
     picture: imgBloodandsand,
     ingredients: [
-        "4,5cl Scotch Whisky (3cl normal + 1,5cl smoky; e.g. Monkey Shoulder + LaPhroaigh)",
-        "2cl (blood) orange juice",
         "1cl Lemon Juice",
+        "2cl (blood) orange juice",
+        "1cl Cointreau Blood Orange",
         "1,5cl Vermouth",
         "1,5l Cherry (e.g. Heering)",
-        "1cl Cointreau Blood Orange",
+        "4,5cl Scotch Whisky (3cl normal/blended + 1,5cl smoky (LaPhroaigh))",
         "1 dash Angostura Orange Bitters"
     ],
     ingredientsGuest: [
@@ -404,11 +406,9 @@ const penicillin = {
     picture: imgPenicillin,
     ingredients: [
         "4 coin slices of ginger (muddle in Shaker)",
-        "6cl Blended Scotch Whisky (Monkey Shoulder), mild, smooth",
-        "7,5ml LaPhroaigh Whisky 10y (big peaty flavor, smoky",
-        "I would go 100% just Lavavulin",
         "22,5ml Lemon Juice",
-        "22,5ml 3:1 honey sirup"
+        "22,5ml 3:1 honey sirup",
+        "6,5cl Lagavulin; or: 5cl Blended (Monkey Shoulder) + 1,5cl Laphroagh"
     ],
     ingredientsGuest: [
         "Fresh Ginger",
@@ -519,14 +519,14 @@ const oldfashioned = {
 
 const mrswizzle = {
     id: "mrswizzle",
-    name: "Mr Swizzle",
+    name: "Mr. Swizzle",
     picture: imgMrswizzle,
     ingredients: [
+        "1,5cl Lemon Juice",
+        "1,5cl Honey Sirup",
+        "1,5cl Falernum",
         "4,5cl Demerara Rum (zB. El Dorado)",
         "22,5ml Mr. Black Coffee Liqueur",
-        "1,5cl Falernum",
-        "1,5cl Honey Sirup",
-        "1,5cl Lemon Juice",
         "2 dashes Orange bitters"
     ],
     ingredientsGuest: [
@@ -827,7 +827,8 @@ const trinidadsour = {
         "30ml Orgeat",
         "30ml Angostura Bitters",
         "15ml 100 Proof Rye Whisky (e.g. Rittenhouse)",
-        "22,5ml Lemon Juice"
+        "22,5ml Lemon Juice",
+        "optional: egg white. Greg loves it like this cuz of the great texture"
     ],
     ingredientsGuest: [
         "Angostura Bitters",
@@ -903,12 +904,12 @@ const saturn = {
     name: "Saturn",
     picture: imgSaturn,
     ingredients: [
-        "75ml London Dry Gin (Tanqueray)",
+        "15ml Passion Fruit Juice (or puree)",
+        "5-10ml Sugar Sirup (orig: 15ml, but too sweet)",
         "30ml Lemon Juice (maybe try with lime instead next time)",
-        "15ml Passion Fruit Juice (or puree or liqueur. I bought it at Biowelt Schlessmann)",
-        "10ml Sugar Sirup (maybe only 5ml, used to be 15ml, still a bit sweet)",
+        "15ml Falernum (John D. Taylor's Velvet)",
         "15ml Orgeat",
-        "15ml Falernum (John D. Taylor's Velvet)"
+        "75ml London Dry Gin (Tanqueray)"
     ],
     ingredientsGuest: [
         "London Dry Gin",
@@ -943,7 +944,8 @@ const saturn = {
     ],
     history: [],
     notes: [
-        "How to Drink: https://www.youtube.com/watch?v=rt-foO5u2z8"
+        "How to Drink: https://www.youtube.com/watch?v=rt-foO5u2z8",
+        "Bought the Passsionfruit Juice at Biowelt Schlessmann"
     ],
     price: "4,5€ (50+50+50+50+240)"
 };
@@ -1224,10 +1226,10 @@ const lastword = {
     name: "Last Word",
     picture: imgLastword,
     ingredients: [
-        "2cl Dry Gin (e.g. Botanist, for me, maybe Needle, but I did it with Tanqueray)",
-        "2cl Green Chartreuse",
-        "2cl Maraschino Liqueur (e.g. Luxardo)",
-        "2cl Lime Juice"
+        "2,5cl Dry Gin (e.g. Botanist, for me, maybe Needle, but I did it with Tanqueray)",
+        "2,5cl Green Chartreuse",
+        "2,5cl Maraschino Liqueur (e.g. Luxardo)",
+        "2,5cl Lime Juice"
     ],
     ingredientsGuest: [
         "Dry Gin",
@@ -1237,8 +1239,7 @@ const lastword = {
     ],
     preparationSteps: [
         PREP_WET_SHAKE,
-        PREP_FINE_STRAIN,
-        "low quantity"
+        PREP_FINE_STRAIN
     ],
     garnishes: [
         "Maraschino Cherry"
@@ -1274,10 +1275,10 @@ const finalward = {
     name: "Final Ward",
     picture: imgFinalward,
     ingredients: [
-        "2cl Rye Whisky",
-        "2cl Green Chartreuse",
-        "2cl Maraschino Liqueur (e.g. Luxardo)",
-        "2cl Lemon Juice",
+        "2,5cl Rye Whisky",
+        "2,5cl Green Chartreuse",
+        "2,5cl Maraschino Liqueur (e.g. Luxardo)",
+        "2,5cl Lemon Juice",
         "you can substitue rye with irish whisky, and lemon with lime, and you get a 'Dublin Minstrel'"
     ],
     ingredientsGuest: [
@@ -1304,7 +1305,8 @@ const finalward = {
         "bit sweet, bit sour, good balance",
         "reminds me of honey",
         "last word much more interesting and better with the gin",
-        "darker, not as bright than last word"
+        "darker, not as bright than last word",
+        "Riff on the Last Word"
     ],
     history: [],
     notes: [
@@ -1317,11 +1319,10 @@ const nakedandfamous = {
     name: "Naked & Famous",
     picture: imgNakedandfamous,
     ingredients: [
-        "2cl Mezcal",
-        "2cl Yellow Chartreuse (if only green: maybe 1/3 less and replace by honey sirup",
-        "2cl Aperol",
-        "2cl Lime Juice",
-        "it's low quantity for a nick n nora. Maybe use iceball"
+        "2,5cl Aperol",
+        "2,5cl Lime Juice",
+        "2,5cl Yellow Chartreuse (if Green: 2cl green, 0,5cl honey sirup",
+        "2,5cl Mezcal"
     ],
     ingredientsGuest: [
         "Mezcal",
@@ -1469,7 +1470,7 @@ const corpsereviver = {
         "pretty sweet",
         "fruity",
         "orange",
-        "cherry (esp with Luxardo),"
+        "cherry-ish (esp with Luxardo)"
     ],
     history: [],
     notes: [
@@ -1732,11 +1733,11 @@ const margaritanegra = {
     name: "Margarita Negra",
     picture: imgMargaritanegra,
     ingredients: [
-        "12 ml Agave Sirup (or Simple Sugar Sirup if non-existnet)",
+        "12 ml Agave Sirup (or Sugar Sirup/Honey if non-existnet)",
         "30 ml Lime Juice",
-        "30 ml Tequila Blanco (e.g. Casamigos, but really any will work) Mezcal",
+        "30 ml Tequila Blanco / Mezcal",
         "30 ml Mr. Black Coffee Liquor",
-        "tajin and salt (if no Tajin, maybe use a few drops of tabasco run around the rim)",
+        "Tajin and Salt for rim (if no Tajin, maybe use a few drops of tabasco run around the rim)",
         "benefits from a light dash of chocolate bitters :-)"
     ],
     ingredientsGuest: [
@@ -2012,10 +2013,10 @@ const artichokehold = {
     name: "Artichoke Hold",
     picture: imgArtichokehold,
     ingredients: [
-        "15ml Orgeat",
-        "15ml Elderflower Sirup",
-        "22.5ml Lime Juice",
         "22.5ml Cynar",
+        "22.5ml Lime Juice",
+        "15ml Elderflower Sirup",
+        "15ml Orgeat",
         "22.5ml Overproof Jamaican Rum (Smith and Cross, please don't use anything else)",
         "Mint Sprig Garnish"
     ],
@@ -2064,7 +2065,7 @@ const artichokehold = {
     ],
     history: [],
     notes: [
-        "source: educated barlfy: https://www.youtube.com/watch?v=Ja3FPq3f9fE"
+        "source: Educated Barlfy: https://www.youtube.com/watch?v=Ja3FPq3f9fE"
     ]
 };
 
@@ -2122,8 +2123,8 @@ const gordonsbreakfast = {
         "1 Lime cut into 6 wedges",
         "4-5 Pieces of Cucumber",
         "2cl Simple Sugar Sirup",
-        "6cl Gin (e.g. Tanqueray or Needle, both fine)",
-        "4 dashes Tabasco (but this will be already fiery :)",
+        "6cl Gin (e.g. Tanqueray or Needle)",
+        "4 dashes Tabasco (is already fiery :))",
         "3 dashes Worcestershire Sauce",
         "bit of salt and pepper"
     ],
@@ -2283,7 +2284,7 @@ const eggnog = {
     ingredients: [
         "15ml Simple Sugar Sirup",
         "30ml Heavy Cream",
-        "25ml Bourbon Whisky (100 proof, e.g. Old Grand-Dad Bonded), I used bulleit bourbon, next time use rittenhouse rye",
+        "25ml Bourbon Whisky (high proof)",
         "22.5ml Overproof Jamaican Rum (Smith and Cross)",
         "1 Whole Egg",
         "Grated Cinnamon",
@@ -2484,10 +2485,10 @@ const closingargument = {
     name: "Closing Argument",
     picture: imgClosingargument,
     ingredients: [
-        "2cl Mezcal (e.g. Del Maguey VIDA mezcal :-))",
-        "2cl Green Chartreuse",
-        "2cl Maraschino Liqueur (use Luxardo)",
-        "2cl Lime Juice"
+        "2,5cl Lime Juice",
+        "2,5cl Maraschino Liqueur (use Luxardo)",
+        "2,5cl Mezcal (use Del Maguey VIDA :-))",
+        "2,5cl Green Chartreuse"
     ],
     ingredientsGuest: [
         "Mezcal",
@@ -2497,8 +2498,7 @@ const closingargument = {
     ],
     preparationSteps: [
         PREP_WET_SHAKE,
-        PREP_FINE_STRAIN,
-        "low quantity (maybe make more or smaller glass)"
+        PREP_FINE_STRAIN
     ],
     garnishes: [
         "Lime zeste"
@@ -2516,7 +2516,7 @@ const closingargument = {
         "awesome small smokiness",
         "nice",
         "suck my ass and call me nancy",
-        "fuck me"
+        "Riff on the Last Word"
     ],
     history: [],
     notes: [
@@ -2563,7 +2563,9 @@ const chevala = {
     tags: [
         "Savory",
         "spicy",
-        "hot"
+        "hot",
+        "a bit like a watered down Bloody Mary",
+        "like the Bloody Mary more"
     ],
     history: [],
     notes: [
@@ -2577,10 +2579,10 @@ const thewellerman = {
     name: "The Wellerman",
     picture: imgThewellerman,
     ingredients: [
-        "15 ml Simple Sirup (could maybe use a little more acc. to Greg. Maybe use 22,5 ml)",
+        "15 ml Simple Sirup",
         "30 ml Lemon Juice",
         "60 ml Rum (Should be Demarara, Pot stilled; e.g. El Dorado 8; toasty sugar oak)",
-        "Heaping barspoonful of Matcha Powder",
+        "small heaping barspoonful of Matcha Powder",
         "1 Egg White",
         "Dry Shake",
         "Add ice and shake again",
@@ -2596,12 +2598,13 @@ const thewellerman = {
     ],
     preparationSteps: [
         PREP_DRY_SHAKE,
-        PREP_WET_SHAKE
+        PREP_WET_SHAKE,
+        "high quantity, barely fits into a Nick and Nora"
 
     ],
     garnishes: [
         "Doesnt really need garnish, maybe a skull design with angostura bitters",
-        "or maybe ankor"
+        "or maybe anchor"
     ],
     glasses: [
         GLASS_NICKANDNORA
@@ -2620,6 +2623,79 @@ const thewellerman = {
         "Source: How to drink: https://www.youtube.com/watch?v=gLlIMN1RTJE"
     ]
 };
+
+const bitterlastword = {
+    id: "bitterlastword",
+    name: "Bitter Last Word",
+    picture: imgBitterlastword,
+    ingredients: [
+        "2,5cl Angostura Bitters",
+        "2,5cl Green Chartreuse",
+        "2,5cl Maraschino Liqueur (use Luxardo)",
+        "2,5cl Lime Juice"
+    ],
+    ingredientsGuest: [
+        "Angostura Bitters",
+        "Green Chartreuse",
+        "Maraschino Liqueur",
+        "Fresh Lime Juice"
+    ],
+    preparationSteps: [
+        PREP_WET_SHAKE,
+        PREP_FINE_STRAIN
+    ],
+    garnishes: [
+        "nothing probably. If you want, lime zeste."
+    ],
+    glasses: [
+        GLASS_NICKANDNORA
+    ],
+    tags: [
+        "pretty good, but I think it's too close too the Trinidad Sour, just not as good. Trinidad Sour feels a bit more balanced",
+        "Riff on the Last Word"
+    ],
+    history: [],
+    notes: [
+        "Source: How to drink: https://www.youtube.com/watch?v=vAg0FXty5y0"
+    ]
+};
+
+const wordsmith = {
+    id: "wordsmith",
+    name: "Wordsmith",
+    picture: imgWordsmith,
+    ingredients: [
+        "2,5cl Overproof Pot Still Rum (Smith and Cross :-))",
+        "2,5cl Green Chartreuse",
+        "2,5cl Maraschino Liqueur (use Luxardo)",
+        "2,5cl Lime Juice"
+    ],
+    ingredientsGuest: [
+        "Overproof Pot Still Rum",
+        "Green Chartreuse",
+        "Maraschino Liqueur",
+        "Fresh Lime Juice"
+    ],
+    preparationSteps: [
+        PREP_WET_SHAKE,
+        PREP_FINE_STRAIN
+    ],
+    garnishes: [
+        "maybe lime zeste"
+    ],
+    glasses: [
+        GLASS_NICKANDNORA
+    ],
+    tags: [
+        "nice, balanced, good, but does not beat the Closing Argument",
+        "Riff on the Last Word"
+    ],
+    history: [],
+    notes: [
+        "Source (I actually actively searched for this combination of ingredients :)): https://www.diffordsguide.com/cocktails/recipe/3445/wordsmith"
+    ]
+};
+
 
 const cocktails = [
     whiskysour,
@@ -2679,7 +2755,9 @@ const cocktails = [
     adiosmotherfucker,
     closingargument,
     chevala,
-    thewellerman
+    thewellerman,
+    bitterlastword,
+    wordsmith
 ]//.sort((a, b) => a.name.localeCompare(b.name))
 
 const cocktailsMap: any = {}

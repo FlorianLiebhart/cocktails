@@ -151,7 +151,7 @@ function App() {
     return (
         <div id="main" style={{margin: '0px 20px 40px 20px'}}>
             <div id="pic" className="App" title="Florian's Finest">
-                <a href={window.location.pathname == "/" ? "/bartender" : "/"}><img src={cocktailbarImg} style={{
+                <a href={window.location.pathname == "/" ? "/guest" : "/"}><img src={cocktailbarImg} style={{
                     height: '250px',
                     marginBottom: '2px'
                 }}/></a>
@@ -173,10 +173,10 @@ function App() {
                 }}
             />
             <Router>
-                <Route exact path="/">
+                <Route exact path="/guest">
                     <GuestCocktailList cocktails={cocktails.filter(filterCocktails)} onCocktailClicked={addCocktailToCart} style={{marginBottom: "40px"}}/>
                 </Route>
-                <Route exact path="/bartender">
+                <Route exact path="/">
                     <CocktailList cocktails={cocktails.filter(filterCocktails)} onCocktailClicked={addCocktailToCart} style={{marginBottom: "40px"}}/>
                 </Route>
                 <Route exact path="/ingredients">
