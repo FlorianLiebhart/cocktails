@@ -319,11 +319,12 @@ const bloodandsand = {
     picture: imgBloodandsand,
     ingredients: [
         "1cl Lemon Juice",
-        "2cl (blood) orange juice",
+        "2cl (Blood) orange juice",
         "1cl Cointreau Blood Orange",
-        "1,5cl Vermouth",
-        "1,5l Cherry (e.g. Heering)",
-        "4,5cl Scotch Whisky (3cl normal/blended + 1,5cl smoky (LaPhroaigh))",
+        "1,5cl Red Vermouth",
+        "1,5l Cherry (Heering)",
+        "3cl Blended Scotch",
+        "1,5cl Smoky Scotch (Laphroaigh)",
         "1 dash Angostura Orange Bitters"
     ],
     ingredientsGuest: [
@@ -341,8 +342,8 @@ const bloodandsand = {
         PREP_FINE_STRAIN
     ],
     garnishes: [
-        "nothing",
-        "possibly a orange/lemon zeste and maraschino cherries"
+        "e.g. orange/lemon zeste",
+        "e.g. maraschino cherries"
     ],
     glasses: [
         GLASS_NICKANDNORA
@@ -405,9 +406,9 @@ const penicillin = {
     name: "Penicillin",
     picture: imgPenicillin,
     ingredients: [
-        "4 coin slices of ginger (muddle in Shaker)",
-        "22,5ml Lemon Juice",
+        "4 coin slices (3 mm) of ginger (muddle in Shaker)",
         "22,5ml 3:1 honey sirup",
+        "22,5ml Lemon Juice",
         "6,5cl Lagavulin; or: 5cl Blended (Monkey Shoulder) + 1,5cl Laphroagh"
     ],
     ingredientsGuest: [
@@ -421,7 +422,7 @@ const penicillin = {
         PREP_MUDDLE,
         PREP_WET_SHAKE,
         PREP_FINE_STRAIN,
-        "On big Ice ball in Nick and Nora glass; or in Tumbler"
+        "Muddle Ginger in Shaker, add the rest, wet shake, strain"
     ],
     garnishes: [
         "Candied ginger"
@@ -525,7 +526,7 @@ const mrswizzle = {
         "1,5cl Lemon Juice",
         "1,5cl Honey Sirup",
         "1,5cl Falernum",
-        "4,5cl Demerara Rum (zB. El Dorado)",
+        "4,5cl Demerara Rum (e.g. El Dorado)",
         "22,5ml Mr. Black Coffee Liqueur",
         "2 dashes Orange bitters"
     ],
@@ -904,12 +905,12 @@ const saturn = {
     name: "Saturn",
     picture: imgSaturn,
     ingredients: [
-        "15ml Passion Fruit Juice (or puree)",
-        "5-10ml Sugar Sirup (orig: 15ml, but too sweet)",
+        "15ml Passion Fruit Juice",
         "30ml Lemon Juice (maybe try with lime instead next time)",
         "15ml Falernum (John D. Taylor's Velvet)",
         "15ml Orgeat",
-        "75ml London Dry Gin (Tanqueray)"
+        "75ml London Dry Gin (Tanqueray)",
+        "5-10ml Sugar Sirup"
     ],
     ingredientsGuest: [
         "London Dry Gin",
@@ -1322,7 +1323,7 @@ const nakedandfamous = {
         "2,5cl Aperol",
         "2,5cl Lime Juice",
         "2,5cl Yellow Chartreuse (if Green: 2cl green, 0,5cl honey sirup",
-        "2,5cl Mezcal"
+        "2,5cl Mezcal (Espolon Tequila)"
     ],
     ingredientsGuest: [
         "Mezcal",
@@ -1423,8 +1424,7 @@ const nucleardaiquiri = {
         "very tart",
         "very strong",
         "very good, tastes like herbs",
-        "2005, Gregor De Gruyther",
-        "favorite"
+        "2005, Gregor De Gruyther"
     ],
     history: [],
     notes: [
@@ -1572,8 +1572,8 @@ const delicioussour = {
     ingredients: [
         "5 cl Apple Brandy (Calvados Papidoux V.S.O.P. or Laird's Applejack)",
         "3 cl Lemon Juice",
-        "1,5 cl Peach Liqueur (don't use more!. It was really tastable already)",
-        "1,5 cl sugar sirup (maybe a little bit less sweet (maybe 1cl sugar sirup))",
+        "1,5 cl (orig 1,5) Peach Liqueur (don't use more!. It was really tastable already)",
+        "1 cl (orig 1,5) sugar sirup (maybe a little bit less sweet (maybe 1cl sugar sirup))",
         "half an egg white",
         "Lemon Twist",
         "Mabye a dash of bitters"
@@ -1605,7 +1605,6 @@ const delicioussour = {
         "sweet",
         "fruity",
         "delicious",
-        "favorite",
         "tastes like apple, peach pretty prominent as well",
         "christianapproved"
     ],
@@ -1735,7 +1734,7 @@ const margaritanegra = {
     ingredients: [
         "12 ml Agave Sirup (or Sugar Sirup/Honey if non-existnet)",
         "30 ml Lime Juice",
-        "30 ml Tequila Blanco / Mezcal",
+        "30 ml Tequila Blanco / Mezcal (El Jimador or Espolon)",
         "30 ml Mr. Black Coffee Liquor",
         "Tajin and Salt for rim (if no Tajin, maybe use a few drops of tabasco run around the rim)",
         "benefits from a light dash of chocolate bitters :-)"
@@ -1752,7 +1751,7 @@ const margaritanegra = {
         "in double rocks glass on one big ice cube"
     ],
     garnishes: [,
-        "Rim glass with salt or/and Tajin spice mix",
+        "Rim glass with salt or/and Tajin spice mix or tabasco and salt",
         "Lime Wheel"
     ],
     glasses: [
@@ -1827,11 +1826,10 @@ const coldbrewshakerato = {
     name: "Cold Brew Shakerato",
     picture: imgColdbrewshakerato,
     ingredients: [
-        "it's like a 'shaken Negroni'",
         "30 ml Fresh Orange Juice",
-        "30 ml Campari (maybe use less?, as I also use less in Negroni)",
+        "30 ml Campari",
         "30 ml London Dry Gin (e.g. Tanqueray)",
-        "30 ml Mr Black Coffee Liquor",
+        "25 ml Mr Black Coffee Liquor",
         "Orange twist"
     ],
     ingredientsGuest: [
@@ -2015,8 +2013,8 @@ const artichokehold = {
     ingredients: [
         "22.5ml Cynar",
         "22.5ml Lime Juice",
-        "15ml Elderflower Sirup",
-        "15ml Orgeat",
+        "12,5ml Elderflower Sirup",
+        "12,5ml Orgeat",
         "22.5ml Overproof Jamaican Rum (Smith and Cross, please don't use anything else)",
         "Mint Sprig Garnish"
     ],
@@ -2074,13 +2072,11 @@ const eastside = {
     name: "Eastside",
     picture: imgEastside,
     ingredients: [
-        "8 Mint leaves",
-        "3-4 slices of cucumber",
-        "2cl Sugar Sirup",
+        "5 Mint leaves",
+        "4 slices of cucumber",
+        "1,5cl Sugar Sirup",
         "3cl Lime Juice",
-        "6cl Gin (Tanqueray or Needle, both fine :))",
-        "sweet-sour balance very important, 30ml lime and 20ml sugar should be fine, but I need to play around with it more; maybe less sugar (15ml?) and maybe even less lime",
-        "for myself, I'd wanna try 6cl Gin, 25ml Lime, 15ml Sugar Sirup"
+        "6cl Gin (e.g. Tanqueray)"
     ],
     ingredientsGuest: [
         "Gin",
@@ -2121,7 +2117,7 @@ const gordonsbreakfast = {
     picture: imgGordonsbreakfast,
     ingredients: [
         "1 Lime cut into 6 wedges",
-        "4-5 Pieces of Cucumber",
+        "4-5 Slices of Cucumber",
         "2cl Simple Sugar Sirup",
         "6cl Gin (e.g. Tanqueray or Needle)",
         "4 dashes Tabasco (is already fiery :))",
@@ -2140,7 +2136,8 @@ const gordonsbreakfast = {
         PREP_WET_SHAKE,
         PREP_OPEN_POUR,
         "Cut lime into 6 wedges, remove whites",
-        "muddle with the other ingredients, wet shake, and open pour (ice crisps are actually nice)"
+        "muddle with the other ingredients, wet shake, and open pour (ice crisps are actually nice)",
+        "serve with straw"
 
     ],
     garnishes: [,
@@ -2487,7 +2484,7 @@ const closingargument = {
     ingredients: [
         "2,5cl Lime Juice",
         "2,5cl Maraschino Liqueur (use Luxardo)",
-        "2,5cl Mezcal (use Del Maguey VIDA :-))",
+        "2,5cl Mezcal (Del Maguey VIDA)",
         "2,5cl Green Chartreuse"
     ],
     ingredientsGuest: [
