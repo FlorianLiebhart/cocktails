@@ -71,6 +71,8 @@ import imgChevala from './images/cocktails/chevala.png';
 import imgThewellerman from './images/cocktails/thewellerman.png';
 import imgBitterlastword from './images/cocktails/bitterlastword.png';
 import imgWordsmith from './images/cocktails/wordsmith.png';
+import imgSeenoevil from './images/cocktails/seenoevil.png';
+import imgVanillapunch from './images/cocktails/vanillapunch.png';
 
 const whiskysour = {
     id: "whiskysour",
@@ -2693,6 +2695,84 @@ const wordsmith = {
     ]
 };
 
+const seenoevil = {
+    id: "seenoevil",
+    name: "See No Evil",
+    picture: imgSeenoevil,
+    ingredients: [
+        "4,5cl Del Maguey Vida Mezcal",
+        "22,5ml Orgeat",
+        "22,5ml Lime Juice",
+        "3 dashes tabasco",
+        "4-5 dashes Angostura Armoatic Bitters (float)"
+    ],
+    ingredientsGuest: [
+        "4,5cl Del Maguey Vida Mezcal",
+        "22,5ml Orgeat",
+        "22,5ml Lime Juice",
+        "3 dashes tabasco",
+        "4-5 dashes Angostura Armoatic Bitters (float)"
+    ],
+    preparationSteps: [
+        PREP_WET_SHAKE,
+        PREP_OPEN_POUR,
+        "shake with crushed ice, open pour, add more crushed ice",
+        "add tabasco on top"
+    ],
+    garnishes: [
+        "Mint",
+        "grated nutmeg (leave out)"
+    ],
+    glasses: [
+        GLASS_LOWBALL
+    ],
+    tags: [
+        "by Anders Erickson",
+        "favorite",
+        "spicy",
+        "hot",
+        "smoky"
+    ],
+    history: [],
+    notes: [
+        "Anders Erickson: https://www.youtube.com/watch?v=xRJ9uAzTcaE"
+    ]
+};
+
+const vanillapunch = {
+    id: "vanillapunch",
+    name: "Vanilla Punch",
+    picture: imgVanillapunch,
+    ingredients: [
+        "4,5cl Cognac",
+        "22,5ml Licor 43",
+        "22,5ml Lemon Juice"
+    ],
+    ingredientsGuest: [
+        "4,5cl Cognac",
+        "22,5ml Licor 43",
+        "22,5ml Lemon Juice"
+    ],
+    preparationSteps: [
+        PREP_WET_SHAKE,
+        PREP_OPEN_POUR,
+        "shake with crushed ice, open pour, add more crushed ice"
+    ],
+    garnishes: [
+        "Maraschino Cherry"
+    ],
+    glasses: [
+        GLASS_LOWBALL
+    ],
+    tags: [
+        "favorite"
+    ],
+    history: [],
+    notes: [
+        "Educated Barfly: https://www.youtube.com/watch?v=NeGJqmmrCWs"
+    ]
+};
+
 
 const cocktails = [
     whiskysour,
@@ -2754,7 +2834,9 @@ const cocktails = [
     chevala,
     thewellerman,
     bitterlastword,
-    wordsmith
+    wordsmith,
+    seenoevil,
+    vanillapunch
 ]//.sort((a, b) => a.name.localeCompare(b.name))
 
 const cocktailsMap: any = {}
