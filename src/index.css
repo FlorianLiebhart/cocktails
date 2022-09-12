@@ -5,9 +5,33 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: "Menlo";
+  background-color: #2e303e;
+  color:  #e8ebfb;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+div[title="preparation steps"] div div div img {
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
+
+div[title=glasses] {
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
+#searchbar {
+  background-color: #e8ebfb;
+}
+
+div[title="tags"] {
+    color: #2d303e;
+}
+
+ul[title="cart"] {
+  color:  #2d303e;
 }

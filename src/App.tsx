@@ -156,7 +156,7 @@ function App() {
                     marginBottom: '2px'
                 }}/></a>
             </div>
-            <input
+            <input id="searchbar"
                 placeholder={"Search for something"}
                 style={{
                     display: 'flex',
