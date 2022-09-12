@@ -6,3 +6,10 @@
     height: 40vmin;
     pointer-events: none;
 }
+
+#pic {
+    background-image: url("./domain/images/cocktailbar-background.jpg");
+    background-repeat: repeat-x;
+    height: 250px;
+    background-size: contain;
+}
