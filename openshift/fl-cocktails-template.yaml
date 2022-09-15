@@ -1,0 +1,191 @@
+apiVersion: template.openshift.io/v1
+kind: Template
+metadata:
+  name: cocktails
+objects:
+  - kind: ResourceQuota
+    apiVersion: v1
+    metadata:
+      name: fl-cocktails-quota
+    spec:
+      hard:
+        limits.memory: 3Gi
+        limits.cpu: 3
+        requests.memory: 2Gi
+        requests.cpu: 3
+
+  - kind: LimitRange
+    apiVersion: v1
+    metadata:
+      name: fl-limit-range
+    spec:
+      limits:
+        - type: Container
+          default:
+            memory: 500Mi
+            cpu: 500m
+          defaultRequest:
+            memory: 100Mi
+            cpu: 100m
+
+  - kind: ProxyWhitelist
+    apiVersion: ai.vwgroup.com/v1
+    metadata:
+      name: fl-proxywhitelist
+    spec:
+      whitelist:
+        - registry.npmjs.org
+        - registry.access.redhat.com
+        - quay.io
+        - registry-1.docker.io
+        - registry.docker.io
+        - auth.docker.io
+        - docker.io
+        - registry.redhat.io
+        - production.cloudflare.docker.com
+        - registry.npm.taobao.org
+        - registry.npmmirror.com
+        - cdn.npmmirror.com
+        - registry.nlark.com
+        - github.com
+        - static.realm.io
+        - s3.dualstack.eu-west-1.amazonaws.com
+      whitelistCIDRs:
+        - 1.1.1.1/32
+      whitelistPorts:
+        - 80
+        - 443
+
+  - kind: ImageStream
+    apiVersion: image.openshift.io/v1
+    metadata:
+      name: fl-cocktails-app
+    spec:
+      lookupPolicy:
+        local: true
+
+  - kind: Secret
+    apiVersion: v1
+    metadata:
+      name: fl-github-webhook-secret
+    type: Opaque
+    stringData:
+      WebHookSecretKey: ba2d8611221e6836
+
+  - kind: BuildConfig
+    apiVersion: build.openshift.io/v1
+    metadata:
+      name: fl-cocktailapp-buildconfig
+    spec:
+      source:
+        git:
+          ref: main
+          uri: 'https://github.com/FlorianLiebhart/cocktails.git'
+        type: Git
+      output:
+        to: 
+          kind: ImageStreamTag
+          name: 'fl-cocktails-app:dev-latest'
+      strategy:
+        type: Source
+        sourceStrategy:
+          from:
+            kind: ImageStreamTag
+            namespace: openshift
+            name: 'nodejs:16-ubi8'
+          env:
+            - name: HTTPS_PROXY
+              valueFrom:
+                secretKeyRef:
+                  name: fl-proxywhitelist
+                  key: https-proxy-url
+            - name: HTTP_PROXY
+              valueFrom:
+                secretKeyRef:
+                  name: fl-proxywhitelist
+                  key: http-proxy-url
+      triggers:
+        - type: ConfigChange
+        - type: GitHub
+          github:
+            secretReference:
+              name: fl-github-webhook-secret
+      resources:
+        limits:
+          memory: 2Gi
+          cpu: 1.5
+        requests: 
+          memory: 1.5Gi
+          cpu: 1.5Gi
+
+  - kind: Deployment
+    apiVersion: apps/v1
+    metadata:
+      name: fl-cocktailapp-deployment
+      annotations: 
+        image.openshift.io/triggers: |-
+          [
+            {
+              "from": {
+                "kind": "ImageStreamTag",
+                "name": "fl-cocktails-app:dev-latest"
+              },
+              "fieldPath": "spec.template.spec.containers[0].image"
+            }
+          ]
+    spec:
+      replicas: 1
+      selector:
+        matchLabels:
+          app: fl-cocktails-app
+      template:
+        metadata:
+          labels:
+            app: fl-cocktails-app
+        spec:
+          containers:
+            - name: fl-cocktails-app
+              image: cocktails:dev-latest
+              resources: 
+                limits:
+                  memory: 800Mi
+                requests: 
+                  memory: 500Mi
+              ports:
+                - containerPort: 3000
+              imagePullPolicy: Always
+          restartPolicy: Always
+
+  - kind: Service
+    apiVersion: v1
+    metadata:
+      name: fl-cocktails-app
+    spec:
+      ipFamilies:
+        - IPv4
+      ports:
+        - name: 8080-tcp
+          protocol: TCP
+          port: 8080
+          targetPort: 3000
+      internalTrafficPolicy: Cluster
+      type: ClusterIP
+      selector:
+        app: fl-cocktails-app
+
+  - kind: Route
+    apiVersion: route.openshift.io/v1
+    metadata:
+      name: fl-cocktails-app
+    spec:
+      host: cocktails2.ocp.dev.datalab.vwgroup.com
+      to:
+        kind: Service
+        name: fl-cocktails-app
+        weight: 100
+      port:
+        targetPort: 8080-tcp
+      tls:
+        termination: edge
+        insecureEdgeTerminationPolicy: Allow
+      wildcardPolicy: None
