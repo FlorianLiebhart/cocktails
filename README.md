@@ -1,4 +1,14 @@
-# cocktails
+# Cocktails
+
+# Deployment
+
+```yaml
+oc process -f openshift/fl-cocktails-template.yaml | oc apply -f -
+```
+
+Wait until the ProxywhitelistController has created the fl-proxywhitelist secret, then re-run the build.
+
+Get the GitHub Webhook URL from BuildConfigs and add it as the Payload URL to the GIthub repo Webhook.
 
 # Getting Started with Create React App
 
