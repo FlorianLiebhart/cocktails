@@ -12,4 +12,6 @@
     background-repeat: repeat-x;
     height: 250px;
     background-size: contain;
+    border-radius: 12px;
+    margin-bottom: 10px;
 }

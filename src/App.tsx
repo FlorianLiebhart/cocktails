@@ -161,12 +161,13 @@ function App() {
                 style={{
                     display: 'flex',
                     height: '48px',
-                    width: '98%',
+                    width: '100%',
                     borderRadius: '10px',
                     borderStyle: 'solid',
                     borderWidth: '1px',
                     paddingLeft: '10px',
-                    paddingRight: '10px'
+                    paddingRight: '10px',
+                    boxSizing: 'border-box'
                 }}
                 onChange={(ev) => {
                     setFilter(ev.target.value);

@@ -115,7 +115,6 @@ const whiskysour = {
     notes: []
 };
 
-
 const negroni = {
     id: "negroni",
     name: "Negroni",
