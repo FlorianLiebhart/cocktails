@@ -2,6 +2,10 @@ apiVersion: template.openshift.io/v1
 kind: Template
 metadata:
   name: cocktails
+parameters:
+- description: Webhook secret key to the github repository
+  name: WEBHOOKSECRETKEY
+  required: true
 objects:
   - kind: ResourceQuota
     apiVersion: v1
@@ -70,7 +74,7 @@ objects:
       name: fl-github-webhook-secret
     type: Opaque
     stringData:
-      WebHookSecretKey: ba2d8611221e6836
+      WebHookSecretKey: '${WEBHOOKSECRETKEY}'
 
   - kind: BuildConfig
     apiVersion: build.openshift.io/v1
