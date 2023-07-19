@@ -177,6 +177,20 @@ objects:
       selector:
         app: fl-cocktails-app
 
+  - kind: Certificate
+    apiVersion: cert-manager.io/v1
+    metadata:
+      name: cocktails.ai.vwgroup.com
+      annotations:
+        cert-utils-operator.redhat-cop.io/certs-from-secret: cocktails.ai.vwgroup.com
+    spec:
+      secretName: cocktails.ai.vwgroup.com
+      issuerRef:
+        name: dl-letsencrypt-clusterissuer
+        kind: ClusterIssuer
+      dnsNames:
+      - 'cocktails.ai.vwgroup.com'
+
   - kind: Route
     apiVersion: route.openshift.io/v1
     metadata:
